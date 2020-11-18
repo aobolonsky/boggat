@@ -1,0 +1,47 @@
+.header-top {
+    .container {
+        display: flex;
+        height: 60px;
+        justify-content: flex-end;
+    }
+    background-color: #F0F0F0;
+}
+
+.header-top__email,
+.header-top__phone,
+.header-top__search {
+    align-self: center;
+    margin-left: 20px;
+}
+
+.header-bottom {
+    background: none;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+    }
+
+    .header-bottom__logo {
+        align-self: center;
+    }
+
+    .header-bottom__nav {
+        display: flex;
+        .nav {
+            display: flex;
+            justify-content: flex-end;
+
+            .nav-link {
+                align-self: center;
+                margin-left: 20px;
+            }
+        }
+
+        .lk-button {
+            align-self: center;
+            margin-left: 20px;
+        }
+    }
+}

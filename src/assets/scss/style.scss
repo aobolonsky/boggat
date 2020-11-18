@@ -1,0 +1,18 @@
+@import "vendor/reset";
+@import "fonts";
+@import "vars";
+
+body {
+    font: $font_main;
+    background-color: $color_white;
+    color: $color_black;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/footer";
