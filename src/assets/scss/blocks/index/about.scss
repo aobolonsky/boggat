@@ -1,0 +1,48 @@
+.page-section {
+    height: 100vh;
+    padding: 10rem 0;
+
+    .page-section-heading {
+        font: $font_sub_header;
+        color: $primary;
+        text-align: center;
+    }
+}
+
+.about-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .about-item {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font: $font_main;
+
+        .about-item-icon img {
+            width: 75px;
+            height: 75px;
+        }
+    
+        &--left {
+            flex-direction: row;
+
+            .about-item-text {
+                text-align: right;
+            }
+            .about-item-icon {
+                margin: 30px 20px 30px 50px;
+            }
+        }
+        &--right {
+            flex-direction: row-reverse;
+
+            .about-item-text {
+                text-align: left;
+            }
+            .about-item-icon {
+                margin: 30px 50px 30px 20px;
+            }
+        }     
+    }
+}

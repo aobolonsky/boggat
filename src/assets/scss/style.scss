@@ -1,21 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans+Condensed:wght@700&display=swap');
+@import "vendor/bootstrap";
 @import "vendor/reset";
 @import "vars";
 
 html {
     font: $font_main;
+    font-size: 62.5%;
 }
 
 body {
+    font-size: 1.4rem;
     background-color: $color_white;
     color: $color_black;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 130rem;
     margin: 0 auto;
+}
+
+.cta-button-dark {
+    font: $font_button;
+    color: $secondary;
+    background-color: $primary;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba($primary, 0.4);
+    padding: 1.5rem 7rem;
+}
+
+.cta-button-light {
+    font: $font_button;
+    color: $primary;
+    background-color: $secondary;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba($color_shadow, 0.2);
+    padding: 0.8rem 2rem;
 }
 
 /* Blocks */
 @import "blocks/header";
+@import "blocks/index/slider";
+@import "blocks/index/about";
 @import "blocks/footer";

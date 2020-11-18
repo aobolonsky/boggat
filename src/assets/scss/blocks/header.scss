@@ -1,7 +1,12 @@
+.header {
+    position: fixed;
+    width: 100%;
+}
+
 .header-top {
     .container {
         display: flex;
-        height: 60px;
+        height: 6rem;
         justify-content: flex-end;
     }
     background-color: #F0F0F0;
@@ -11,16 +16,42 @@
 .header-top__phone,
 .header-top__search {
     align-self: center;
-    margin-left: 20px;
+    margin-left: 4rem;
+    font: $font_main;
+}
+
+.header-top__email,
+.header-top__phone {
+    display: flex;
+    align-items: baseline;
+}
+
+.header-email,
+.header-phone {
+    margin-left: 1.8rem;
+}
+
+.header-top__search {
+    img {
+        margin-bottom: 0.5rem;
+    }
+
+    input {
+        border: none;
+        background: none;
+        color: $color_black;
+        max-width: 7rem;
+    }
 }
 
 .header-bottom {
     background: none;
+    padding: 20px 0;
     
     .container {
         display: flex;
         justify-content: space-between;
-        height: 100px;
+        height: 10rem;
     }
 
     .header-bottom__logo {
@@ -35,13 +66,18 @@
 
             .nav-link {
                 align-self: center;
-                margin-left: 20px;
+                margin-left: 2rem;
+
+                a {
+                    font: $font_main;
+                    color: $secondary;
+                }
             }
         }
 
         .lk-button {
             align-self: center;
-            margin-left: 20px;
+            margin-left: 2rem;
         }
     }
 }

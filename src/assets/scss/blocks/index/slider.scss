@@ -1,0 +1,13 @@
+.slider {
+  height: 100vh;
+  padding-top: calc(6rem + 74px);
+  padding-bottom: 6rem;
+  background-image: url("../images/Headerimage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.slider .slider-heading {
+  font: $font_header;
+  padding-top: 9rem;
+}
