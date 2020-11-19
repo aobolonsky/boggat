@@ -10,24 +10,31 @@ html {
 }
 
 body {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     background-color: $color_white;
     color: $color_black;
 }
 
 .container {
-    max-width: 130rem;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
 .cta-button-dark {
-    font: $font_button;
+    font: $font_button_dark;
+    text-decoration: none;
     color: $secondary;
     background-color: $primary;
     border: none;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba($primary, 0.4);
-    padding: 1.5rem 7rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.6rem 1rem rgba($color_dark, 0.2);
+    padding: 2.2rem 8.6rem;
+    transition: background-color .2s ease-in;
+
+    &:hover {
+        color: $primary;
+        background-color: $secondary;
+    }
 }
 
 .cta-button-light {
@@ -35,9 +42,15 @@ body {
     color: $primary;
     background-color: $secondary;
     border: none;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba($color_shadow, 0.2);
-    padding: 0.8rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.3rem 1rem rgba($color_dark, 0.2);
+    padding: 1rem 2.6rem;
+    transition: background-color .2s ease-in;
+
+    &:hover {
+        color: $secondary;
+        background-color: $primary;
+    }
 }
 
 /* Blocks */

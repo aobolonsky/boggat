@@ -1,12 +1,13 @@
 .header {
-    position: fixed;
+    position: absolute;
+    top: 0;
     width: 100%;
 }
 
 .header-top {
     .container {
         display: flex;
-        height: 6rem;
+        height: 6.7rem;
         justify-content: flex-end;
     }
     background-color: #F0F0F0;
@@ -15,43 +16,62 @@
 .header-top__email,
 .header-top__phone,
 .header-top__search {
-    align-self: center;
-    margin-left: 4rem;
-    font: $font_main;
-}
-
-.header-top__email,
-.header-top__phone {
     display: flex;
-    align-items: baseline;
+    align-items: flex-end;
+    align-self: center;
+    margin-left: 4.6rem;
+    font: $font_main;
+    color: $color_dark;
+    text-decoration: none;
 }
 
-.header-email,
-.header-phone {
-    margin-left: 1.8rem;
+.top-text,
+.top-search {
+    display: block;
+    margin-left: 2.2rem;
 }
 
 .header-top__search {
-    img {
+    transition: border-bottom .2s  ease-in;
+    border-bottom: 0.15rem solid rgba($primary, 0);
+
+    &:hover,
+    &:focus {
+        border-bottom: 0.15rem solid rgba($primary, 1);
+    }
+
+    .top-icon {
         margin-bottom: 0.5rem;
     }
 
-    input {
-        border: none;
-        background: none;
-        color: $color_black;
-        max-width: 7rem;
+    .top-search {
+        display: block;
+        padding-bottom: 0.2rem;
+        margin-bottom: 0.2rem;
+
+        .search-input {
+            font: inherit;
+            border: none;
+            background: none;
+            color: $color_black;
+            max-width: 5.4rem;
+            line-height: 1.3rem;
+
+            &::placeholder {
+                color: $color_black;
+                font: inherit;
+            }
+        }
     }
 }
 
 .header-bottom {
     background: none;
-    padding: 20px 0;
+    padding: 3rem 0;
     
     .container {
         display: flex;
         justify-content: space-between;
-        height: 10rem;
     }
 
     .header-bottom__logo {
@@ -60,24 +80,79 @@
 
     .header-bottom__nav {
         display: flex;
+        justify-content: flex-end;
+
         .nav {
             display: flex;
             justify-content: flex-end;
 
-            .nav-link {
+            .nav-item {
+                position: relative;
                 align-self: center;
-                margin-left: 2rem;
+                margin-right: 4rem;
+                padding: 1rem 0;
 
-                a {
+                &:hover {
+                    .nav-link {
+                        color: $primary;
+                    }
+                
+                    > .subnav {
+                        display: block;
+                    }
+                }
+
+                .nav-link {
                     font: $font_main;
+                    text-decoration: none;
                     color: $secondary;
+                    transition: color .2s ease-in;
+                }
+
+                .subnav {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: -3rem;
+                    width: 280px;
+                    background-color: $secondary;
+                    border-radius: 10px;
+                    padding: 2.5rem 0;
+                    filter: drop-shadow(0px 3px 10px rgba(51, 51, 51, 0.2));
+                    transition: all .3s ease-in-out;
+
+                    &:before {
+                        position: absolute;
+                        content: "";
+                        top: -1rem;
+                        left: 2.3rem;
+                        border-style: solid;
+                        border-width: 0 14px 18px 14px;
+                        border-color: transparent transparent #ffffff transparent;
+                        line-height: 0px;
+                        _border-color: #000000 #000000 #ffffff #000000;
+                        _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+                    }
+
+                    .subnav-link {
+                        display: block;
+                        color: $color_dark;
+                        font: $font_sublink;
+                        text-decoration: none;
+                        padding: 0.5rem 3rem;
+                        transition: all .2s ease-in;
+
+                        &:hover {
+                            background-color: $primary;
+                            color: $secondary;
+                        }
+                    }
                 }
             }
         }
 
         .lk-button {
             align-self: center;
-            margin-left: 2rem;
         }
     }
 }

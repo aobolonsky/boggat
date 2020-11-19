@@ -1,31 +1,65 @@
 <header class="header">
     <div class="header-top">
         <div class="container">
-            <div class="header-top__email">
-                <img src="assets/images/icons/envelope.svg" alt="email">
-                <span class="header-email">info@boggat.ru</span>
-            </div>
-            <div class="header-top__phone">
-                <img src="assets/images/icons/phone.svg" alt="phone">
-                <span class="header-phone">8 (800) 250-11-88</span>
-            </div>
+            <a href="#" class="header-top__email">
+                <img class="top-icon" src="assets/images/icons/envelope.svg" alt="email">
+                <span class="top-text">info@boggat.ru</span>
+            </a>
+            <a href="#" class="header-top__phone">
+                <img class="top-icon" src="assets/images/icons/phone.svg" alt="phone">
+                <span class="top-text">8 (800) 250-11-88</span>
+            </a>
             <div class="header-top__search">
-                <img src="assets/images/icons/loupe.svg" alt="search">
-                <input type="text" placeholder="Поиск">
+                <img class="top-icon" src="assets/images/icons/loupe.svg" alt="search">
+                <form class="top-search" action="/" method="POST">
+                    <input class="search-input" type="text" placeholder="Поиск">
+                </form>
             </div>
         </div>
     </div>
     <div class="header-bottom">
         <div class="container">
-            <div class="header-bottom__logo">
+            <a href="#" class="header-bottom__logo">
                 <img src="assets/images/logob.png" alt="logo">
-            </div>
+            </a>
             <div class="header-bottom__nav">
                 <ul class="nav">
-                    <li class="nav-link"><a href="#">О Боггат</a></li>
-                    <li class="nav-link"><a href="#">Займы</a></li>
-                    <li class="nav-link"><a href="#">Сбережения</a></li>
-                    <li class="nav-link"><a href="#">Контакты</a></li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link has-subnav">О Боггат</a>
+
+                        <ul class="subnav">
+                            <li>
+                                <a href="#" class="subnav-link">Информация о Боггат</a>
+                            </li>
+                            <li>
+                                <a href="#" class="subnav-link">Управляющие документы</a>
+                            </li>
+                            <li>
+                                <a href="#" class="subnav-link">Реквизиты</a>
+                            </li>
+                            <li>
+                                <a href="#" class="subnav-link">Новости</a>
+                            </li>
+                            <li>
+                                <a href="#" class="subnav-link">Финансовый журнал</a>
+                            </li>
+                            <li>
+                                <a href="#" class="subnav-link">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="#" class="subnav-link">Для партнеров</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Займы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Сбережения</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Контакты</a>
+                    </li>
                 </ul>
                 <button class="cta-button-light lk-button">Личный кабинет</button>
             </div>

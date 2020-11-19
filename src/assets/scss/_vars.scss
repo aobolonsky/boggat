@@ -1,13 +1,17 @@
 // Colors
-$primary: #1D2B6B;
+$primary:   #1D2B6B;
 $secondary: #fff;
 
 $color_white: #fff;
 $color_black: #000;
-$color_shadow: #333;
+$color_dark:  #333;
 
 // Fonts
-$font_main: 500 1.8rem/2.4rem 'Montserrat';
-$font_button: 600 1.9rem/2.2rem 'Montserrat';
-$font_header: 700 10rem/12rem 'Open Sans Condensed';
-$font_sub_header: 700 3.5rem/4.2rem 'Open Sans Condensed';
+$font_sublink:      normal normal 500 1.6rem/2rem 'Montserrat';
+$font_main:         normal normal 600 1.6rem/2rem 'Montserrat';
+$font_about_item:    normal normal 500 1.8rem/2.7rem 'Montserrat';
+$font_link:         normal normal 600 1.8rem/2.2rem 'Montserrat';
+$font_button:       normal normal 600 1.8rem/2.2rem 'Montserrat';
+$font_button_dark:  normal normal 600 2rem/2.5rem 'Montserrat';
+$font_header:       normal normal 700 10rem/12rem 'Open Sans Condensed';
+$font_sub_header:   normal normal 700 3.5rem/4.2rem 'Open Sans Condensed';

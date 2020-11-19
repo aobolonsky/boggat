@@ -1,11 +1,22 @@
-.page-section {
-    height: 100vh;
-    padding: 10rem 0;
+.about {
+    padding: 15rem 0;
 
-    .page-section-heading {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .section-heading {
         font: $font_sub_header;
         color: $primary;
-        text-align: center;
+        margin-bottom: 11.3rem;
+    }
+
+    .cta-about {
+        padding: 1.7rem 6.8rem;
+        margin-top: 12rem;
     }
 }
 
@@ -15,13 +26,15 @@
 
     .about-item {
         display: flex;
-        justify-content: flex-end;
         align-items: center;
-        font: $font_main;
+
+        .about-item-text {
+            font: $font_about_item;
+        }
 
         .about-item-icon img {
-            width: 75px;
-            height: 75px;
+            max-width: 75px;
+            max-height: 75px;
         }
     
         &--left {
@@ -31,7 +44,7 @@
                 text-align: right;
             }
             .about-item-icon {
-                margin: 30px 20px 30px 50px;
+                margin: 3rem 2rem 3rem 4rem;
             }
         }
         &--right {
@@ -41,7 +54,7 @@
                 text-align: left;
             }
             .about-item-icon {
-                margin: 30px 50px 30px 20px;
+                margin: 3rem 4rem 30px 2rem;
             }
         }     
     }
