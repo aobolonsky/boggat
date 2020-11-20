@@ -2,8 +2,9 @@
 @import "vendor/reset";
 @import "vendor/owl.carousel";
 @import "vendor/owl.theme.default";
-@import "vars";
 @import "bootstrap/scss/bootstrap-grid";
+@import "vars";
+
 
 html {
     font: $font_main;
