@@ -61,10 +61,20 @@ title: Boggat | Home
             </div>
         </div>
 
-        <!-- About Section Button-->
-        <a class="cta-about cta-button-dark" href="">
-            Заказать звонок
-        </a>
+        <!-- Call Section Form Button-->
+        <div class="call-form">
+            <form class="form-wrapper" action="/" method="POST">
+                <input class="form-item" type="text" placeholder="Ваше имя" name="name" id="name">
+                <input class="form-item" type="text" placeholder="+7 (___)___-__-__" name="phone" id="phone">
+                <input class="form-item-input" type="checkbox" name="agree" id="agree">
+                <label class="form-item-label" for="agree">
+                    Я даю своё согласие на обработку персональных данных
+                </label>
+            </form>
+            <button class="cta-call cta-button-dark">
+                Заказать звонок
+            </button>
+        </div>
     </div>
 </section>
 
