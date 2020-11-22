@@ -1,17 +1,18 @@
 footer{
-    height: 40.6rem;
     //width: 1416px;
     background-color: #1D2B6B;
     color: #ffffff;
-    display: grid; grid-template-columns: 7vw 1fr 7vw;
-    grid-template-rows: auto auto; 
+    .container {
+        padding-top: 5.7rem;
+        padding-bottom: 7.5rem;
+    }
     
 }
 .footer-container {
      grid-column: 2 / 3; display: grid; /* ACTING AS A GRID CONTAINER */ 
      grid-template-columns: repeat(12, 1fr); 
-     grid-template-rows: repeat(3, auto); 
-     padding-top: 4rem;
+     grid-template-rows: repeat(4, auto);
+     grid-row-gap: 2rem;
      grid-template-areas:
         "logo logo  logo nav nav nav nav nav nav contact contact contact"
         "tou tou tou tou tou tou tou tou tou tou social social"
@@ -29,11 +30,15 @@ footer{
     justify-items: center;
     color: #ffffff;
     display: grid;
-  grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(5, auto);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    padding-bottom: 1.6rem;
+    margin-top: auto;
 }
 .footer-nav>li>a{
     color: #ffffff;
     font-size: 1.6rem;
+    text-decoration: none;
 }
 .contact-block{
     grid-area: contact;
@@ -53,6 +58,7 @@ footer{
 }
 .Terms-of-use{
     grid-area: tou;
+    margin: auto 0;
 }
 .Terms-of-use>p{
     font-size: 1.6rem !important;
@@ -61,12 +67,17 @@ footer{
 .social-networks{
     grid-area: social;
     display: grid;
-  grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+
+    > div {
+        margin-left: auto;
+    }
 }
 .footer-info{
     grid-area: fi;
     font-size: 1.5rem;
     font-weight: 400;
+    text-align: justify;
 }
 .footer-copyright{
     grid-area: copyright;
