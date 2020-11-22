@@ -179,18 +179,17 @@
 	 * @public
 	 */
 	Owl.Defaults = {
-		items: 3,
+		items: 5,
 		loop: false,
 		center: false,
 		rewind: false,
 		checkVisibility: true,
-
 		mouseDrag: true,
 		touchDrag: true,
 		pullDrag: true,
 		freeDrag: false,
 
-		margin: 0,
+		margin: 85,
 		stagePadding: 0,
 
 		merge: false,
@@ -204,7 +203,17 @@
 		fluidSpeed: false,
 		dragEndSpeed: false,
 
-		responsive: {},
+		responsive: {
+			0: {
+				items: 1
+			},
+			768: {
+				items: 2
+			},
+			1170: {
+				items: 3
+			}
+		},
 		responsiveRefreshRate: 200,
 		responsiveBaseElement: window,
 

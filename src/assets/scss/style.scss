@@ -18,7 +18,8 @@ body {
 }
 
 .container {
-    max-width: 120rem;
+   // max-width: 120rem;
+    max-width: 142rem;
     margin: 0 auto;
 }
 
@@ -62,4 +63,5 @@ body {
 @import "blocks/index/slider";
 @import "blocks/index/about";
 @import "blocks/index/call-form.scss";
+@import "blocks/index/finservices";
 @import "blocks/footer";

@@ -1,0 +1,73 @@
+footer{
+    height: 40.6rem;
+    //width: 1416px;
+    background-color: #1D2B6B;
+    color: #ffffff;
+    display: grid; grid-template-columns: 7vw 1fr 7vw;
+    grid-template-rows: auto auto; 
+    
+}
+.footer-container {
+     grid-column: 2 / 3; display: grid; /* ACTING AS A GRID CONTAINER */ 
+     grid-template-columns: repeat(12, 1fr); 
+     grid-template-rows: repeat(3, auto); 
+     grid-template-areas:
+        "logo logo  logo nav nav nav nav nav nav contact contact contact"
+        "tou tou tou tou tou tou tou tou tou tou social social"
+        "fi fi fi fi fi fi fi fi fi fi fi fi"
+        "copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright"; 
+}
+.footer-logo{
+    grid-area: logo;
+    align-self: center;
+    justify-items: center;
+}
+.footer-nav{
+    grid-area: nav;
+    align-self: center;
+    justify-items: center;
+    color: #ffffff;
+    display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.footer-nav>li>a{
+    color: #ffffff;
+    font-size: 1.6rem;
+}
+.contact-block{
+    grid-area: contact;
+    align-self: center;
+    justify-items: center;
+    text-align: end;
+}
+.contact-block>h3{
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+.contact-block>h4{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.Terms-of-use{
+    grid-area: tou;
+}
+.Terms-of-use>p{
+    font-size: 1.6rem !important;
+    font-weight: 400 !important;
+}
+.social-networks{
+    grid-area: social;
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer-info{
+    grid-area: fi;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.footer-copyright{
+    grid-area: copyright;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+}
