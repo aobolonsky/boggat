@@ -1,5 +1,72 @@
 .o-boggat {
     font: $font_page_header;
     color: $primary;
-    height: 40vh;
+    background-image: url(/assets/images/partner.png);
+    background-repeat: no-repeat;
+}
+.o-boggat-slogan{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 120%;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.breadcrumbs{
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 130.2%;
+}
+.section-name{
+    padding-top: 3rem;
+}
+.boggat-cooperativ{
+    background-image: url(/assets/images/cooperativ.png);
+    background-repeat: no-repeat;
+}
+.tree-squares{
+    display: grid;
+    grid-gap:3.1rem;
+    grid-template-columns: repeat(3, auto);
+}
+.square{
+    display: grid;
+    grid-template-rows: 9rem auto;
+    width: 45.3rem;
+    height: 47.6rem;
+    background: #1D2B6B;
+    box-shadow: 0px 3px 10px rgba(29, 43, 107, 0.4);
+    border-radius: 10px;
+}
+.check{
+    display: grid;
+    place-items: center;
+    align-items: end;
+}
+.check-text{
+    color: #ffffff;
+    padding-right: 5.2rem;
+    padding-left: 5.2rem;
+    padding-bottom: 10rem;
+    align-self: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 150%;
+    text-align: justify;
+}
+.cooperativ-text{
+    display: grid;
+    grid-template-columns: auto 81.6rem;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 150%;
+    text-align: justify;
+    color: #333333;
+    padding-top: 14rem;
 }
