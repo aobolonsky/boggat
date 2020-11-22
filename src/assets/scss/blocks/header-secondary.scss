@@ -1,21 +1,28 @@
-.header {
-    position: absolute;
-    top: 0;
+.header-secondary {
+    display: block;
     width: 100%;
-}
-
-.header-top {
+    background-color: #F0F0F0;
+    
     .container {
         display: flex;
-        padding: 2.4rem;
-        justify-content: flex-end;
+        align-items: center;
+        justify-content: space-between;
     }
-    background-color: #F0F0F0;
 }
 
-.header-top__email,
-.header-top__phone,
-.header-top__search {
+.header-secondary-right {
+    padding: 2rem 0;
+}
+
+.header-secondary-top {
+    display: flex;
+    padding: 1rem 0;
+    justify-content: flex-end;
+}
+
+.header-secondary-top__email,
+.header-secondary-top__phone,
+.header-secondary-top__search {
     display: flex;
     align-items: flex-end;
     align-self: center;
@@ -31,7 +38,7 @@
     margin-left: 2.2rem;
 }
 
-.header-top__search {
+.header-secondary-top__search {
     transition: border-bottom .2s  ease-in;
     border-bottom: 0.15rem solid rgba($primary, 0);
 
@@ -65,20 +72,17 @@
     }
 }
 
-.header-bottom {
+.header-secondary-bottom {
     background: none;
-    padding: 4.3rem 0;
-    
-    .container {
-        display: flex;
-        justify-content: space-between;
-    }
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
 
-    .header-bottom__logo {
+    .header-secondary-bottom__logo {
         align-self: center;
     }
 
-    .header-bottom__nav {
+    .header-secondary-bottom__nav {
         display: flex;
         justify-content: flex-end;
 
@@ -105,7 +109,7 @@
                 .nav-link {
                     font: $font_button;
                     text-decoration: none;
-                    color: $secondary;
+                    color: $color_dark;
                     transition: color .2s ease-in;
                 }
 
@@ -115,8 +119,8 @@
                     top: 100%;
                     left: -3rem;
                     width: 280px;
-                    background-color: $secondary;
                     border-radius: 10px;
+                    background-color: $secondary;
                     padding: 2.5rem 0;
                     filter: drop-shadow(0px 3px 10px rgba(51, 51, 51, 0.2));
                     transition: all .3s ease-in-out;

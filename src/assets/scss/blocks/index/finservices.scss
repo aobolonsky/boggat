@@ -3,6 +3,13 @@
     height: 59.9rem;
      display: grid;
     align-items: center;
+
+    a,
+    a:hover,
+    a:focus,
+    a:visited {
+        text-decoration: none;
+    }
  }
 .fin-service{
     height: 33.3rem;
@@ -12,6 +19,7 @@
     justify-items: center;
     align-items: center;
     text-decoration: none;
+    transition: all .1s ease-in;
 }
 .fin-service:hover{
     background: #1D2B6B;

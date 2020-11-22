@@ -2,6 +2,13 @@
     display: grid;
     align-items: center;
     padding-bottom: 13rem;
+
+    a,
+    a:hover,
+    a:focus,
+    a:visited {
+        text-decoration: none;
+    }
  }
 
 .news-heading{
@@ -14,6 +21,7 @@
     letter-spacing: 0.07rem;
 
 }
+
 .news-service{
     height: 33.2rem;
     width: 33.2rem;
@@ -21,62 +29,40 @@
     justify-items: center;
     align-items: center;
     text-decoration: none;
+    background-color: none;
+    transition: background-color .1s ease-in;
 }
+
 .news-item-all{
     display: grid;
     grid-gap:2rem;
     justify-items: center;
     align-content: space-between;
     padding: 3rem;
+    transition: transform .2s ease-in;
 }
-.news1:hover{
-    background-image: none;
-    background-color: #1D2B6B;
-    animation: bounce 1s;
-}
-.news2:hover{
-    background-image: none;
-    background-color: #1D2B6B;
-    animation: bounce 1s;
-}
-.news3:hover{
-    background-image: none;
-    background-color: #1D2B6B;
-    animation: bounce 1s;
-}
-.news4:hover{
-    background-image: none;
-    background-color: #1D2B6B;
-    animation: bounce 1s;
-}
-.news5:hover{
-    background-image: none;
-    background-color: #1D2B6B;
-    animation: bounce 1s;
-}
-@keyframes bounce {
-	0%, 20%, 60%, 100% {
-		transform: translateY(0);
-	}
 
-	40% {
-		transform: translateY(20px);
-	}
+.news-service:hover {
+    background-image: none;
+    background-color: #1D2B6B;
 
-	80% {
-		transform: translateY(10px);
-	}
+    > .news-item-all {
+        transform: translateY(-20px);
+    }
 }
+
 .news-item{
     display: grid;
     justify-content: center;
 }
+
 .news-item-all>hr{
     color: #ffffff;
     border: solid 1px;
     width: 9.9rem;
     
 }
+
 .news-head{
     font-family: Montserrat;
     color: #ffffff;
@@ -85,15 +71,18 @@
     font-size: 1.8rem;
     line-height: 2.2rem;
 }
+
 .news-details{
     font-size: 1.6rem;
     color: #ffffff;
     text-align: center;
     line-height: 150%;
 }
+
 .news1{
     background-image: url(/assets/images/news1.png);
 }
+
 .news2{
     background-image: url(/assets/images/news2.png);
 }
