@@ -89,7 +89,7 @@
             .nav-item {
                 position: relative;
                 align-self: center;
-                margin-right: 4rem;
+                margin-right: 5.34rem;
                 padding: 1rem 0;
 
                 &:hover {
@@ -103,7 +103,7 @@
                 }
 
                 .nav-link {
-                    font: $font_main;
+                    font: $font_button;
                     text-decoration: none;
                     color: $secondary;
                     transition: color .2s ease-in;

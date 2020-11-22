@@ -9,9 +9,9 @@ title: Boggat | Home
         <!-- Slider Section Heading-->
         <h1 class="slider-heading">Инвестируйте<br> в свое будущее!</h1>
         <!-- Start Investing Button-->
-        <a class="cta-button-dark" href="">
+        <button class="cta-button-dark">
             Начать инвестировать
-        </a>
+        </button>
     </div>
 </section>
 
@@ -65,7 +65,7 @@ title: Boggat | Home
         </div>
 
         <!-- Call Section Form Button-->
-        <div class="call-form">
+        <!-- <div class="call-form">
             <form class="form-wrapper" action="/" method="POST">
                 <input class="form-item" type="text" placeholder="Ваше имя" name="name" id="name">
                 <input class="form-item" type="text" placeholder="+7 (___)___-__-__" name="phone" id="phone">
@@ -73,11 +73,14 @@ title: Boggat | Home
                 <label class="form-item-label" for="agree">
                     Я даю своё согласие на обработку персональных данных
                 </label>
+                <button class="cta-call cta-button-dark" type="submit">
+                    Заказать звонок
+                </button>
             </form>
-            <button class="cta-call cta-button-dark">
-                Заказать звонок
-            </button>
-        </div>
+        </div> -->
+        <button class="cta-show-call-form cta-button-dark">
+            Заказать звонок
+        </button>
     </div>
 </section>
 
@@ -284,7 +287,35 @@ title: Boggat | Home
             </div>
             <div class="calc-gap"></div>
             <div class="calc-column calc-column--right">
-                right
+                <h3 class="calc-column-heading">Вы получите</h3>
+                <div class="total-big">0 ₽</div>
+                <div class="total form-item">
+                    <span class="item-title">Общий доход</span>
+                    <span class="item-value"></span>
+                    <span>₽</span>
+                </div>
+                <div class="total form-item">
+                    <span class="item-title">Доход в месяц</span>
+                    <span class="item-value"></span>
+                    <span>₽</span>
+                </div>
+                <div class="total form-item">
+                    <span class="item-title">Ставка</span>
+                    <span class="item-value">7,65</span>
+                    <span>%</span>
+                </div>
+                <div class="total form-item">
+                    <span class="item-title">Срок</span>
+                    <span class="item-value"></span>
+                    <span>мес.</span>
+                </div>
+                <button class="form-button">
+                    <span class="form-button-top">Получить доход</span>
+                    <span class="form-button-bottom">0 ₽</span>
+                </button>
+                <div class="start-text">
+                    * Пример расчета процентов носит информационный характер и не является публичной афертой
+                </div>
             </div>
             <div class="calc-padding"></div>
         </div>
@@ -295,6 +326,24 @@ title: Boggat | Home
     news
 </section>
 
+<!-- Contact Section-->
 <section class="contact" id="contact">
-    contact
+    <div class="container">
+        <h3 class="contact-heading">Оставьте заявку на <br>
+            бесплатную консультацию</h3>
+        <div class="call-bottom-form">
+            <form class="form-wrapper" action="/" method="POST">
+                <input class="form-item" type="text" placeholder="Ваше имя" name="name" id="name-bottom">
+                <input class="form-item" type="text" placeholder="+7 (___)___-__-__" name="phone" id="phone-bottom">
+                
+                <button class="cta-call cta-button-dark" type="submit">
+                    Оставить заявку
+                </button>
+                <input class="form-item-input" type="checkbox" name="agree" id="agree-bottom">
+                <label class="form-item-label" for="agree-bottom">
+                    Я даю своё согласие на обработку персональных данных
+                </label>
+            </form>
+        </div>
+    </div>
 </section>

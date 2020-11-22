@@ -8,69 +8,79 @@
     border-radius: 1rem;
     box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.2);
 
-    .form-wrapper {
-        max-width: 31rem;
-        padding: 8rem 0 5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 auto;
-        
-        .form-item {
+}
+.form-wrapper {
+    max-width: 31rem;
+    padding: 3rem 0 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    
+    .form-item {
+        font: $font_call_form;
+        color: #333333;
+        display: block;
+        box-sizing: border-box;
+        margin-top: 50px;
+        text-align: center;
+        border: none;
+        border-bottom: 0.15rem solid #333333;;
+        background-color: transparent;
+        padding: 1rem 0;
+
+        &::placeholder {
             font: $font_call_form;
-            color: #333333;
-            display: block;
-            box-sizing: border-box;
-            margin-top: 50px;
-            text-align: center;
-            border: none;
-            border-bottom: 0.15rem solid #333333;;
-            background-color: transparent;
-            padding: 1rem 0;
-
-            &::placeholder {
-                font: $font_call_form;
-                color: rgba(51, 51, 51, 0.5);
-            }
-        }
-
-        .form-item-label {
-            position: relative;
-            padding-left: 3.5rem;
-            margin-top: 5rem;
-            color: #333333;
-            font: $font_call_label;
-            user-select: none;
-        }
-
-        .form-item-input {
-            display: none;
-        }
-
-        input[type="checkbox"] + label:before {
-            position: absolute;
-            content: "";
-            width: 1.9rem;
-            height: 2rem;
-            left: 0;
-            top: 0.6rem;
-            background-image: url('/assets/images/icons/unchecked.svg');
-        }
-
-        input[type="checkbox"]:checked + label:before {
-            width: 2rem;
-            background-image: url('/assets/images/icons/checked.svg');
+            color: rgba(51, 51, 51, 0.5);
         }
     }
 
+    .form-item-label {
+        position: relative;
+        padding-left: 3.5rem;
+        margin-top: 5rem;
+        color: #333333;
+        font: $font_call_label;
+        user-select: none;
+    }
+
+    .form-item-input {
+        display: none;
+    }
+
+    input[type="checkbox"] + label:before {
+        position: absolute;
+        content: "";
+        width: 1.9rem;
+        height: 2rem;
+        left: 0;
+        top: 0.6rem;
+        background-image: url('/assets/images/icons/unchecked.svg');
+    }
+
+    input[type="checkbox"]:checked + label:before {
+        width: 2rem;
+        background-image: url('/assets/images/icons/checked.svg');
+    }
+
     .cta-call {
-        padding: 1.7rem 6.8rem;
-        margin: 0 auto;
-        margin-bottom: 8rem;
+        margin-top: 4.4rem;
+        padding: 1.7rem 6.7rem;
 
         &:hover {
             color: $color_white;
             background-color: #04388F;
         }
+    }
+}
+
+.cta-show-call-form {
+    margin: 0 auto;
+    margin-top: 11rem;
+    padding: 1.7rem 6.7rem;
+
+    &:hover {
+        color: $color_white;
+        background-color: #04388F;
     }
 }
