@@ -11,6 +11,7 @@ footer{
      grid-column: 2 / 3; display: grid; /* ACTING AS A GRID CONTAINER */ 
      grid-template-columns: repeat(12, 1fr); 
      grid-template-rows: repeat(3, auto); 
+     padding-top: 4rem;
      grid-template-areas:
         "logo logo  logo nav nav nav nav nav nav contact contact contact"
         "tou tou tou tou tou tou tou tou tou tou social social"
@@ -28,7 +29,7 @@ footer{
     justify-items: center;
     color: #ffffff;
     display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, auto);
 }
 .footer-nav>li>a{
     color: #ffffff;
@@ -43,6 +44,8 @@ footer{
 .contact-block>h3{
     font-size: 2.1rem;
     font-weight: 600;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .contact-block>h4{
     font-size: 1.6rem;

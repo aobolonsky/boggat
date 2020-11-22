@@ -20,7 +20,13 @@
 .fin-service:visited{
     text-decoration: none;
 }
-
+.fin-services-heading{
+    text-align: center;
+    font-family: 'Open Sans Condensed';
+    font-size: 3.5rem;
+    padding-bottom: 7rem;
+    color: #ffffff;
+}
 .item-details{
     color: #ffffff;
     font-size: 18px;
@@ -50,17 +56,17 @@
 	
   position: absolute;
   top: 43%;
-	font-size: 20px;
+    font-size: 20px;
   color: #fff;
 	
 }
 .owl-carousel .owl-prev {
-  left: -9rem;
+  left: -1rem;
   background-image: url(/assets/images/prev.svg)  !important;
   background-repeat: no-repeat !important;
 }
 .owl-carousel .owl-next {
-  right: -9rem;
+  right: -1rem;
   background-image: url(/assets/images/next.svg) !important;
   background-repeat: no-repeat !important;
 }

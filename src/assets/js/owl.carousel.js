@@ -189,7 +189,7 @@
 		pullDrag: true,
 		freeDrag: false,
 
-		margin: 85,
+		margin: 0,
 		stagePadding: 0,
 
 		merge: false,

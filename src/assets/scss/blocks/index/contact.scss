@@ -1,5 +1,5 @@
 .contact {
-    height: 87rem;
+    height: 85rem;
     background-image: url("../images/contact.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,6 +14,8 @@
         font-size: 50px;
         line-height: 150%;
         color: $primary;
+        padding-top: 12rem;
+        letter-spacing: 1px;
     }
 
     .call-bottom-form {
