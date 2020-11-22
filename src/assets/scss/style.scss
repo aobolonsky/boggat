@@ -2,7 +2,6 @@
 @import "vendor/reset";
 @import "vendor/owl.carousel";
 @import "vendor/owl.theme.default";
-@import "bootstrap/scss/bootstrap-grid";
 @import "vars";
 
 
@@ -18,9 +17,20 @@ body {
 }
 
 .container {
-   // max-width: 120rem;
     max-width: 142rem;
     margin: 0 auto;
+    width: 100%;
+}
+
+.section-heading {
+    font: $font_section_heading;
+    color: $primary;
+    margin-bottom: 11.3rem;
+}
+
+.section-sub-heading {
+    font: $font_section_sub_heading;
+    color: $color_dark;
 }
 
 .cta-button-dark {
@@ -63,5 +73,6 @@ body {
 @import "blocks/index/slider";
 @import "blocks/index/about";
 @import "blocks/index/call-form.scss";
+@import "blocks/index/calc.scss";
 @import "blocks/index/finservices";
 @import "blocks/footer";

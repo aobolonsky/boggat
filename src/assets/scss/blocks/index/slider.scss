@@ -5,18 +5,21 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    display: flex;
+    align-items: center;
 
     .container {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        margin-bottom: 3.5rem;
     }
 }
 
 .slider-heading {
     font: $font_header;
-    margin-top: 21rem;
     margin-bottom: 10.5rem;
+    margin-left: -0.5rem;
     color: $secondary;
     text-align: left;
 }

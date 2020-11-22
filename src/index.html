@@ -3,7 +3,7 @@ layout: default
 title: Boggat | Home
 ---
 
-<!-- Slider Section-->
+<!-- Slider Section -->
 <section class="slider">
     <div class="container">
         <!-- Slider Section Heading-->
@@ -15,7 +15,7 @@ title: Boggat | Home
     </div>
 </section>
 
-<!-- About Section-->
+<!-- About Section -->
 <section class="about" id="about">
     <div class="container">
         <!-- About Section Heading-->
@@ -78,13 +78,9 @@ title: Boggat | Home
                 Заказать звонок
             </button>
         </div>
-
-        <!-- About Section Button-->
-        <a class="cta-about cta-button-dark" href="">
-            Заказать звонок
-        </a>
     </div>
 </section>
+
 <!--
 <section>
     <div class="container-fluid fin-services">
@@ -198,3 +194,107 @@ title: Boggat | Home
         </div>
 </section>
 <!-- END OF TESTIMONIALS -->
+
+<!-- Calc Section-->
+<section class="calc" id="calc">
+    <div class="container">
+        <div class="calc-wrapper">
+            <div class="calc-padding"></div>
+            <div class="calc-column calc-column--left">
+                <h2 class="section-heading">Хотите начать инвестировать?</h2>
+                <h3 class="section-sub-heading">Рассчитайте доходность ваших сбережений </h3>
+                <form class="calc-form" action="/" method="POST">
+                    <div class="input-wrapper-horizontal">
+                        <label class="input-label-horizontal" for="input-sum">Сумма вложения (рубли)</label>
+                        <input class="input-horizontal" type="text" name="input-sum" id="input-sum">
+                        <span class="pen-btn"></span>
+                    </div>
+                    <div class="range_container">
+                        <input 
+                            class="input-range" 
+                            type="range" 
+                            name="input-sum-range" 
+                            id="input-sum-range"
+                            value="0"
+                            min="0" 
+                            max="3000000" 
+                            step="10000"
+                        >
+                        <div class="range-interval">
+                            <span>0</span>
+                            <span>3 000 000</span>
+                        </div>
+                    </div>
+
+                    <label class="input-label">На срок (месяцы)</label>
+                    <div class="term-wrapper">
+                        <div class="term-line"></div>
+                        <div>
+                            <input type="radio" id="term-3" name="term-type" value="3">
+                            <label for="term-3">3</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="term-6" name="term-type" value="6">
+                            <label for="term-6">6</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="term-12" name="term-type" value="12">
+                            <label for="term-12">12</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="term-24" name="term-type" value="24">
+                            <label for="term-24">24</label>
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper-horizontal">
+                        <label class="input-label-horizontal" for="input-repl">Ежемесячное пополнение</label>
+                        <input class="input-horizontal" type="text" name="input-repl" id="input-repl">
+                        <span class="pen-btn"></span>
+                    </div>
+                    <div class="range_container">
+                        <input 
+                            class="input-range" 
+                            type="range"
+                            name="input-repl-range" 
+                            id="input-repl-range"
+                            value="0"
+                            min="0" 
+                            max="600000" 
+                            step="10000"
+                        >
+                        <div class="range-interval">
+                            <span>0</span>
+                            <span>600 000</span>
+                        </div>
+                    </div>
+
+                    <label class="input-label">Проценты</label>
+                    <div class="perc-type-wrapper">
+                        <div class="perc-type-item">
+                            <input type="radio" id="perc-type-one" name="perc-type" value="perc1">
+                            <label for="perc-type-one">Оставлять на счёте личных сбережений</label>
+                        </div>
+                        <div class="perc-type-item">
+                            <input type="radio" id="perc-type-two" name="perc-type" value="perc2">
+                            <label for="perc-type-two">Получать проценты ежемесячно</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="calc-gap"></div>
+            <div class="calc-column calc-column--right">
+                right
+            </div>
+            <div class="calc-padding"></div>
+        </div>
+    </div>
+</section>
+
+<section class="news" id="news">
+    news
+</section>
+
+<section class="contact" id="contact">
+    contact
+</section>
