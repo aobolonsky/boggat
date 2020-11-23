@@ -69,6 +69,14 @@ body {
     }
 }
 
+.breadcrumbs {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 130.2%;
+    margin-bottom: 3rem;
+}
+
 /* Blocks */
 @import "blocks/header";
 @import "blocks/header-secondary.scss";
@@ -83,4 +91,5 @@ body {
 @import "blocks/u-dokumenty/u-dokumenty.scss";
 @import "blocks/rekvizity/rekvizity.scss";
 @import "blocks/dlya-partnerov/dlya-partnerov.scss";
+@import "blocks/news/news.scss";
 @import "blocks/footer";
