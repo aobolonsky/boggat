@@ -1,5 +1,76 @@
 .rekvizity {
     font: $font_page_header;
     color: $primary;
-    height: 40vh;
+    margin-bottom: 15rem;
+    
+    .page-wrapper {
+        padding: 7rem 1rem 0 1rem;
+
+        @media (min-width: 625) {
+            padding: 7rem 5rem 0 5rem;
+        }
+
+        @media (min-width: 870px) {
+            padding: 7rem 12rem 0 12rem;
+        }  
+    }
+
+    .table-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 2rem;
+        
+        .table-item {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 130.2%;
+            color: $color_dark;
+
+            display: grid;
+            grid-template-columns: minmax(20rem, 3fr) 5fr;
+            padding: 3rem 0;
+            border-top: 2px solid #1D2B6B;
+
+            &:nth-child(1) {
+                border-top: none;
+            }
+
+            .title-col {
+                padding-right: 3rem;
+            }
+        }
+    }
+
+    .download-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .download-item {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            margin-bottom: 3.5rem;
+
+            .item-image {
+                width: 6rem;
+                height: 6rem;
+                background-image: url(/assets/images/icons/pdfIcon.svg);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin-right: 3.3rem;
+            }
+
+            .item-title {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 130.2%;
+                color: $color_dark;
+            }
+        }
+    }
 }

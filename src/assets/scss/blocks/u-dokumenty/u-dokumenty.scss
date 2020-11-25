@@ -1,5 +1,87 @@
-.u-dokumenty {
+.u-documenty {
     font: $font_page_header;
     color: $primary;
-    height: 40vh;
+    margin-bottom: 15rem;
+    font-size: 18px;
+
+    .section-heading {
+        text-align: center;
+    }
+    
+    .page-wrapper {
+        padding: 7rem 1rem 0 1rem;
+
+        @media (min-width: 625) {
+            padding: 7rem 5rem 0 5rem;
+        }
+
+        @media (min-width: 870px) {
+            padding: 7rem 12rem 0 12rem;
+        }  
+    }
+
+    .download-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 5rem;
+    }
+
+    .download-item {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        margin-bottom: 3.5rem;
+
+        .item-image {
+            width: 6rem;
+            height: 6rem;
+            background-image: url(/assets/images/icons/pdfIcon.svg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 6rem;
+        }
+
+        .item-title {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 130.2%;
+            color: $color_dark;
+        }
+    }
+
+    .sert-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 2.7rem;
+
+        .image-wrapper {
+            position: relative;
+            margin: auto;
+            cursor: pointer;
+
+            .hover-wrapper {
+                position: absolute;
+                opacity: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(51, 51, 51, 0.5);
+                background-image: url(/assets/images/icons/zoom.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                transition: opacity .1s ease;
+            }
+
+            &:hover {
+                > .hover-wrapper {
+                    opacity: 1;
+                }
+            }
+
+
+        }
+    }
 }
