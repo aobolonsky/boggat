@@ -1,0 +1,102 @@
+.fin-jurnal,
+.fin-jurnal-single-page {
+    font: $font_page_header;
+    color: $primary;
+    margin-top: 5rem;
+}
+
+.fin-jurnal {
+    margin-bottom: 15rem;
+}
+
+.fin-jurnal-wrapper {
+    padding: 10rem 3rem 0 3rem;
+
+    .item-wrapper {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: #F0F0F0;
+        border-radius: 10px;
+        padding: 30px 80px;
+        margin-bottom: 4.5rem;
+        height: 20.3rem;
+        box-sizing: border-box;
+        transition: box-shadow .2s ease;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.3);
+        }
+
+        .item-text {
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 130.2%;
+        }
+
+        .item-bottom {
+            display: flex;
+            justify-content: space-between;
+
+            .item-link {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 130.2%;
+
+                a {
+                    color: #04388F;
+                    text-decoration: none;
+                }
+            }
+
+            .item-tag {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 130.2%;
+                color: #ABABAB;
+            }
+        }
+    }
+    @media (min-width: 956px) {
+        padding: 10rem 13rem 0 13rem;
+    }
+
+    @media (min-width: 1150px) {
+        padding: 10rem 23rem 0 23rem;
+    }    
+}
+
+.fin-jurnal-single-page {
+    margin-bottom: 18rem;
+
+    .single-fin-jurnal-bottom {
+        text-align: center;
+    }
+
+    .single-fin-jurnal-link {
+        display: block;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 130.2%;
+        color: #04388F;
+        text-decoration: none;
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .single-fin-jurnal-body {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 142.8%;
+        text-align: justify;
+        margin: 10rem 25rem 6rem 25rem;
+    }
+}
