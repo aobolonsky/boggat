@@ -3,7 +3,6 @@
     color: $primary;
     background-image: url(/assets/images/partner.png);
     background-repeat: no-repeat;
-    margin-top: 5rem;
 }
 .o-boggat-slogan{
     font-family: Montserrat;
@@ -12,6 +11,8 @@
     font-size: 6rem;
     line-height: 120%;
     color: rgba(51, 51, 51, 0.5);
+    padding-top: 4.1rem;
+    padding-bottom: 10.3rem;
 }
 
 .breadcrumbs{
@@ -19,6 +20,7 @@
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 130.2%;
+    padding-top: 5rem;
 }
 .section-name{
     padding-top: 3rem;
@@ -69,5 +71,50 @@
     line-height: 150%;
     text-align: justify;
     color: #333333;
-    padding-top: 14rem;
+    padding: 14rem 0;
 }
+.cooperativ-info-all{
+    display:grid;
+    grid-template-columns: repeat(2, auto);
+    margin-top: -11rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 150%;
+}
+.cooperativ-info-text{
+    margin-top: 11rem;
+}
+.pay-text{
+    
+}
+.pay-text-steps{
+    display: grid;
+    grid-template-columns: 10rem auto;
+    align-self:start;
+    align-items: center;
+    margin-top: 3rem;
+}
+.pay-text-steps-number {
+    font-family: 'Montserrat'; /* Гарнитура шрифта первой буквы */
+    font-size: 6rem; /* Размер шрифта первого символа */
+    font-weight: 900;
+    line-height: 130.2%;
+    color: #00296F;
+    align-self:start;
+   }
+   .pay-text-text{
+    padding-top: 6rem;
+    padding-right: 15rem;
+   }
+   .button-cooperativ-place{
+       justify-content: end;
+       margin-top: -1rem;
+       padding-bottom: 15rem;
+   }
+
+   .cooperativ-button-dark{
+       align-self: center;
+       height: 6rem;
+       
+   }
