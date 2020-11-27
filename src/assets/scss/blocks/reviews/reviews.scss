@@ -1,12 +1,44 @@
-.reviews,
-.reviews-single-page {
-    font: $font_page_header;
-    color: $primary;
-    margin-top: 5rem;
-}
-
 .reviews {
     margin-bottom: 15rem;
+}
+
+.single-review {
+    .single-page-body {
+        margin: 4rem 15rem 6rem 15rem;
+
+        .item-wrapper-user {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 6.5rem;
+                
+            .user-image{
+                padding: 2rem;
+            }
+            .user-name{
+                padding:2rem;
+            }
+        }
+        
+        .single-reviews-link {
+            display: block;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 130.2%;
+            color: #04388F;
+            text-decoration: none;
+        
+            &:focus {
+                outline: none;
+            }
+        }
+    
+        > img {
+            margin: 0 auto;
+            margin-top: 6rem;
+        }
+    }
+
 }
 
 .reviews-wrapper {
@@ -92,63 +124,5 @@
 
     @media (min-width: 1150px) {
         padding: 10rem 23rem 0 23rem;
-    }
-}
-
-.reviews-single-page {
-    margin-bottom: 18rem;
-
-    .single-reviews-bottom {
-        text-align: center;
-
-        .play-button{
-            position: absolute;
-            margin-left:17%;
-            margin-top:9%;
-        }
-
-    }
-
-    .item-wrapper-user {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        p{
-            padding: 4rem 0;
-        }
-
-
-
-        .user-image{
-            padding: 2rem;
-        }
-        .user-name{
-            padding:2rem;
-        }
-    }
-
-    .single-reviews-link {
-        display: block;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 130.2%;
-        color: #04388F;
-        text-decoration: none;
-
-        &:focus {
-            outline: none;
-        }
-    }
-
-    .single-reviews-body {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 142.8%;
-        text-align: justify;
-        margin: 10rem 25rem 6rem 25rem;
-
     }
 }

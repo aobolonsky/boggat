@@ -1,5 +1,150 @@
 .dlya-partnerov {
     font: $font_page_header;
     color: $primary;
-    height: 40vh;
 }
+
+.dlya-partnerov {
+    
+    .advantages-wrapper {
+        margin-bottom: 15rem;            
+    }
+    
+    .advantages-title {
+        font-family: Montserrat;
+        text-align: center;
+        font-weight: 500;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        text-transform: uppercase;
+        margin-top: 10rem;
+        margin-bottom: 6.4rem;
+    }
+    
+    .advantages-items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    
+    .advantages-item {
+        max-width: 25%;
+    }
+    
+    .item-title {
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        text-transform: uppercase;
+        color: #333333;
+        margin-top: 3rem;
+    }
+    
+    .perspectives-wrapper {
+        background: url(/assets/images/perspectivesBack.png) center no-repeat;
+        background-size: cover;
+
+        .container {
+            padding-top: 4.4rem;
+            padding-bottom: 6rem;
+            color: $secondary;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+        }
+    }
+    
+    .background-mask {
+        background: rgba(37, 37, 37, 0.83);  
+    }
+    
+    .perspectives-title {
+        font-size: 2.5rem;
+        line-height: 150%;
+        text-align: center;
+        color: inherit;
+    }
+    
+    .perspectives {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .perspectives-items-left,
+    .perspectives-items-right {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        width: 50%;
+    }
+    
+    .perspectives-item {
+        font-size: 2rem;
+        line-height: 150%;
+        position: relative;
+        padding-left: 8rem;
+        margin-top: 5rem;
+        
+        &:before {
+            content: "";
+            width: 3.1rem;
+            height: 3.1rem;
+            background: url(/assets/images/icons/mark.svg) center no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;    
+        }
+    }
+    
+    .text-wrapper {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 150%;
+        color: $color_dark;
+        text-align: center;
+        margin: auto;
+        padding: 21.2rem 25rem;
+    }
+    
+    .request-wrapper {
+        background: url(/assets/images/requestBack.png) center no-repeat;
+        background-size: cover;
+        
+        .background-mask {
+            padding: 21.5rem 15rem;
+        }
+        
+        .request-title {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 2.5rem;
+            line-height: 150%;
+            text-align: center;
+            margin-bottom: 10.5rem;
+            color: $secondary;
+        }
+        
+        .request-button {
+            display: block;    
+            margin: 0 auto;
+            border-radius: 1rem;
+            padding: 2.9rem 10.2rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
