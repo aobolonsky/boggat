@@ -1,107 +1,128 @@
-.news{
-    display: grid;
-    align-items: center;
-    padding-bottom: 13rem;
+.news {
+  padding-bottom: 15rem;
 
-    a,
-    a:hover,
-    a:focus,
-    a:visited {
-        text-decoration: none;
-    }
- }
-
-.news-heading{
-    text-align: center;
-    font-family: 'Open Sans Condensed';
-    font-size: 3.5rem;
-    line-height: 120.1%;
-    padding-bottom: 10rem;
-    color: #1D2B6B;
-    letter-spacing: 0.07rem;
+  a,
+  a:hover,
+  a:focus,
+  a:visited {
+    text-decoration: none;
+  }
 }
 
-.news-service{
+.customers-news {
+    position: relative;
+
+    .owl-carousel .owl-next,
+    .owl-carousel .owl-prev {
+        max-width: 6.5rem;
+        max-height: 7rem;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 40%;
+
+        &.disabled {
+            display: none;
+        }
+    }
+
+    .owl-carousel .owl-prev {
+        left: -3rem;
+        transform: rotateY(180deg);
+    }
+    .owl-carousel .owl-next {
+        right: -3rem;
+    }
+}
+
+.news-heading {
+  text-align: center;
+  font-size: 3.5rem;
+  line-height: 120.1%;
+  padding-bottom: 10rem;
+  letter-spacing: 0.07rem;
+}
+
+.news-service {
     display: block;
     height: 33.2rem;
-    width: 33.2rem;
+    max-width: 33.2rem;
+    width: 100%;
     text-decoration: none;
     margin: 0 auto;
-    
+    margin-top: 1.5rem;
+    transition: margin 0.2s linear;
+    background-position: center;
+
     .background-mask {
         background: rgba(82, 81, 81, 0.57);
+        transition: background 0.2s linear;
         height: inherit;
-        display: grid;
-        justify-items: center;
+        display: flex;
         align-items: center;
-        transition: all .1s ease-in;
+    }
+    
+    &:hover {
+        margin: -1.5rem auto;
+        box-shadow: 0px 4px 20px rgba(29, 43, 107, 0.5);
+
+        .background-mask {
+        background-color: #1d2b6b;
+        }
     }
 }
 
-.news-service:hover {
-    box-shadow: 0px 4px 20px rgba(29, 43, 107, 0.5);
-    
-    .background-mask {
-        background-color: #1D2B6B;
-    }
+.news-item-all {
+  display: grid;
+  grid-gap: 2rem;
+  justify-items: center;
+  align-content: space-between;
+  padding: 3rem;
+  transition: all 0.2s ease-in;
 }
 
-.news-item-all{
-    display: grid;
-    grid-gap:2rem;
-    justify-items: center;
-    align-content: space-between;
-    padding: 3rem;
-    transition: all .2s ease-in;
+.news-item-all > hr {
+  color: #ffffff;
+  border: solid 1px;
+  width: 9.9rem;
 }
 
-.news-item-all>hr{
-    color: #ffffff;
-    border: solid 1px;
-    width: 9.9rem;
-    
+.news-head {
+  font-family: Montserrat;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
 }
 
-.news-head{
-    font-family: Montserrat;
-    color: #ffffff;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
+.news-details {
+  font-size: 1.6rem;
+  color: #ffffff;
+  text-align: center;
+  line-height: 150%;
 }
 
-.news-details{
-    font-size: 1.6rem;
-    color: #ffffff;
-    text-align: center;
-    line-height: 150%;
+.news-nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 40%;
 }
 
-.news1{
-    background-image: url(/assets/images/news1.png);
+.news1 {
+  background-image: url(/assets/images/news1.png);
 }
-
-.news2{
-    background-image: url(/assets/images/news2.png);
+.news2 {
+  background-image: url(/assets/images/news2.png);
 }
-.news3{
-    background-image: url(/assets/images/news3.png);
+.news3 {
+  background-image: url(/assets/images/news3.png);
 }
-.news4{
-    background-image: url(/assets/images/news1.png);
+.news4 {
+  background-image: url(/assets/images/news1.png);
 }
-.news5{
-    background-image: url(/assets/images/news2.png);
-}
-.owl-carousel .owl-next,
-.owl-carousel .owl-prev {
-  width: 2.7rem;
-  height: 4.3rem;
-	
-  position: absolute;
-  top: 43%;
-    font-size: 20px;
-  color: #fff;
-	
+.news5 {
+  background-image: url(/assets/images/news2.png);
 }

@@ -1,9 +1,49 @@
 import "./jquery.pixlayout";
-import "./owl.carousel";
-import "./owl.navigation";
+import "./owl.carousel.min";
 
 $(document).ready(function(){
-    $('.owl-carousel').owlCarousel();
+    $('#customers-testimonials').owlCarousel({
+        nav: true,
+        navText: [
+            '<img src="/assets/images/prev.svg" alt="left">','<img src="/assets/images/next.svg" alt="right">'
+        ],
+        // Адаптация
+        responsive: {
+            // Ширина от 500 пикселей
+            500: {
+            // Количество элементов 2
+                items: 2,
+            },
+            // Ширина от 800 пикселей
+            800: {
+                // Количество элементов 3
+                items: 3,
+            }
+        }
+    });
+
+    $('#customers-news').each(function () {
+        // Создаем карусель
+        var owl = $(this).find('.owl-carousel').owlCarousel({
+            nav: true,
+            navText: [
+                '<img src="/assets/images/icons/news-arrow.svg" alt="left">','<img src="/assets/images/icons/news-arrow.svg" alt="right">'
+            ],
+            // Адаптация
+            responsive: {
+                // Ширина от 500 пикселей
+                500: {
+                    // Количество элементов 2
+                    items: 2,
+                },
+                // Ширина от 800 пикселей
+                800: {
+                    // Количество элементов 3
+                    items: 3,
+                }
+            }
+        });
+    });
 
     //    $(function () {
     //        $.pixlayout({

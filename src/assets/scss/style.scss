@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans+Condensed:wght@700&display=swap');
 @import "vendor/reset";
-@import "vendor/owl.carousel";
+@import "vendor/owl.carousel.min";
 @import "vendor/owl.theme.default";
 @import "vars";
 
 
 html {
-    font: $font_main;
     font-size: 62.5%;
 }
 
 body {
-    font-size: 1.8rem;
+    font: $font_main;
     background-color: $color_white;
     color: $color_dark;
 }
@@ -24,7 +23,7 @@ h1 {
     font-family: 'Open Sans Condensed';
     font-style: normal;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 5rem;
     line-height: 120.1%;
     color: $primary;
 }
@@ -33,7 +32,7 @@ h2 {
     font-family: 'Open Sans Condensed';
     font-style: normal;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 3.5rem;
     line-height: 130.2%;
     color: $primary;
 }
@@ -42,13 +41,18 @@ h3 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 142.8%;
     color: $color_dark;
 }
 
 h4 {
-
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 142.8%;
+    color: $color_dark;
 }
 
 p {
@@ -59,11 +63,13 @@ p {
 }
 
 b {
-
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 130.2%;
 }
 
 ul {
-
+    
 }
 
 ol {
@@ -135,11 +141,12 @@ ol {
 .arrows-wrapper {
     text-align: center;
     width: 100%;
-
+    
     .arrow-left img {
         transform: rotateY(180deg);
     }
 }
+
 
 /* Blocks */
 @import "blocks/header";
