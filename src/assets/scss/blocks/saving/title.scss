@@ -1,0 +1,26 @@
+.saving-title {
+    display: flex;
+    background-color: #EBEBEB;
+
+    .container {
+        padding: 0 5vw;
+    }
+
+    .title-image {
+        height: inherit;
+    }
+}
+
+.saving-decription {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    margin-top: 16.1rem;
+
+    &--pensioner {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        margin-top: 10rem;
+    }
+}

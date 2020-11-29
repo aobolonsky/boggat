@@ -1,0 +1,67 @@
+.saving-bottom {
+    padding: 15rem 0;
+    text-align: center;
+
+    .image-wrap {
+        width: 50%;
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 150%;
+        text-align: justify;
+        letter-spacing: 0.02em;
+        color: $color_dark;
+    }
+
+    .hr-line {
+        border-top: 0.2rem solid #1D2B6B;
+    }
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: row;
+
+    .text-wrap {
+        padding: 10rem 0;
+        width: 50%;
+        margin-right: 6rem;
+
+        .text {
+            margin-left: 5vw;
+        }
+    }
+
+    .hr-line {
+        margin: 2rem 40% 2rem 0;
+    }
+
+    &--reverse {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 10rem 0;
+
+        .text-wrap {
+            width: 50%;
+            margin-left: 6rem;
+
+            .text {
+                margin-right: 5vw;
+            }
+        }
+        
+        .hr-line {
+            margin: 2rem 0 2rem 40%;
+        }
+    }
+}

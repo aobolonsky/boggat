@@ -79,7 +79,7 @@ ol {
 .container {
     max-width: 142rem;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 5vw;
     width: 100%;
 }
 
@@ -165,4 +165,7 @@ ol {
 @import "blocks/news/news.scss";
 @import "blocks/fin-jurnal/fin-jurnal.scss";
 @import "blocks/reviews/reviews.scss";
+@import "blocks/saving/title.scss";
+@import "blocks/saving/table.scss";
+@import "blocks/saving/bottom.scss";
 @import "blocks/footer";
