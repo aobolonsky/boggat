@@ -1,0 +1,58 @@
+.contacts {
+    margin-bottom: 15rem;
+}
+
+.all-contacts-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: start;
+    justify-content: space-between;
+}
+
+.adress-fields {
+    padding-top: 7rem;
+}
+
+.adress-fields-header {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 130.2%;
+    color: #1D2B6B;
+    padding-top: 2rem;
+}
+
+.form-item.head-office-form-item {
+    margin-top: 3rem;
+}
+
+.map-place {
+    padding-top: 9rem;
+}
+
+.to-boss-all-info {
+    display: grid;
+}
+
+.to-boss-info-text {
+    display:grid;
+    width: 810px;
+    height: 571px;
+    background: #1D2B6B;
+    box-shadow: 3px 3px 10px rgba(29, 43, 107, 0.4);
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 130.2%;
+    text-align: justify;
+    color: #FFFFFF;
+    padding: 6.7rem 11rem;
+    justify-self: center;
+    align-content: center;
+}
+.form-to-boss{
+    background-image: url(assets/images/telefon.jpg);
+}
