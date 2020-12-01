@@ -19,5 +19,35 @@ title: Контакты | Обратиться к руководителю
     </div>
 </section>
 <section class="form-to-boss">
-    <div class="container">12</div>
+    <div class="container">
+        <div class="form-to-boss-all">
+            <form class="form-to-boss-wrapper" action="/" method="POST">
+                <p>
+                    <label for="">Ваше имя:</label>
+                    <input class="form-to-boss-input" type="text" placeholder="" name="name" id="tobossname">
+                </p>
+                <p></p>
+                <p>
+                    <label for="">Телефон:</label>
+                    <input class="form-to-boss-input" type="text" placeholder="" name="phone" id="tobossphone">
+                </p>
+                <p>
+                    <label for="">Электронная почта:</label>
+                    <input class="form-to-boss-input" type="text" placeholder="" name="email" id="tobossemail">
+                </p>
+                <p class="full-width">
+                    <label for="">Текст письма:</label>
+                    <input class="form-to-boss-input" type="text" placeholder="" name="messagebody"
+                        id="tobossmessagebody">
+                </p>
+                <p class="full-width button-send"><button class="cta-call cta-button-dark" type="submit">Отправить</button></p>
+                <p></p>
+                <p class="full-width agree-send">
+                <input class="form-item-input" type="checkbox" name="agree" id="agree">
+                <label class="form-item-label" for="agree">
+                    Я даю своё согласие на обработку персональных данных
+                </label></p>
+            </form>
+        </div>
+    </div>
 </section>

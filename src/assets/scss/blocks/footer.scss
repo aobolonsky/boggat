@@ -19,6 +19,17 @@ footer{
         "fi fi fi fi fi fi fi fi fi fi fi fi"
         "copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright"; 
 }
+
+@media (min-width: 700px) {
+    .footer-container  {
+        grid-template-areas:
+        "social social  social social social social social social social social social social"
+        "tou tou tou tou tou tou tou tou tou tou social social"
+        "fi fi fi fi fi fi fi fi fi fi fi fi"
+        "copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright"; 
+    }
+}
+
 .footer-logo{
     grid-area: logo;
     align-self: center;

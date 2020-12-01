@@ -33,10 +33,11 @@
 
 .to-boss-all-info {
     display: grid;
+    margin-top: 10rem;
 }
 
 .to-boss-info-text {
-    display:grid;
+    display: grid;
     width: 810px;
     height: 571px;
     background: #1D2B6B;
@@ -53,6 +54,48 @@
     justify-self: center;
     align-content: center;
 }
-.form-to-boss{
-    background-image: url(assets/images/telefon.jpg);
+
+.form-to-boss {
+    background-image: url(/assets/images/telefon.png);
+}
+.form-to-boss-all{
+    display: grid;
+}
+.form-to-boss-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    justify-self: center;
+    width: 64.3rem;
+    margin-top: 6.1rem;
+    margin-bottom:14.3rem
+}
+
+
+.form-to-boss-wrapper label {
+    display: block;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 1.6rem;
+line-height: 130.2%;
+color: rgba(51, 51, 51, 0.5);
+}
+
+.form-to-boss-wrapper p {
+    margin: 0;
+}
+
+.form-to-boss-input {
+    width: 100%;
+    border: none;
+    border-bottom: 0.15rem solid #333333;
+    background-color: transparent;
+}
+
+.full-width {
+    grid-column: 1 / 3;
+}
+.button-send, .agree-send{
+    justify-self: center;
 }
