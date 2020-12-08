@@ -1,0 +1,158 @@
+.zaym-advantages {
+    padding: 12rem 0;
+    text-align: center;
+    h2 {
+        margin-bottom: 10rem;
+    }
+}
+
+.advantages-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages-wrapper li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 29.3rem;
+
+    .advantages-image {
+        width: 14.5rem;
+        height: 14.5rem;
+        border-radius: 50%;
+        background-color: #F0F0F0;
+        overflow: hidden;
+        margin-bottom: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .advantages-title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    .advantages-text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: justify;
+    }
+}
+
+.blocks-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    > div {
+        min-width: 31.5rem;
+        height: 31.5rem;
+    }
+
+    .background-mask {
+        height: 100%;
+        background: rgba(51, 51, 51, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block-img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &-1 {
+            background-image: url(/assets/images/blockImg1.png);
+        }
+        &-2 {
+            background-image: url(/assets/images/blockImg2.png);
+        }
+        &-3 {
+            background-image: url(/assets/images/blockImg3.png);
+        }
+        &-4 {
+            background-image: url(/assets/images/blockImg4.png);
+        }
+    }
+    
+    .block-text {
+        background-color: #F0F0F0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        color: #1D2B6B;
+        padding: 5.5rem 3.2rem;
+    }
+
+    .text-white {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        color: #fff;
+        text-align: center;
+        padding: 5.5rem 3.2rem;
+    }
+}
+
+.zaym-advantages .star-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 128.2%;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.zaym-advantages .cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+
+    .card {
+        border: 3px solid #F0F0F0;
+        border-radius: 1rem;
+        max-width: 33.7rem;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .top-card {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        background-color: #F0F0F0;
+        padding: 4rem 3rem;
+    }
+
+    .bottom-card {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        padding: 4rem 3rem;
+    }
+}

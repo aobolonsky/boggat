@@ -1,0 +1,32 @@
+.advantages-wrapper li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 29.3rem;
+
+    .advantages-image-check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2.2rem;
+    }
+}
+
+.dark-container {
+    text-align: center;
+    z-index: 999;
+    margin-top: -10rem;
+    margin-bottom: 15rem;
+}
+
+.container.special {
+    background: #F0F0F0;
+    box-shadow: 3px 3px 10px rgba(51, 51, 51, 0.2);
+    border-radius: 10px;
+    padding: 6rem;
+    margin-bottom: 10rem;
+
+    h2 {
+        margin-bottom: 5rem;
+    }
+}
