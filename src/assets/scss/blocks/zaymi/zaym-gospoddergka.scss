@@ -1,0 +1,60 @@
+.zaym-goverment {
+    padding: 15rem 0;
+    h2 {
+        text-align: center;
+        margin-bottom: 12.5rem;
+    }
+    background-image: url(/assets/images/zaym-goverment.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #EDF9F5;
+}
+
+.goverment-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10rem;
+
+    .row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .cta-button-dark {
+            max-width: 40rem;
+            margin: 0 auto;
+            padding: 1.5rem 6.5rem;
+        }
+    }
+}
+
+.goverment-list-item {
+    display: flex;
+    margin-bottom: 8rem;
+    width: 50%;
+    &:nth-child(n) {
+        margin-right: 9rem;
+    }
+}
+
+.goverment-list-number {
+    font-weight: 900;
+    font-size: 80px;
+    color: #1D2B6B;
+    margin-right: 4rem;
+    display: block;
+    height: 100%;
+    line-height: 90%;
+    flex: 1;
+}
+
+.goverment-list-text {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: justify;
+    color: #333333;
+    flex: 8;
+}
