@@ -57,3 +57,37 @@
         }     
     }
 }
+
+@media (max-width: 1080px) {
+    .about {
+        padding: 6rem 0;
+        
+        .section-heading {
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+    
+        .call-form {
+            display: none;
+        }
+
+        .about-items {
+            display: flex;
+            flex-direction: column;
+
+            .about-item {
+                &--left {
+                    flex-direction: row-reverse;
+
+                    .about-item-text {
+                        text-align: left;
+                    }
+
+                    .about-item-icon {
+                        margin: 3rem 4rem 30px 2rem;
+                    }
+                }
+            }
+        }
+    }
+}

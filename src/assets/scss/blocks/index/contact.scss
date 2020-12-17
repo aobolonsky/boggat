@@ -36,3 +36,22 @@
         }
     }
 }
+
+@media (max-width: 1080px) {
+    .contact {
+        background-image: none;
+        justify-content: center;
+
+        .contact-heading {
+            text-align: center;
+        }
+
+        .call-bottom-form {
+
+            .form-wrapper {
+                justify-content: center;
+                margin: auto;
+            }
+        }
+    }
+}
