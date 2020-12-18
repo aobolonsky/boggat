@@ -45,6 +45,10 @@ $(document).ready(function(){
         });
     });
 
+    $('.menu-toggler').on('click', () => {
+        $(this).find('.mobile-nav').css("display","block")
+    })
+
     //    $(function () {
     //        $.pixlayout({
     //            clip: true,

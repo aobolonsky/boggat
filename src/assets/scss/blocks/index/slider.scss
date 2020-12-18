@@ -23,3 +23,21 @@
     color: $secondary;
     text-align: left;
 }
+
+@media (max-width: 1080px) {
+    .slider {
+        max-height: 36rem;  
+        max-width: 100%;
+        background-size: cover;
+        padding-top: 0;
+
+        .slider-heading {
+            font: normal normal 600 2.4rem/120% "Open Sans Condensed";
+            margin: auto 0 auto 3rem;
+        }
+
+        .cta-button-dark {
+            display: none;
+        }
+    }
+}

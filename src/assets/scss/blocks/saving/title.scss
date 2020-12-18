@@ -2,12 +2,15 @@
     display: flex;
     background-color: #EBEBEB;
 
-    .container {
-        padding: 0 5vw;
-    }
-
     .title-image {
         height: inherit;
+        width: 40%;
+    }
+
+    .title-image img {
+        display: block;
+        max-width: 100%;
+        height: auto;
     }
 }
 
@@ -16,6 +19,7 @@
     font-size: 20px;
     line-height: 150%;
     margin-top: 16.1rem;
+    margin-bottom: 26.4rem;
 
     &--pensioner {
         font-weight: 500;
