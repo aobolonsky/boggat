@@ -1,30 +1,119 @@
 .saving-title {
     display: flex;
     background-color: #EBEBEB;
+    min-height: 350px;
+    height: auto;
 
     .title-image {
-        height: inherit;
-        width: 40%;
+        height: 100%;
     }
 
     .title-image img {
-        display: block;
-        max-width: 100%;
-        height: auto;
+        display: none;
+
+        @media (min-width: 1298px) {
+            display: block;
+            height: auto;
+        }
+    }
+
+    .title-container {
+        margin-left: 0;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &--bp {
+            background-image: url(/assets/images/saving-title-1.png);
+        }
+
+        &--gp {
+            background-image: url(/assets/images/zaym-gospoddergka.png);
+        }
+
+        &--mk {
+            background-image: url(/assets/images/materinskiy-kapital.png);
+        }
+
+        &--pz {
+            background-image: url(/assets/images/zaym-pod-zalog.png);
+        }
+
+        &--pt {
+            background-image: url(/assets/images/zaym-potrebitelskiy.png);
+        }
+
+        &--rsk {
+            background-image: url(/assets/images/zaym-rsk.png);
+        }
+
+        &--zp {
+            background-image: url(/assets/images/saving-title-2.png);
+        }
+
+        @media (min-width: 1298px) {
+            margin-left: 0;
+            margin-right: 2em;
+            background: none;
+        }
+
+        @media (min-width: 1460px) {
+            margin-left: 4em;
+            margin-right: 8em;
+        }
+
+        @media (min-width: 1660px) {
+            margin-left: 8em;
+            margin-right: 15em;
+        }
+    }
+
+    @media (min-width: 1298px) {
+        height: 70.8rem;
     }
 }
 
+.background-mask-light {
+    width: 100%;
+    height: 100%;
+    background: rgba(235, 235, 235, 0.8);
+}
+
 .saving-decription {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 150%;
-    margin-top: 16.1rem;
-    margin-bottom: 26.4rem;
+    margin-top: 4rem;
+    margin-bottom: 3.1rem;
+    padding: 0 3rem;
+
+    p {
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 120%;
+    }
 
     &--pensioner {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 150%;
+        display: none;
         margin-top: 10rem;
+
+        &_mobile {
+            display: block;
+        }
+    }
+
+    @media (min-width: 1298px) {
+        margin-top: 6.1rem;
+
+        p {
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 150%;
+        }
+
+        &--pensioner {
+            display: block;
+    
+            &_mobile {
+                display: none;
+            }
+        }
     }
 }

@@ -16,34 +16,52 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin-top: 3rem;
+    padding-top: 3rem;
 }
 
 h1 {
     font-family: 'Open Sans Condensed';
     font-style: normal;
     font-weight: bold;
-    font-size: 5rem;
-    line-height: 120.1%;
+    font-size: 2rem;
+    line-height: 130%;
     color: $primary;
+    padding: 3rem 3rem 0; 
+
+    @media (min-width: 1140px) {
+        font-size: 5rem;
+        line-height: 120%;
+        padding-bottom: 4rem;
+    }
 }
 
 h2 {
     font-family: 'Open Sans Condensed';
     font-style: normal;
     font-weight: bold;
-    font-size: 3.5rem;
-    line-height: 130.2%;
+    font-size: 2rem;
+    line-height: 130%;
     color: $primary;
+
+    @media (min-width: 1140px) {
+        font-size: 3.5rem;
+        line-height: 130%;
+    }
 }
 
 h3 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
-    font-size: 1.8rem;
-    line-height: 142.8%;
     color: $color_dark;
+    font-size: 1.4rem;
+    line-height: 120%;
+    padding: 0 3rem;
+
+    @media (min-width: 1140px) {
+        font-size: 1.8rem;
+        line-height: 143%;
+    }
 }
 
 h4 {
@@ -51,7 +69,7 @@ h4 {
     font-style: normal;
     font-weight: bold;
     font-size: 1.2rem;
-    line-height: 142.8%;
+    line-height: 143%;
     color: $color_dark;
 }
 
@@ -59,13 +77,13 @@ p {
     font-weight: 500;
     font-size: 1.8rem;
     text-indent: 2rem;
-    line-height: 142.8%;
+    line-height: 142%;
 }
 
 b {
     font-weight: bold;
     font-size: 1.8rem;
-    line-height: 130.2%;
+    line-height: 130%;
 }
 
 ul {
@@ -76,6 +94,18 @@ ol {
     
 }
 
+a {
+    text-decoration: none;
+    color: #04388F;
+
+    &:hover,
+    &:active,
+    &:visited {
+        text-decoration: none;
+        color: #04388F;
+    }
+}
+
 .container {
     max-width: 142rem;
     // margin: 0 auto;
@@ -84,9 +114,15 @@ ol {
 }
 
 .section-heading {
-    font: $font_section_heading;
+    font-size: 2rem;
+    line-height: 130%;
     color: $primary;
-    margin-bottom: 11.3rem;
+    margin-bottom: 4rem;
+
+    @media (min-width: 1140px) {
+        font: $font_section_heading;
+        margin-bottom: 11.3rem;
+    }
 }
 
 .section-sub-heading {
@@ -136,6 +172,7 @@ ol {
     line-height: 130.2%;
     margin-bottom: 3rem;
     color: $primary;
+    padding: 5rem 3rem 0;
 }
 
 .arrows-wrapper {

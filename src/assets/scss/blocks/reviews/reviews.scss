@@ -1,10 +1,14 @@
 .reviews {
-    margin-bottom: 15rem;
+    margin-bottom: 6rem;
+
+    @media (min-width: 956px) {
+        argin-bottom: 15rem;
+    }
 }
 
 .single-review {
     .single-page-body {
-        margin: 4rem 15rem 6rem 15rem;
+        margin: 4rem 3rem;
 
         .item-wrapper-user {
             display: flex;
@@ -37,12 +41,16 @@
             margin: 0 auto;
             margin-top: 6rem;
         }
+
+        @media (min-width: 956px) {
+            margin: 4rem 15rem 6rem 15rem;
+        }
     }
 
 }
 
 .reviews-wrapper {
-    padding: 10rem 3rem 0 3rem;
+    padding: 4rem 3rem 0 3rem;
 
     .item-wrapper {
         font-family: Montserrat;
@@ -54,7 +62,7 @@
         justify-content: space-between;
         background: #F0F0F0;
         border-radius: 10px;
-        padding: 30px 80px;
+        padding: 4rem;
         margin-bottom: 4.5rem;
         //height: 20.3rem;
         box-sizing: border-box;
@@ -102,11 +110,8 @@
                 font-size: 18px;
                 line-height: 142.8%;
                 padding: 1.5rem;
-
-                a {
-                    color: #04388F;
-                    text-decoration: none;
-                }
+                color: #04388F;
+                text-decoration: none;
             }
 
             .item-tag {
@@ -115,6 +120,10 @@
                 line-height: 130.2%;
                 color: #ABABAB;
             }
+        }
+
+        @media (min-width: 956px) {
+            padding: 3rem 8rem;
         }
     }
 

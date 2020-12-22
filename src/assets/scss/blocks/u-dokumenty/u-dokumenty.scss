@@ -9,7 +9,7 @@
     }
     
     .page-wrapper {
-        padding: 7rem 1rem 0 1rem;
+        padding: 4rem 3rem;
 
         @media (min-width: 625) {
             padding: 7rem 5rem 0 5rem;
@@ -22,8 +22,12 @@
 
     .download-wrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         margin-bottom: 5rem;
+
+        @media (min-width: 1140px) {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
     .download-item {
@@ -35,11 +39,11 @@
         .item-image {
             width: 6rem;
             height: 6rem;
-            background-image: url(/assets/images/icons/pdfIcon.svg);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            margin-right: 6rem;
+            margin-right: 3rem;
+
+            @media (min-width: 1140px) {
+                margin-right: 6rem;
+            }
         }
 
         .item-title {
@@ -54,8 +58,9 @@
 
     .sert-wrapper {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
         grid-column-gap: 2.7rem;
+        grid-row-gap: 1rem;
 
         .image-wrapper {
             position: relative;
