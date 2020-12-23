@@ -37,7 +37,7 @@ table {
     }
 
     th {
-        padding: 1rem 11rem;
+        padding: 1rem 10rem;
         vertical-align: middle;
         color: $secondary;
         background-color: $primary;
@@ -47,6 +47,7 @@ table {
         font-size: 20px;
         line-height: 120.1%;
         border: 1.5px solid #fff;
+        text-align: center;
 
         &:first-child {
             font-weight: 600;

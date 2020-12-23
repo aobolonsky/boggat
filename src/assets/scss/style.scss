@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans+Condensed:wght@700&display=swap');
-@import "vendor/reset";
+// @import "vendor/reset";
 @import "vendor/owl.carousel.min";
 @import "vendor/owl.theme.default";
 @import "vars";
@@ -31,6 +31,7 @@ h1 {
     @media (min-width: 1140px) {
         font-size: 5rem;
         line-height: 120%;
+        padding: 3rem 0; 
         padding-bottom: 4rem;
     }
 }
@@ -84,14 +85,6 @@ b {
     font-weight: bold;
     font-size: 1.8rem;
     line-height: 130%;
-}
-
-ul {
-    
-}
-
-ol {
-    
 }
 
 a {
@@ -172,7 +165,7 @@ a {
     line-height: 130.2%;
     margin-bottom: 3rem;
     color: $primary;
-    padding: 5rem 3rem 0;
+    padding: 5rem 0;
 }
 
 .arrows-wrapper {

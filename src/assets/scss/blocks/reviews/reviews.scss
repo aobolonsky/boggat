@@ -2,7 +2,7 @@
     margin-bottom: 6rem;
 
     @media (min-width: 956px) {
-        argin-bottom: 15rem;
+        margin-bottom: 15rem;
     }
 }
 
@@ -22,6 +22,11 @@
             .user-name{
                 padding:2rem;
             }
+
+            @media (max-width: 490px) {
+                margin-bottom: 3rem;
+            }
+
         }
         
         .single-reviews-link {
@@ -69,6 +74,10 @@
         transition: box-shadow .2s ease;
         cursor: pointer;
 
+        @media (max-width: 490px) {
+            padding: 2rem;
+        }
+
         &:hover {
             box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.3);
         }
@@ -86,19 +95,43 @@
             font-size: 1.8rem;
             line-height: 142.8%;
             padding: 2rem;
+
+            @media (max-width: 490px) {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 142.8%;
+            }
         }
 
         .user-image {
             padding: 2rem;
+
+            img {
+                @media (max-width: 490px) {
+                    width: 55px;
+                }
+            }
         }
 
         .item-text {
-            font-weight: 500;
-            font-size: 1.8rem;
-            line-height: 142.8%;
-            text-align: center;
-            color: #000000;
+            p {
+                font-weight: 500;
+                font-size: 1.8rem;
+                line-height: 142.8%;
+                text-align: center;
+                color: #000000;
+
+                @media (max-width: 490px) {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 120%;
+                }
+            }
             padding: 1.3rem;
+
+            @media (max-width: 490px) {
+                padding: 3rem 0;
+            }
         }
 
         .item-bottom {

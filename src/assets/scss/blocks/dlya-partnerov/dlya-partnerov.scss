@@ -31,10 +31,12 @@
         justify-content: space-between;
         text-align: center;
         flex-wrap: wrap;
-        margin-bottom: 15rem;   
+        margin-bottom: 4.5rem;   
+        white-space: nowrap;
         
         @media (min-width: 956px) {
             flex-direction: row;
+            margin-bottom: 15rem;   
         }
     }
     
@@ -43,6 +45,7 @@
         flex-direction: row;
         justify-content: flex-start; 
         width: 100%;
+        margin-bottom: 3rem;
 
         @media (min-width: 956px) {
             flex-direction: column;    
@@ -54,6 +57,8 @@
 
     .item-image {
         margin: 0;
+        width: 35px;
+        height: 35px;
 
         @media (min-width: 956px) {
             margin: auto;
@@ -63,13 +68,18 @@
     .item-title {
         font-family: Montserrat;
         font-weight: 500;
-        font-size: 2rem;
-        line-height: 2.4rem;
+        font-size: 16px;
+        line-height: 120%;
         color: #333333;
-        margin-top: 3rem;
+        white-space: break-spaces;
+        text-align: left;
+        margin-left: 3rem;
 
         @media (min-width: 956px) {
             text-transform: uppercase;
+            font-size: 2rem;
+            line-height: 2.4rem;
+            margin-left: 0;
         }
     }
     
@@ -92,10 +102,16 @@
     }
     
     .perspectives-title {
-        font-size: 2.5rem;
-        line-height: 150%;
+        font-size: 16px;
+        line-height: 120%;
+        font-weight: 500;
         text-align: center;
         color: inherit;
+
+        @media (min-width: 956px) {
+            font-size: 2.5rem;
+            line-height: 150%;
+        }
     }
     
     .perspectives {
@@ -155,18 +171,28 @@
         background-size: cover;
         
         .background-mask {
-            padding: 21.5rem 15rem;
+            padding: 11.3rem 0;
+            @media (min-width: 956px) {
+                padding: 21.5rem 15rem;
+            }
         }
         
         .request-title {
             font-family: Montserrat;
             font-style: normal;
-            font-weight: 600;
-            font-size: 2.5rem;
-            line-height: 150%;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 120%;
             text-align: center;
             margin-bottom: 10.5rem;
             color: $secondary;
+
+            @media (min-width: 956px) {
+                font-weight: 600;
+                font-size: 2.5rem;
+                line-height: 150%;
+                margin-bottom: 10.5rem;
+            }
         }
         
         .request-button {

@@ -182,6 +182,10 @@
         width: 90%;
         height: 100%;
 
+        & li {
+            list-style-type: none;
+        }
+
         .subnav li:hover {
             a:hover,
             a:active,

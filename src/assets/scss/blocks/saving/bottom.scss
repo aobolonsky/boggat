@@ -1,9 +1,18 @@
 .saving-bottom {
-    padding: 15rem 0;
+    padding: 5rem 0;
     text-align: center;
 
+    @media (min-width: 1298px) {
+        padding: 15rem 0;
+    }
+
     .image-wrap {
+        display: none;
         width: 50%;
+
+        @media (min-width: 1298px) {
+            display: block;
+        }
 
         img {
             display: block;
@@ -34,8 +43,13 @@
 
     .text-wrap {
         padding: 10rem 0;
-        width: 50%;
-        margin-right: 6rem;
+        width: 100%;
+        margin-right: 3rem;
+
+        @media (min-width: 1298px) {
+            width: 50%;
+            margin-right: 6rem;
+        }
 
         .text {
             margin-left: 5vw;
@@ -44,6 +58,17 @@
 
     .hr-line {
         margin: 2rem 40% 2rem 0;
+
+        @media (max-width: 1298px) {
+            &:nth-child(2),
+            &:nth-child(6) {
+                margin: 2rem 20% 2rem 0;
+            }
+
+            &:nth-child(4) {
+                margin: 2rem 0 2rem 20%;
+            }
+        }
     }
 
     &--reverse {
@@ -52,9 +77,14 @@
         padding: 10rem 0;
 
         .text-wrap {
-            width: 50%;
-            margin-left: 6rem;
+            width: 100%;
+            margin-left: 3rem;
 
+            @media (min-width: 1298px) {
+                margin-right: 6rem;
+                width: 50%;
+            }
+        
             .text {
                 margin-right: 5vw;
             }
@@ -62,6 +92,18 @@
         
         .hr-line {
             margin: 2rem 0 2rem 40%;
+
+            @media (max-width: 1298px) {
+                &:nth-child(2),
+                &:nth-child(6) {
+                    margin: 2rem 20% 2rem 0;
+                }
+    
+                &:nth-child(4) {
+                    margin: 2rem 0 2rem 20%;
+                }
+            }
         }
     }
+
 }

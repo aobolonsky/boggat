@@ -267,13 +267,48 @@
 
         .start-text {
             display: flex;
-align-items: center;
-text-align: justify;
+            align-items: center;
+            text-align: justify;
             font-family: Montserrat;
             font-style: normal;
             font-weight: 500;
             font-size: 13px;
             line-height: 120%;
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    .calc {
+        padding: 6rem 0;
+
+        .section-heading {
+            font-size: 20px;
+            line-height: 130.2%;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        .calc-form {
+            padding-right: 0;
+
+            .input-wrapper-horizontal {
+                flex-direction: column;
+
+                .pen-btn {
+                    display: none;
+                }
+            }
+    
+            .range_container {
+                display: none;
+            }
+        }
+
+        .section-sub-heading {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 120%;
+            text-align: center;
         }
     }
 }

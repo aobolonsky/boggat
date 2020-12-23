@@ -41,9 +41,14 @@
     .contact {
         background-image: none;
         justify-content: center;
+        height: auto;
 
         .contact-heading {
             text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 120%;
+            padding-top: 0;
         }
 
         .call-bottom-form {
@@ -51,6 +56,11 @@
             .form-wrapper {
                 justify-content: center;
                 margin: auto;
+            }
+
+            .cta-call {
+                font-size: 16px;
+                line-height: 20px;
             }
         }
     }
