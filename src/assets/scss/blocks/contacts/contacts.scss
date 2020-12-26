@@ -1,62 +1,122 @@
 .contacts {
-    margin-bottom: 15rem;
+    margin-bottom: 7rem;
+
+    .container {
+        position: relative;
+    }
 }
 
 .all-contacts-info {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-items: start;
-    justify-content: space-between;
+    display: flex;
+
+    @include breakpoint(762px) {
+        flex-direction: column;
+    }
 }
 
 .adress-fields {
-    padding-top: 7rem;
+    padding-top: 5rem;
+
+    @include breakpoint($mobile_bp) {
+        padding-top: 1rem;
+    }
 }
 
 .adress-fields-header {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 130.2%;
+    font: normal normal 600 2rem/130% 'Montserrat';
     color: #1D2B6B;
-    padding-top: 2rem;
+    padding-top: 3rem;
+
+    &:first-child {
+        padding-top: 0;
+    }
 }
 
 .form-item.head-office-form-item {
     margin-top: 3rem;
 }
 
-.map-place {
-    padding-top: 9rem;
+.right-wrapper {
+    padding-top: 5rem;
+    margin-left: 12rem;
+    margin-bottom: 8rem;
+    overflow:hidden;
+    position:relative;
+    height:inherit;
+    width: 100%;
+
+    @include breakpoint($tabletH_bp) {
+        margin-left: 6rem;
+    }
+
+    @include breakpoint(762px) {
+        margin: 0;
+        height: 365px;
+    }
+
+    & iframe {
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
 }
 
 .to-boss-all-info {
-    display: grid;
-    margin-top: 10rem;
-}
-
-.to-boss-info-text {
-    display: grid;
-    width: 810px;
-    height: 571px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    margin-top: 6rem;
+    max-width: 81rem;
+    width: 100%;
     background: #1D2B6B;
     box-shadow: 3px 3px 10px rgba(29, 43, 107, 0.4);
     border-radius: 10px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 2.5rem;
-    line-height: 130.2%;
-    text-align: justify;
-    color: #FFFFFF;
-    padding: 6.7rem 11rem;
-    justify-self: center;
-    align-content: center;
+    z-index: 1000;
+    padding: 8rem 6.8rem 11rem;
+
+    @include breakpoint($tabletH_bp) {
+        position: relative;
+        transform: translateX(0);
+        left: 0;
+        padding: 3rem 2.9rem 6rem;
+    }
+
+    .to-boss-info-heder {
+        margin-bottom: 4rem;
+        color: #fff;
+        text-align: center;
+        font: normal normal 600 2.5rem/130% 'Montserrat';
+
+        @include breakpoint($tabletH_bp) {
+            font: normal normal 500 2rem/120% 'Montserrat';
+        }
+    }
+
+    > p {
+        font: normal normal 400 2rem/120% 'Montserrat';
+        text-align: justify;
+        color: #FFFFFF;
+
+        @include breakpoint($tabletH_bp) {
+            font: normal normal 400 1.6rem/120% 'Montserrat';
+        }
+    }
 }
 
 .form-to-boss {
+    margin-top: -6rem;
     background-image: url(/assets/images/telefon.png);
+    z-index: 100;
+    height: 73.1rem;
+    margin-top: 55rem;
+
+    @include breakpoint($tabletH_bp) {
+        margin-top: 1rem;
+        background: none;
+    }
 }
 .form-to-boss-all{
     display: grid;
@@ -67,19 +127,20 @@
     grid-gap: 3rem;
     justify-self: center;
     width: 64.3rem;
-    margin-top: 6.1rem;
-    margin-bottom:14.3rem
+    margin-top: 14rem;
+    margin-bottom:14.3rem;
+
+    @include breakpoint($tabletH_bp) {
+        margin-top: 6rem;
+        grid-template-columns: 1fr;
+    }
 }
 
 
 .form-to-boss-wrapper label {
+    font: normal normal 500 1.6rem/130% 'Montserrat';
     display: block;
-    font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 1.6rem;
-line-height: 130.2%;
-color: rgba(51, 51, 51, 0.5);
+    color: rgba(51, 51, 51, 0.5);
 }
 
 .form-to-boss-wrapper p {

@@ -30,7 +30,7 @@ h1 {
 
     @include breakpoint($tabletV_bp) {
         font: normal normal bold 2rem/130% 'Open Sans Condensed';
-        padding: 3rem 3rem 0;
+        padding: 3rem 0;
     }
 }
 
@@ -103,8 +103,11 @@ input {
 .breadcrumbs {
     font: normal normal 500 1.8rem/130% 'Montserrat';
     color: $primary;
-    margin-bottom: 3rem;
-    padding: 5rem 0;
+    padding-top: 5rem;
+
+    @include breakpoint($mobile_bp) {
+        display: none;
+    }
 }
 
 .arrows-wrapper {

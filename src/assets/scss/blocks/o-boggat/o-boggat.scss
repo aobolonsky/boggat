@@ -13,6 +13,10 @@
     color: rgba(51, 51, 51, 0.5);
     padding-top: 4.1rem;
     padding-bottom: 10.3rem;
+
+    @include breakpoint($mobile_bp) {
+        display: none;
+    }
 }
 
 .section-name{
