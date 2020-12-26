@@ -1,17 +1,22 @@
 import "./jquery.pixlayout";
 import "./owl.carousel.min";
 
-$(document).ready(function(){
+$(document).ready(function () {
     $('#customers-testimonials').owlCarousel({
         nav: true,
         navText: [
-            '<img src="/assets/images/prev.svg" alt="left">','<img src="/assets/images/next.svg" alt="right">'
+            '<img src="/assets/images/prev.svg" alt="left">', '<img src="/assets/images/next.svg" alt="right">'
         ],
         // Адаптация
         responsive: {
+            // Ширина от 300 пикселей
+            300: {
+                // Количество элементов 1
+                items: 1,
+            },
             // Ширина от 500 пикселей
             500: {
-            // Количество элементов 2
+                // Количество элементов 2
                 items: 2,
             },
             // Ширина от 800 пикселей
@@ -27,10 +32,15 @@ $(document).ready(function(){
         var owl = $(this).find('.owl-carousel').owlCarousel({
             nav: true,
             navText: [
-                '<img src="/assets/images/icons/news-arrow.svg" alt="left">','<img src="/assets/images/icons/news-arrow.svg" alt="right">'
+                '<img src="/assets/images/icons/news-arrow.svg" alt="left">', '<img src="/assets/images/icons/news-arrow.svg" alt="right">'
             ],
             // Адаптация
             responsive: {
+                                // Ширина от 300 пикселей
+                                300: {
+                                    // Количество элементов 1
+                                    items: 1,
+                                },
                 // Ширина от 500 пикселей
                 500: {
                     // Количество элементов 2
