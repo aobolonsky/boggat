@@ -45,9 +45,13 @@ $(document).ready(function(){
         });
     });
 
-    $('.menu-toggler').on('click', () => {
-        $(this).find('.mobile-nav').css("display","block")
-    })
+    $('.burger').on('click', () => {
+        $(this).find('body').addClass("show-mobile-menu")
+    });
+
+    $('.mobile-nav').on('click', () => {
+        $(this).find('body').removeClass("show-mobile-menu")
+    });
 
     //    $(function () {
     //        $.pixlayout({

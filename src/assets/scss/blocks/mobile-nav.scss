@@ -1,0 +1,71 @@
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: transparent;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    transition: background .2s linear, z-index .2s linear;
+
+    .show-mobile-menu & {
+        background: rgba(51, 51, 51, 0.8);
+        z-index: 100;
+        .nav {
+            transform: translateX(0);
+        }
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        background-color: #F0F0F0;
+        padding: 6rem 3rem;
+        width: 314px;
+        height: inherit;
+        transform: translateX(-100%);
+        transition: transform .2s linear;
+        overflow: auto;
+        flex-wrap: nowrap;
+
+        & li {
+            list-style-type: none;
+        }
+
+        .subnav li:hover {
+            a:hover,
+            a:active,
+            a:focus,
+            a:visited {
+                color: #1D2B6B;
+                text-decoration: none;
+                outline: none;
+            }
+        }
+
+        
+
+        .nav-item > a {
+            font: normal normal 600 1.8rem/2.2rem "Montserrat";
+            color: #333333;
+            padding: 0;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .subnav {
+            padding-left: 1rem;
+
+            > li {
+                padding-bottom: 1.5rem;
+                &:last-child {
+                    padding-bottom: 0;
+                }
+                > a {
+                    font: normal normal 500 1.6rem/2rem "Montserrat";
+                    color: #333333;
+                }
+            }
+        }
+    }
+}

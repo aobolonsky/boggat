@@ -3,7 +3,7 @@
 @import "vendor/owl.carousel.min";
 @import "vendor/owl.theme.default";
 @import "vars";
-
+@import "mixins";
 
 html {
     font-size: 62.5%;
@@ -13,6 +13,10 @@ body {
     font: $font_main;
     background-color: $color_white;
     color: $color_dark;
+
+    &.show-mobile-menu {
+        overflow: hidden;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -179,6 +183,7 @@ a {
 
 
 /* Blocks */
+@import "blocks/mobile-nav.scss";
 @import "blocks/header";
 @import "blocks/header-secondary.scss";
 @import "blocks/index/slider";
