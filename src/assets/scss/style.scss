@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans+Condensed:wght@700&display=swap');
-// @import "vendor/reset";
 @import "vendor/owl.carousel.min";
 @import "vendor/owl.theme.default";
 @import "vars";
@@ -10,9 +9,9 @@ html {
 }
 
 body {
-    font: $font_main;
-    background-color: $color_white;
-    color: $color_dark;
+    font: normal normal 600 1.6rem/2rem 'Montserrat';
+    background-color: #fff;
+    color: #333;
 
     &.show-mobile-menu {
         overflow: hidden;
@@ -24,74 +23,54 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-family: 'Open Sans Condensed';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 2rem;
-    line-height: 130%;
+    font: normal normal bold 5rem/120% 'Open Sans Condensed';
     color: $primary;
-    padding: 3rem 3rem 0; 
+    padding: 3rem 0; 
+    padding-bottom: 4rem;
 
-    @media (min-width: 1140px) {
-        font-size: 5rem;
-        line-height: 120%;
-        padding: 3rem 0; 
-        padding-bottom: 4rem;
+    @include breakpoint($tabletV_bp) {
+        font: normal normal bold 2rem/130% 'Open Sans Condensed';
+        padding: 3rem 3rem 0;
     }
 }
 
 h2 {
-    font-family: 'Open Sans Condensed';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 2rem;
-    line-height: 130%;
+    font: normal normal bold 3.5rem/130% 'Open Sans Condensed';
     color: $primary;
 
-    @media (min-width: 1140px) {
-        font-size: 3.5rem;
-        line-height: 130%;
+    @include breakpoint($tabletV_bp) {
+        font: normal normal bold 2rem/130% 'Open Sans Condensed';    
     }
 }
 
 h3 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    color: $color_dark;
-    font-size: 1.4rem;
-    line-height: 120%;
+    font: normal normal bold 1.8rem/143% 'Montserrat';
+    color: #333;
     padding: 0 3rem;
 
-    @media (min-width: 1140px) {
-        font-size: 1.8rem;
-        line-height: 143%;
+    @include breakpoint($tabletV_bp) {
+        font: normal normal bold 1.4rem/120% 'Montserrat';
     }
 }
 
 h4 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.2rem;
-    line-height: 143%;
-    color: $color_dark;
+    font: normal normal bold 1.2rem/143% 'Montserrat';
+    color: #333;
 }
 
 p {
-    font-weight: 500;
-    font-size: 1.8rem;
+    font: normal normal 500 1.8rem/142% 'Montserrat';
+    color: #333;
     text-indent: 2rem;
-    line-height: 142%;
 }
 
 b {
-    font-weight: bold;
-    font-size: 1.8rem;
-    line-height: 130%;
+    font: normal normal bold 1.8rem/130% 'Montserrat';
+    color: #333;
 }
 
 a {
+    font: normal normal 500 1.8rem/142% 'Montserrat';
     text-decoration: none;
     color: #04388F;
 
@@ -105,70 +84,16 @@ a {
 
 .container {
     max-width: 142rem;
-    // margin: 0 auto;
-    // padding: 0 5vw;
-    // width: 100%;
-}
-
-.section-heading {
-    font-size: 2rem;
-    line-height: 130%;
-    color: $primary;
-    margin-bottom: 4rem;
-
-    @media (min-width: 1140px) {
-        font: $font_section_heading;
-        margin-bottom: 11.3rem;
-    }
-}
-
-.section-sub-heading {
-    font: $font_section_sub_heading;
-    color: $color_dark;
-}
-
-.cta-button-dark {
-    font: $font_button_dark;
-    text-decoration: none;
-    color: $secondary;
-    background-color: $primary;
-    border: none;
-    border-radius: 1rem;
-    box-shadow: 0 0.6rem 1rem rgba($color_dark, 0.2);
-    padding: 2.2rem 8.6rem;
-    transition: background-color .2s ease-in;
-
-    &:hover {
-        color: $primary;
-        background-color: $secondary;
-        text-decoration: none;
-    }
-}
-
-.cta-button-light {
-    font: $font_button;
-    color: $primary;
-    background-color: $secondary;
-    border: none;
-    border-radius: 1rem;
-    box-shadow: 0 0.3rem 1rem rgba($color_dark, 0.2);
-    padding: 1rem 2.6rem;
-    transition: background-color .2s ease-in;
-
-    &:hover {
-        color: $secondary;
-        background-color: $primary;
-        text-decoration: none;
+    @include breakpoint($mobile_menu_bp) {
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 }
 
 .breadcrumbs {
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size: 1.8rem;
-    line-height: 130.2%;
-    margin-bottom: 3rem;
+    font: normal normal 500 1.8rem/130% 'Montserrat';
     color: $primary;
+    margin-bottom: 3rem;
     padding: 5rem 0;
 }
 
@@ -181,11 +106,13 @@ a {
     }
 }
 
-
 /* Blocks */
 @import "blocks/mobile-nav.scss";
+@import "blocks/burger.scss";
 @import "blocks/header";
 @import "blocks/header-secondary.scss";
+@import "blocks/section.scss";
+@import "blocks/cta-button.scss";
 @import "blocks/index/slider";
 @import "blocks/index/about";
 @import "blocks/index/call-form.scss";

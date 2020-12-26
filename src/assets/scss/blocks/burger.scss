@@ -1,0 +1,39 @@
+.burger {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 0;
+    color: transparent;
+
+    &:hover,
+    &:focus {
+        border: none;
+        outline: none;
+    }
+
+    span,
+    span:before,
+    span:after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #1D2B6B;
+    }
+
+    span:before,
+    span:after {
+        content: '';
+    }
+
+    span:before {
+        top: -11px;
+    }
+
+    span:after {
+        top: 11px;
+    }
+}

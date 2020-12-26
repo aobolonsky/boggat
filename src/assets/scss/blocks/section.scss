@@ -1,0 +1,16 @@
+.section-heading {
+    font-size: 2rem;
+    line-height: 130%;
+    color: $primary;
+    margin-bottom: 4rem;
+
+    @media (min-width: 1140px) {
+        font: normal normal 700 3.5rem/4.2rem 'Open Sans Condensed';
+        margin-bottom: 11.3rem;
+    }
+}
+
+.section-sub-heading {
+    font: normal normal 500 2rem/2.6rem 'Montserrat';
+    color: #333;
+}

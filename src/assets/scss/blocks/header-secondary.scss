@@ -7,6 +7,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @include breakpoint($mobile_menu_bp) {
+            display: none;
+        }
     }
 }
 
@@ -27,8 +31,8 @@
     align-items: flex-end;
     align-self: center;
     margin-left: 4.4rem;
-    font: $font_main;
-    color: $color_dark;
+    font: normal normal 600 1.6rem/2rem 'Montserrat';
+    color: #333;
     text-decoration: none;
 }
 
@@ -60,12 +64,12 @@
             font: inherit;
             border: none;
             background: none;
-            color: $color_black;
+            color:  #000;
             max-width: 5.7rem;
             line-height: 1.3rem;
 
             &::placeholder {
-                color: $color_black;
+                color:  #000;
                 font: inherit;
             }
         }
@@ -96,6 +100,10 @@
                 margin-right: 5.34rem;
                 padding: 1rem 0;
 
+                @include breakpoint($tabletH_bp) {
+                    margin-right: 1rem;
+                }
+
                 &:hover {
                     .nav-link {
                         color: $primary;
@@ -107,9 +115,9 @@
                 }
 
                 .nav-link {
-                    font: $font_button;
+                    font: normal normal 600 1.8rem/2.2rem 'Montserrat';
                     text-decoration: none;
-                    color: $color_dark;
+                    color: #333;
                     transition: color .2s ease-in;
                 }
 
@@ -141,8 +149,8 @@
 
                     .subnav-link {
                         display: block;
-                        color: $color_dark;
-                        font: $font_sublink;
+                        color: #333;
+                        font: normal normal 500 1.6rem/2rem 'Montserrat';
                         text-decoration: none;
                         padding: 0.5rem 3rem;
                         transition: all .2s ease-in;
@@ -158,14 +166,6 @@
 
         .lk-button {
             align-self: center;
-        }
-    }
-}
-
-@media (max-width: 1080px) {
-    .header-secondary {
-        .container {
-            display: none;
         }
     }
 }

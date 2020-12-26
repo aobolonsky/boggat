@@ -2,6 +2,10 @@
     position: absolute;
     top: 0;
     width: 100%;
+
+    @include breakpoint($mobile_menu_bp) {
+        position: relative;
+    }
 }
 
 .header-top {
@@ -11,6 +15,10 @@
         justify-content: flex-end;
     }
     background-color: #F0F0F0;
+
+    @include breakpoint($mobile_menu_bp) {
+        display: none;
+    }
 }
 
 .header-top__email,
@@ -20,8 +28,8 @@
     align-items: flex-end;
     align-self: center;
     margin-left: 4.4rem;
-    font: $font_main;
-    color: $color_dark;
+    font: normal normal 600 1.6rem/2rem 'Montserrat';
+    color: #333;
     text-decoration: none;
 }
 
@@ -29,6 +37,7 @@
 .top-search {
     display: block;
     margin-left: 2.2rem;
+    color: #333;
 }
 
 .header-top__search {
@@ -53,12 +62,12 @@
             font: inherit;
             border: none;
             background: none;
-            color: $color_black;
+            color:  #000;
             max-width: 5.7rem;
             line-height: 1.3rem;
 
             &::placeholder {
-                color: $color_black;
+                color:  #000;
                 font: inherit;
             }
         }
@@ -68,6 +77,10 @@
 .header-bottom {
     background: none;
     padding: 4.3rem 0;
+
+    @include breakpoint($mobile_menu_bp) {
+        display: none;
+    }
     
     .container {
         display: flex;
@@ -93,6 +106,10 @@
                 padding: 1rem 0;
                 list-style-type: none;
 
+                @include breakpoint($tabletH_bp) {
+                    margin-right: 1rem;
+                }
+
                 &:hover {
                     .nav-link {
                         color: $primary;
@@ -104,7 +121,7 @@
                 }
 
                 .nav-link {
-                    font: $font_button;
+                    font: normal normal 600 1.8rem/2.2rem 'Montserrat';
                     text-decoration: none;
                     color: $secondary;
                     transition: color .2s ease-in;
@@ -138,8 +155,8 @@
 
                     .subnav-link {
                         display: block;
-                        color: $color_dark;
-                        font: $font_sublink;
+                        color: #333;
+                        font: normal normal 500 1.6rem/2rem 'Montserrat';
                         text-decoration: none;
                         padding: 0.5rem 3rem;
                         transition: all .2s ease-in;
@@ -163,59 +180,8 @@
 
 .header-mobile {
     display: none;
-}
 
-.button-mobile {
-    padding: 1.2rem 2.4rem;
-    font: normal normal 500 1.6rem/2rem "Montserrat";
-}
-
-.burger {
-    position: relative;
-    width: 3rem;
-    height: 3rem;
-    background: none;
-    border: none;
-    padding: 0;
-    font-size: 0;
-    color: transparent;
-
-    &:hover,
-    &:focus {
-        border: none;
-        outline: none;
-    }
-
-    span,
-    span:before,
-    span:after {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 3px;
-        background-color: #1D2B6B;
-    }
-
-    span:before,
-    span:after {
-        content: '';
-    }
-
-    span:before {
-        top: -11px;
-    }
-
-    span:after {
-        top: 11px;
-    }
-}
-
-@include breakpoint($mobile_menu_bp) {
-    .header {
-        position: relative;
-    }
-
-    .header-mobile {
+    @include breakpoint($mobile_menu_bp) {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -223,21 +189,9 @@
         background-color: #F0F0F0;
         cursor: pointer;
     }
-
-    .header-top,
-    .header-bottom {
-        display: none;
-    }
 }
 
-@include breakpoint($tabletH_bp) {
-    .header-bottom {
-        .header-bottom__nav {
-            .nav {
-                .nav-item {
-                    margin-right: 1rem;
-                }
-            }
-        }
-    }
+.button-mobile {
+    padding: 1.2rem 2.4rem;
+    font: normal normal 500 1.6rem/2rem "Montserrat";
 }

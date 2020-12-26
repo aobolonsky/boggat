@@ -1,44 +1,31 @@
 footer {
-    //width: 1416px;
-    background-color: #1D2B6B;
-    color: #ffffff;
-
-    .container {
-        padding-top: 5.7rem;
-        padding-bottom: 7.5rem;
-        width: auto;
-    }
-
+    background-color: $primary;
+    color: $secondary;
+    padding-top: 5.7rem;
+    padding-bottom: 7.5rem;
 }
 
 .footer-container {
-    grid-column: 2 / 3;
+    position: relative;
     display: grid;
-    /* ACTING AS A GRID CONTAINER */
-    grid-template-columns: repeat(12, 1fr);
+    grid-column: 2 / 3;
+    grid-template-columns: repeat(12, auto);
     grid-template-rows: repeat(4, auto);
-    grid-row-gap: 2rem;
     grid-template-areas:
-        "logo logo  logo nav nav nav nav nav nav contact contact contact"
-        "tou tou tou tou tou tou tou tou tou tou social social"
+        "logo nav nav contact contact contact contact contact contact contact contact contact"
+        "tou tou tou tou tou tou tou tou tou tou tou social"
         "fi fi fi fi fi fi fi fi fi fi fi fi"
         "copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright";
-}
 
-@media (max-width: 700px) {
-    .breadcrumbs, .o-boggat-slogan {
-        display: none;
-    }
-    .footer-logo {
-        display: none;
-    }
-
-    .footer-address {
-        position: absolute;
-        left: 3.5rem;
+    @include breakpoint($tabletH_bp) {
+        grid-template-areas:
+        "logo nav nav nav nav nav nav nav contact contact contact contact"
+        "tou tou tou tou tou tou tou tou tou tou tou social"
+        "fi fi fi fi fi fi fi fi fi fi fi fi"
+        "copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright";
     }
 
-    .footer-container {
+    @include breakpoint($mobile_menu_bp) {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "social contact"
@@ -47,106 +34,170 @@ footer {
             "fi fi"
             "copyright copyright";
     }
-
-    .social-networks>div {
-        //margin-right: auto;
-        margin-left: 0 !important;
-    }
-
-    .footer-nav {
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr !important;
-        justify-items: start !important;
-    }
-
-    .footer-info, .footer-copyright{
-        color: rgba(255, 255, 255, 0.5);
-    }
 }
 
 .footer-logo {
     grid-area: logo;
     align-self: center;
     justify-items: center;
-}
+    margin-bottom: 0.7rem;
 
-.footer-nav {
-    grid-area: nav;
-    align-self: center;
-    justify-items: center;
-    color: #ffffff;
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
-    padding-bottom: 1.6rem;
-    margin-top: auto;
-
-    & li {
-        list-style-type: none;
+    @include breakpoint($mobile_menu_bp) {
+        display: none;
     }
 }
 
-.footer-nav>li>a {
-    color: #ffffff;
-    font-size: 1.6rem;
+.footer-nav {
+    margin: 4.7rem 4.4rem 0 8rem;
+    padding: 0;
+    padding-bottom: 1.6rem;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+
+    li {
+        list-style-type: none;
+        margin: 0 1rem 0 0;
+
+        &:last-of-type {
+            margin: 0;
+        }
+
+        @include breakpoint($mobile_menu_bp) {
+            margin: 0 2.5rem 0 0;
+        }
+    }
+
+    @include breakpoint($tabletH_bp) {
+        margin: 4.7rem 2rem 2rem 2rem;
+    }
+
+    @include breakpoint($mobile_menu_bp) {
+        margin: 6.5rem 0 2rem 0;
+        border: none;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+
+.footer-nav > li > a {
+    color: rgba(255, 255, 255, 0.8);
+    font: normal normal 500 1.6rem/2rem 'Montserrat';
     text-decoration: none;
+    white-space: nowrap;
+
+    @include breakpoint($mobile_menu_bp) {
+        font: normal normal 500 1.4rem/1.7rem 'Montserrat';
+        color: #fff;
+        text-decoration: underline;
+    }
 }
 
 .contact-block {
     grid-area: contact;
-    align-self: center;
-    justify-items: center;
-    text-align: end;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 
-.contact-block {
-    font-family: Montserrat;
-    font-style: normal;
+    @include breakpoint($mobile_menu_bp) {
+        justify-content: center;
+    }
 
     .footer-phone {
-        font-size: 2.1rem;
-        font-weight: 600;
+        font: normal normal 600 2.1rem/117.7% 'Montserrat';
+        color: rgba(255, 255, 255, 0.8);
         padding-top: 2.1rem;
-        line-height: 117.7%;
-        color: $color_white;
         margin-bottom: 0.4rem;
+
+        @include breakpoint($mobile_menu_bp) {
+            font: normal normal 500 1.4rem/117.7% 'Montserrat';
+            color: #fff;
+            padding-top: 0;
+        }
+
     }
 
     .footer-address {
-        font-size: 1.6rem;
-        font-weight: 500;
-        line-height: 117.7%;
+        font: normal normal 500 1.6rem/117.7% 'Montserrat';
+        color: rgba(255, 255, 255, 0.8);
+        text-align: right;
+
+        @include breakpoint($mobile_menu_bp) {
+            font: normal normal 400 1.2rem/117.7% 'Montserrat';
+            color: #fff;
+            position: absolute;
+            left: 0;
+            top: 6rem;
+        }
     }
 }
 
-.Terms-of-use {
+.terms-of-use {
+    font: normal normal 400 1.6rem/2rem 'Montserrat';
     grid-area: tou;
     margin: auto 0;
-    font-size: 14px;
-    line-height: 145%;
-    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+
+    @include breakpoint($mobile_menu_bp) {
+        font: normal normal 400 1.4rem/145% 'Montserrat';
+        color: #fff;
+    }
 }
 
 .social-networks {
     grid-area: social;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.7rem;
 
-    >div {
-        margin-left: auto;
+    @include breakpoint($mobile_menu_bp) {
+        justify-content: flex-start;
+    }
+
+    > a {
+        display: block;
+        margin-left: 2.6rem;
+
+        @include breakpoint($mobile_menu_bp) {
+            margin-left: 0;
+            margin-right: 3rem;
+
+            img {
+                width: auto;
+                height: 2rem;
+            }
+        }
     }
 }
 
 .footer-info {
+    font: normal normal 400 1.5rem/120% 'Montserrat';
+    color: rgba(255, 255, 255, 0.8);
     grid-area: fi;
-    font-size: 1.5rem;
-    font-weight: 400;
     text-align: justify;
+
+    @include breakpoint($mobile_menu_bp) {
+        font: normal normal 400 1rem/120% 'Montserrat';
+        color: rgba(255, 255, 255, 0.5);
+        margin-top: 4rem;
+    }
 }
 
 .footer-copyright {
+    font: normal normal 400 1.6rem/2rem 'Montserrat';
     grid-area: copyright;
-    font-size: 1.6rem;
-    font-weight: 400;
     text-align: center;
+    margin-top: 3rem;
+
+    @include breakpoint($mobile_menu_bp) {
+        font: normal normal 400 1.2rem/1.5rem 'Montserrat';
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+@media (max-width: 700px) {
+    .breadcrumbs, .o-boggat-slogan {
+        display: none;
+    }
 }
