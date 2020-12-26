@@ -4,6 +4,7 @@ import "./owl.carousel.min";
 $(document).ready(function () {
     $('#customers-testimonials').owlCarousel({
         nav: true,
+        pagination: false,
         navText: [
             '<img src="/assets/images/prev.svg" alt="left">', '<img src="/assets/images/next.svg" alt="right">'
         ],
@@ -13,16 +14,25 @@ $(document).ready(function () {
             300: {
                 // Количество элементов 1
                 items: 1,
+                pagination: true,
+                nav: false,
             },
-            // Ширина от 500 пикселей
-            500: {
+            // Ширина от 768 пикселей
+            768: {
                 // Количество элементов 2
                 items: 2,
+                pagination: true,
+                nav: false,
             },
-            // Ширина от 800 пикселей
-            800: {
+            991: {
+                nav: true,
+                pagination: false,
+            },
+            // Ширина от 1148 пикселей
+            1148: {
                 // Количество элементов 3
                 items: 3,
+                
             }
         }
     });
@@ -36,18 +46,23 @@ $(document).ready(function () {
             ],
             // Адаптация
             responsive: {
-                                // Ширина от 300 пикселей
-                                300: {
-                                    // Количество элементов 1
-                                    items: 1,
-                                },
+                // Ширина от 300 пикселей
+                300: {
+                    // Количество элементов 1
+                    items: 1,
+                    nav: false,
+                },
                 // Ширина от 500 пикселей
-                500: {
+                768: {
                     // Количество элементов 2
                     items: 2,
+                    nav: false,
+                },
+                991: {
+                    nav: true,
                 },
                 // Ширина от 800 пикселей
-                800: {
+                1148: {
                     // Количество элементов 3
                     items: 3,
                 }

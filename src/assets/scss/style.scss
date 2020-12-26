@@ -46,7 +46,6 @@ h2 {
 h3 {
     font: normal normal bold 1.8rem/143% 'Montserrat';
     color: #333;
-    padding: 0 3rem;
 
     @include breakpoint($tabletV_bp) {
         font: normal normal bold 1.4rem/120% 'Montserrat';
@@ -82,6 +81,17 @@ a {
     }
 }
 
+input:focus,
+button:focus {
+    outline: none;
+}
+
+label, 
+input {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     max-width: 142rem;
     @include breakpoint($mobile_menu_bp) {
@@ -103,6 +113,34 @@ a {
     
     .arrow-left img {
         transform: rotateY(180deg);
+    }
+}
+
+.show-all {
+    display: none;
+    font: normal normal 500 1.6rem/150% 'Montserrat';
+    color: rgba(51, 51, 51, 0.5);
+    padding-right: 2.8rem;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+
+    @include breakpoint($tabletV_bp) {
+        display: block;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 1.6rem;
+        height: 0.8rem;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        background-image: url(/assets/images/icons/arrow-show.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
     }
 }
 

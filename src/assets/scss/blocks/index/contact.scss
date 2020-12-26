@@ -4,64 +4,53 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    display: flex;
-    align-items: center;
+
+    @include breakpoint($tabletV_bp) {
+        background-image: none;
+        justify-content: center;
+        height: auto;
+    }
 
     .contact-heading {
-        font-family: Open Sans Condensed;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 50px;
-        line-height: 150%;
+        font: normal normal bold 5rem/150% 'Open Sans Condensed';
         color: $primary;
-        padding-top: 12rem;
-        letter-spacing: 1px;
+        padding-top: 17.2rem;
+        letter-spacing: 0.02em;
+
+        @include breakpoint($tabletV_bp) {
+            font: normal normal bold 4rem/120% 'Open Sans Condensed';
+            text-align: center;
+            padding-top: 0;
+        }
+
+        @include breakpoint($mobile_bp) {
+            font: normal normal bold 2rem/120% 'Open Sans Condensed';
+        }
     }
 
     .call-bottom-form {
-
         .form-wrapper {
-            justify-content: flex-start;
-            margin: 0;
+            margin-left: 8rem;
+
+            @include breakpoint($tabletV_bp) {
+                justify-content: center;
+                margin: auto;
+            }
         }
 
         .cta-call {
             margin-top: 5rem;
             margin-bottom: 2.5rem;
             padding: 1.6rem 5rem;
+
+            @include breakpoint($tabletV_bp) {
+                font-size: 16px;
+                line-height: 20px;
+            }
         }
 
         .form-item-label {
             margin-top: 0;
-        }
-    }
-}
-
-@media (max-width: 1080px) {
-    .contact {
-        background-image: none;
-        justify-content: center;
-        height: auto;
-
-        .contact-heading {
-            text-align: center;
-            font-weight: bold;
-            font-size: 20px;
-            line-height: 120%;
-            padding-top: 0;
-        }
-
-        .call-bottom-form {
-
-            .form-wrapper {
-                justify-content: center;
-                margin: auto;
-            }
-
-            .cta-call {
-                font-size: 16px;
-                line-height: 20px;
-            }
         }
     }
 }

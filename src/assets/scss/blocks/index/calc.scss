@@ -1,15 +1,18 @@
 .calc {
     padding: 15rem 0;
+
+    @include breakpoint(854px) {
+        padding: 3rem 0 6rem;
+    }
 }
 
 .calc-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-}
+    display: flex;
+    justify-content: center;
 
-.calc-padding,
-.calc-gap {
-    display: none;
+    @include breakpoint(854px) {
+        flex-direction: column;
+    }
 }
 
 .calc-column {
@@ -19,27 +22,54 @@
     .section-heading {
         letter-spacing: 0.02em;
         margin-bottom: 5rem;
+        text-align: left;
+        padding-top: 0;
+
+        @include breakpoint(854px) {
+            text-align: center;
+        }
+
+        @include breakpoint($mobile_bp) {
+            margin-bottom: 4rem;
+        }
     }
 
     .section-sub-heading {
-        margin-bottom: 5.2rem;
+        margin-bottom: 5rem;
+
+        @include breakpoint(854px) {
+            text-align: center;
+        }
+
+        @include breakpoint($mobile_bp) {
+            margin-bottom: 3rem;
+        }
     }
 
     &--left {
+        margin: 0 4rem;
+
+        @include breakpoint($mobile_menu_bp) {
+            margin: 0 2rem;
+        }
+
+        @include breakpoint(854px) {
+            margin: 0;
+        }
+
         .calc-form {
             display: flex;
             flex-direction: column;
-            padding-right: 6.3rem;
             margin-bottom: 2rem;
 
+            @include breakpoint($mobile_bp) {
+                margin-bottom: 3rem;
+            }
+
             label {
+                font: normal normal normal 1.8rem/130.2% 'Montserrat';
                 display: block;
                 position: relative;
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 130.2%;
                 user-select: none;
             }
             
@@ -55,10 +85,20 @@
                 height: 2.4rem;
                 overflow: hidden;
                 background: url(/assets/images/icons/thumb.svg) center center no-repeat;
+
+                @include breakpoint($mobile_bp) {
+                    width: 4rem;
+                    height: 4rem;
+                    background: url(/assets/images/icons/thumb-mobile.svg) center center no-repeat;
+                }
             }
 
             input[type=radio]:checked + label:before {
                 background-image: url(/assets/images/icons/thumb-checked.svg);
+
+                @include breakpoint($mobile_bp) {
+                    background-image: url(/assets/images/icons/thumb-mobile-checked.svg);
+                }
             }
 
             .range_container{
@@ -66,9 +106,13 @@
                 width: 100%; /*input range width*/
                 height: 1rem; /*input range height*/
                 margin-bottom: 5rem;
+
+                @include breakpoint($mobile_bp) {
+                    display: none;
+                }
             }
             
-            input[type='range'] {
+            input[type=range] {
                 position: absolute;
                 width: 100%;
                 height: 0.2rem;
@@ -78,7 +122,7 @@
                 left: -2px;
             }
                 
-            input[type='range']::-webkit-slider-thumb {
+            input[type=range]::-webkit-slider-thumb {
                 width: 2rem;
                 height: 2.4rem;
                 margin-top: 0.5rem;
@@ -87,7 +131,7 @@
                 background: url(/assets/images/icons/thumb.svg) center center no-repeat;
             }
             
-            input[type="range"]::-moz-range-track {  
+            input[type=range]::-moz-range-track {  
                 background-color: #1D2B6B;
             }
 
@@ -98,6 +142,10 @@
                 position: relative;
                 margin-bottom: 4.2rem;
 
+                @include breakpoint($mobile_bp) {
+                    margin-bottom: 3rem;
+                }
+
                 .term-line {
                     position: absolute;
                     top: 0.5rem;
@@ -105,27 +153,41 @@
                     border-bottom: 3px solid #1D2B6B;;
                     width: 99%;
                     z-index: -100;
+
+                    @include breakpoint($mobile_bp) {
+                        display: none;
+                    }
                 }
 
                 label {
-                    padding-top: 1.5rem;
+                    padding-top: 2rem;
                     width: 2rem;
                     text-align: center;
                     cursor: pointer;
+
+                    @include breakpoint($mobile_bp) {
+                        font: normal normal 500 1.4rem/130.2% 'Montserrat';
+                        padding-top: 3.5rem;
+                    }
                 }
 
                 input[type=radio] + label:before {
                     top: -0.3rem;
                     left: 0;
+
+                    @include breakpoint($mobile_bp) {
+                        left: -0.9rem;
+                    }
                 }
             }
 
             .input-label {
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 1.8rem;
-                line-height: 130.2%;
+                font: normal normal bold 1.8rem/130.2% 'Montserrat';
+                margin-bottom: 3rem;
+
+                @include breakpoint($mobile_bp) {
+                    font: normal normal 600 1.6rem/130.2% 'Montserrat';
+                }
             }
 
             .input-wrapper-horizontal {
@@ -137,16 +199,34 @@
                 position: relative;
 
                 label {
-                    font-weight: bold;
+                    font: normal normal bold 1.8rem/130.2% 'Montserrat';
+                }
+
+                @include breakpoint($mobile_bp) {
+                    flex-direction: column;
+                    text-align: left;
+
+                    .input-label-horizontal {
+                        font: normal normal 600 1.6rem/130.2% 'Montserrat';
+                        margin-bottom: 3rem;
+                        align-self: flex-start;
+                    }
                 }
             }
 
             .input-horizontal {
+                font: normal normal 500 1.6rem/130.2% 'Montserrat';
                 max-width: 16.8rem;
                 border: 2px solid #1D2B6B;
                 box-sizing: border-box;
                 border-radius: 10px;
                 padding: 0.3rem;
+
+                @include breakpoint($mobile_bp) {
+                    padding: 1.2rem 6.7rem;
+                    border: 1px solid #1D2B6B;
+                    max-width: 21.6rem;
+                }
             }
 
             .pen-btn {
@@ -156,12 +236,12 @@
                 right: 1.3rem;
                 cursor: pointer;
                 background: url(/assets/images/icons/pencil.svg) center center no-repeat;
+                
+                @include breakpoint($mobile_bp) {
+                    display: none;
+                }
             }
             
-            .input-label {
-                margin-bottom: 3rem;
-            }
-
             .input-range {
                 margin-bottom: 3rem;
                 cursor: pointer;
@@ -179,6 +259,10 @@
                     color: #333;
                     padding-left: 3.1rem;
                     cursor: pointer;
+
+                    @include breakpoint($mobile_bp) {
+                        padding-left: 6.1rem;
+                    }
                 }
 
                 input[type=radio] + label:before {
@@ -192,6 +276,18 @@
                 justify-content: space-between;
                 margin-top: 1.3rem;
             }
+
+            .mobile-text {
+                display: none;
+                font: normal normal 500 1.4rem/130.2% 'Montserrat';
+                color: rgba(51, 51, 51, 0.8);
+                margin-top: 1.5rem;
+                align-self: flex-start;
+
+                @include breakpoint($mobile_bp) {
+                    display: block;
+                }
+            }
         }
     }
 
@@ -199,9 +295,27 @@
         background-color: #1D2B6B;
         color: #FFFFFF;
         border-radius: 10px;
-        max-width: auto;
         width: 100%;
+        max-width: 42rem;
         padding: 7.5rem 6rem 7rem 6rem;
+        margin: 0 4rem;
+
+        @include breakpoint($mobile_menu_bp) {
+            margin: 0 2rem;
+        }
+
+        @include breakpoint($tabletV_bp) {
+            max-width: 40rem;
+        }
+
+        @include breakpoint(854px) {
+            max-width: none;
+            margin: 0;
+        }
+
+        @include breakpoint($mobile_bp) {
+            padding: 5rem 2.8rem 5.5rem 2.7rem;
+        }
 
         .calc-column-heading {
             display: block;
@@ -209,20 +323,29 @@
             color: #333;
             color: #FFFFFF;
             margin-bottom: 2.1rem;
+
+            @include breakpoint($mobile_bp) {
+                text-align: center;
+            }
         }
-                
 
         .total-big {
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 35px;
-            line-height: 43px;
+            font: normal normal 600 3.5rem/4.3rem 'Montserrat';
             margin-bottom: 1.8rem;
+
+            @include breakpoint($mobile_bp) {
+                text-align: center;
+                font: normal normal 600 2rem/2.4rem 'Montserrat';
+                margin-bottom: 2rem;
+            }
         }
 
         .form-item {
             margin-bottom: 4rem;
+            @include breakpoint($mobile_bp) {
+                font: normal normal 500 1.6rem/2rem 'Montserrat';
+                margin-bottom: 2rem;
+            }
         }
 
         .item-value {
@@ -233,6 +356,12 @@
             max-width: 12.3rem;
             width: 100%;
             text-align: center;
+
+            @include breakpoint($mobile_bp) {
+                max-width: 8.3rem;
+                margin-left: 0;
+                margin-right: 0;
+            }
         }
 
         .form-button {
@@ -244,96 +373,43 @@
             max-width: 29.7rem;
             width: 100%;
             text-align: center;
+            align-self: center;
             filter: drop-shadow(0px 3px 10px rgba(255, 255, 255, 0.4));
 
+            @include breakpoint($mobile_bp) {
+                padding: 1.2rem 4.3rem;
+                margin-bottom: 0;
+            }
+
             .form-button-top {
+                font: normal normal 600 2rem/2.4rem 'Montserrat';
                 display: block;
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 20px;
-                line-height: 24px;
                 margin-bottom: 0.5rem;
+
+                @include breakpoint($mobile_bp) {
+                    font: normal normal 600 1.6rem/2rem 'Montserrat';
+                    margin-bottom: 0;
+                }
             }
 
             .form-button-bottom {
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 35px;
-                line-height: 43px;
+                font: normal normal 600 3.5rem/43px 'Montserrat';
+
+                @include breakpoint($mobile_bp) {
+                    display: none;
+                }
             }
         }
 
         .start-text {
+            font: normal normal 500 1.3rem/120% 'Montserrat';
             display: flex;
             align-items: center;
             text-align: justify;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 13px;
-            line-height: 120%;
-        }
-    }
-}
 
-@media (max-width: 780px) {
-    .calc {
-        padding: 6rem 0;
-
-        .section-heading {
-            font-size: 20px;
-            line-height: 130.2%;
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-        .calc-form {
-            padding-right: 0;
-
-            .input-wrapper-horizontal {
-                flex-direction: column;
-
-                .pen-btn {
-                    display: none;
-                }
-            }
-    
-            .range_container {
+            @include breakpoint($mobile_bp) {
                 display: none;
             }
         }
-
-        .section-sub-heading {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 120%;
-            text-align: center;
-        }
     }
 }
-
-@media (min-width: 1145px) {
-    .calc-wrapper {
-        grid-template-columns: 11rem 48fr 6rem 42fr 8rem;
-    }
-
-    .calc-padding,
-    .calc-gap {
-        display: block;
-    }
-
-    .calc-column {
-        &--right {
-            max-width: 42rem;
-        }
-    }  
-}
-
-@media (min-width: 1460px) {
-    .calc-wrapper {
-        grid-template-columns: 21rem 48fr 6rem 42fr 18rem;
-    }
-}
-
-
