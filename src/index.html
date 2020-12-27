@@ -58,8 +58,10 @@ title: Боггат | Главная
                 </div>
             </div>
         </div>
+        
+        <div class="show-all">Показать всё</div>
 
-        <div class="call-form">
+        <div class="call-form" id="call-form-index-top">
             <form class="form-wrapper" action="/" method="POST">
                 <input class="form-item" type="text" placeholder="Ваше имя" name="name" id="name">
                 <input class="form-item" type="text" placeholder="+7 (___)___-__-__" name="phone" id="phone">
@@ -67,12 +69,12 @@ title: Боггат | Главная
                 <label class="form-item-label" for="agree">
                     Я даю своё согласие на обработку персональных данных
                 </label>
-                <button class="cta-call cta-button-dark" type="submit">
+                <button id="cta-call-form-index-top" class="cta-call cta-button-dark" type="submit">
                     Заказать звонок
                 </button>
             </form>
         </div>
-<!--    <button class="cta-show-call-form cta-button-dark">
+        <!-- <button class="cta-show-call-form cta-button-dark">
             Заказать звонок
         </button> -->
     </div>
@@ -161,15 +163,15 @@ title: Боггат | Главная
 <section class="calc" id="calc">
     <div class="container">
         <div class="calc-wrapper">
-            <div class="calc-padding"></div>
             <div class="calc-column calc-column--left">
                 <h2 class="section-heading">Хотите начать инвестировать?</h2>
                 <h3 class="section-sub-heading">Рассчитайте доходность ваших сбережений </h3>
-                <form class="calc-form" action="/" method="POST">
+                <form class="calc-form" action="/" method="">
                     <div class="input-wrapper-horizontal">
                         <label class="input-label-horizontal" for="input-sum">Сумма вложения (рубли)</label>
                         <input class="input-horizontal" type="text" name="input-sum" id="input-sum">
                         <span class="pen-btn"></span>
+                        <div class="mobile-text">*Максимальная сумма 3 000 000</div>
                     </div>
                     <div class="range_container">
                         <input class="input-range" type="range" name="input-sum-range" id="input-sum-range" value="0"
@@ -205,6 +207,7 @@ title: Боггат | Главная
                         <label class="input-label-horizontal" for="input-repl">Ежемесячное пополнение</label>
                         <input class="input-horizontal" type="text" name="input-repl" id="input-repl">
                         <span class="pen-btn"></span>
+                        <div class="mobile-text">*Максимальная сумма 600 000</div>
                     </div>
                     <div class="range_container">
                         <input class="input-range" type="range" name="input-repl-range" id="input-repl-range" value="0"
@@ -228,7 +231,6 @@ title: Боггат | Главная
                     </div>
                 </form>
             </div>
-            <div class="calc-gap"></div>
             <div class="calc-column calc-column--right">
                 <h3 class="calc-column-heading">Вы получите</h3>
                 <div class="total-big">0 ₽</div>
@@ -260,7 +262,6 @@ title: Боггат | Главная
                     * Пример расчета процентов носит информационный характер и не является публичной афертой
                 </div>
             </div>
-            <div class="calc-padding"></div>
         </div>
     </div>
 </section>
@@ -344,8 +345,8 @@ title: Боггат | Главная
 <!-- Contact Section-->
 <section class="contact" id="contact">
     <div class="container">
-        <h3 class="contact-heading">Оставьте заявку на <br>
-            бесплатную консультацию</h3>
+        <h2 class="contact-heading">Оставьте заявку на <br>
+            бесплатную консультацию</h2>
         <div class="call-bottom-form">
             <form class="form-wrapper" action="/" method="POST">
                 <input class="form-item" type="text" placeholder="Ваше имя" name="name" id="name-bottom">

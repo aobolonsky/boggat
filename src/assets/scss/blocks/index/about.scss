@@ -1,6 +1,16 @@
 .about {
     padding: 15rem 0;
 
+    @include breakpoint($mobile_menu_bp) {
+        padding: 6rem 0 3rem;
+    }
+
+    @include breakpoint($tabletV_bp) {
+        .call-form {
+            display: none;
+        }
+    }
+
     .container {
         display: flex;
         flex-direction: column;
@@ -9,7 +19,7 @@
     }
 
     .section-heading {
-        margin-bottom: 7rem;
+        padding-top: 0;
     }
 
     .cta-about {
@@ -21,28 +31,65 @@
 .about-items {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 11rem;
+
+    @include breakpoint($mobile_menu_bp) {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
 
     .about-item {
         display: flex;
         align-items: center;
 
+        @include breakpoint($mobile_menu_bp) {
+            justify-content: flex-end;
+            margin-bottom: 3rem;
+        }
+
         .about-item-text {
             font: normal normal 500 1.8rem/2.7rem 'Montserrat';
+
+            @include breakpoint($mobile_bp) {
+                font: normal normal 500 1.6rem/2rem 'Montserrat';
+            }
         }
 
         .about-item-icon img {
-            max-width: 75px;
-            max-height: 75px;
+            max-width: 7.5rem;
+            max-height: 7.5rem;
+
+            @include breakpoint($mobile_bp) {
+                max-width: 3rem;
+                max-height: 3rem;
+            }
         }
     
         &--left {
             flex-direction: row;
 
+            @include breakpoint($mobile_menu_bp) {
+                flex-direction: row-reverse;
+            }
+
             .about-item-text {
                 text-align: right;
+
+                @include breakpoint($mobile_menu_bp) {
+                    text-align: left;
+                }
             }
             .about-item-icon {
                 margin: 3rem 2rem 3rem 4rem;
+
+                @include breakpoint($mobile_menu_bp) {
+                    margin: 0 2rem 0 0;
+                }
+
+                @include breakpoint($mobile_bp) {
+                    margin: 0 1.2rem 0 0;
+                }
             }
         }
         &--right {
@@ -52,42 +99,16 @@
                 text-align: left;
             }
             .about-item-icon {
-                margin: 3rem 4rem 30px 2rem;
-            }
-        }     
-    }
-}
+                margin: 3rem 4rem 3rem 2rem;
 
-@media (max-width: 1080px) {
-    .about {
-        padding: 6rem 0;
-        
-        .section-heading {
-            margin-bottom: 4rem;
-            text-align: center;
-        }
-    
-        .call-form {
-            display: none;
-        }
-
-        .about-items {
-            display: flex;
-            flex-direction: column;
-
-            .about-item {
-                &--left {
-                    flex-direction: row-reverse;
-
-                    .about-item-text {
-                        text-align: left;
-                    }
-
-                    .about-item-icon {
-                        margin: 3rem 4rem 30px 2rem;
-                    }
+                @include breakpoint($mobile_menu_bp) {
+                    margin: 0 2rem 0 0;
+                }
+                
+                @include breakpoint($mobile_bp) {
+                    margin: 0 1.2rem 0 0;
                 }
             }
-        }
+        }     
     }
 }

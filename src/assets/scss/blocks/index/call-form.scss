@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 12rem;
+    margin-top: 3rem;
     max-width: 71.2rem;
     width: 100%;
     background-color: #F0F0F0;
@@ -77,16 +77,15 @@
 }
 
 .cta-show-call-form {
-    margin: 0 auto;
-    margin-top: 11rem;
+    margin: 3rem auto;
     padding: 1.7rem 6.7rem;
+
+    @include breakpoint($tabletV_bp) {
+        display: none;
+    }
 
     &:hover {
         color: #fff;
         background-color: #04388F;
     }
-}
-
-@media (max-width: 1080px) {
-    
 }

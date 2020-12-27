@@ -1,16 +1,24 @@
 .section-heading {
-    font-size: 2rem;
-    line-height: 130%;
     color: $primary;
-    margin-bottom: 4rem;
+    font: normal normal 700 3.5rem/4.2rem 'Open Sans Condensed';
+    margin-bottom: 10rem;
+    text-align: center;
 
-    @media (min-width: 1140px) {
-        font: normal normal 700 3.5rem/4.2rem 'Open Sans Condensed';
-        margin-bottom: 11.3rem;
+    @include breakpoint($mobile_menu_bp) {
+        margin-bottom: 4rem;
+    }
+
+    @include breakpoint($mobile_bp) {
+        font: normal normal 700 2rem/130% 'Open Sans Condensed';
     }
 }
 
 .section-sub-heading {
-    font: normal normal 500 2rem/2.6rem 'Montserrat';
+    font: normal normal 500 2rem/130.2% 'Montserrat';
+    padding: 0;
     color: #333;
+
+    @include breakpoint($mobile_bp) {
+        font: normal normal 500 1.6rem/120% 'Montserrat';
+    }
 }
