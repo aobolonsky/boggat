@@ -1,9 +1,19 @@
+h1 {
+    @include breakpoint($mobile_menu_bp) {
+        margin-left: 2.9rem;
+    }
+}
 .zaym-advantages {
     padding: 12rem 0;
     text-align: center;
     h2 {
         margin-bottom: 10rem;
     }
+}
+.advantage-list{
+@include breakpoint($mobile_menu_bp) {
+    display: none;
+}
 }
 
 .advantages-wrapper {
@@ -49,13 +59,35 @@
     }
 }
 
+.container-blocks{
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .blocks-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "bi1 bt1 bi2 bt2"
+        "bt3 bi3 bt4 bi4"
+         ;
+    @include breakpoint($mobile_menu_bp) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "bi1 bt1"
+        "bt2 bi2"
+        "bi3 bt3"
+        "bt4 bi4"
+         ;
+    }
 
     > div {
         min-width: 31.5rem;
         height: 31.5rem;
+        @include breakpoint($mobile_menu_bp) {
+        min-width: 18rem;
+        height: 18rem;
+        }
     }
 
     .background-mask {
@@ -72,15 +104,19 @@
         background-size: cover;
 
         &-1 {
+            grid-area: bi1;
             background-image: url(/assets/images/blockImg1.png);
         }
         &-2 {
+            grid-area: bi2;
             background-image: url(/assets/images/blockImg2.png);
         }
         &-3 {
+            grid-area: bi3;
             background-image: url(/assets/images/blockImg3.png);
         }
         &-4 {
+            grid-area: bi4;
             background-image: url(/assets/images/blockImg4.png);
         }
     }
@@ -91,6 +127,31 @@
         justify-content: center;
         align-items: center;
     }
+    .block-text1 {
+        grid-area: bt1;
+    }
+    .block-text2 {
+        grid-area: bt2;
+    }
+    .block-text3 {
+        grid-area: bt3;
+    }
+    .block-text4 {
+        grid-area: bt4;
+    }
+
+    .text.text-short{
+        display: none;
+        @include breakpoint($mobile_menu_bp) {
+            display: block;
+        }
+    }
+    .text.text-full{
+        display: block;
+        @include breakpoint($mobile_menu_bp) {
+            display: none;
+        }
+    }
 
     .text {
         font-family: Montserrat;
@@ -100,6 +161,9 @@
         line-height: 150%;
         color: #1D2B6B;
         padding: 5.5rem 3.2rem;
+        @include breakpoint($mobile_menu_bp) {
+            font-size: 14px;
+        }
     }
 
     .text-white {
