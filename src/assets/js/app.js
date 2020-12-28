@@ -10,7 +10,6 @@ $(document).ready(function () {
         ],
         // Адаптация
         responsive: {
-            // Ширина от 300 пикселей
             300: {
                 // Количество элементов 1
                 items: 1,
@@ -18,7 +17,6 @@ $(document).ready(function () {
                 nav: false,
                 margin: 2,
             },
-            // Ширина от 768 пикселей
             768: {
                 // Количество элементов 2
                 items: 2,
@@ -29,7 +27,6 @@ $(document).ready(function () {
                 nav: true,
                 pagination: false,
             },
-            // Ширина от 1148 пикселей
             1148: {
                 // Количество элементов 3
                 items: 3,
@@ -47,14 +44,12 @@ $(document).ready(function () {
             ],
             // Адаптация
             responsive: {
-                // Ширина от 300 пикселей
                 300: {
                     // Количество элементов 1
                     items: 1,
                     margin: 3,
                     //nav: false,
                 },
-                // Ширина от 500 пикселей
                 768: {
                     // Количество элементов 2
                     items: 2,
@@ -63,13 +58,29 @@ $(document).ready(function () {
                 991: {
                     nav: true,
                 },
-                // Ширина от 800 пикселей
                 1148: {
                     // Количество элементов 3
                     items: 3,
                 }
             }
         });
+    });
+
+    $('#advantages-slider').owlCarousel({
+        responsive: {
+            300: {
+                items: 1,
+                pagination: true,
+            },
+            991: {
+                items: 3,
+                pagination: true,
+            },
+            1245: {
+                items: 4,
+                pagination: false,
+            }
+        }
     });
 
     $('.burger').on('click', () => {

@@ -6,7 +6,7 @@ title: Боггат | Займ потребительский
 <div class="page-wrapper">
     <section class="saving-title">
         <div class="title-container title-container--gp">
-            <div class="background-mask-light">
+            <div class="background-mask background-mask--light">
                 <div class="breadcrumbs">Займы / Займ под залог недвижимости</div>
                 <h1>Займ по программе <br> «Господдержка 450 000 рублей»</h1>
 
@@ -75,7 +75,21 @@ title: Боггат | Займ потребительский
                 </div>
                 <div class="row">
                     <div class="goverment-list-item">
-                        <button class="cta-button-dark">Оставить заявку на займ</button>
+                        <button class="cta-button-dark mobile-hide">Оставить заявку на займ</button>
+                        <div class="call-bottom-form mobile-show">
+                            <form class="form-wrapper" action="/" method="POST">
+                                <input class="form-item" type="text" placeholder="Ваше имя" name="name" id="name-bottom">
+                                <input class="form-item" type="text" placeholder="+7 (___)___-__-__" name="phone" id="phone-bottom">
+                                
+                                <button class="cta-call cta-button-dark" type="submit">
+                                    Оставить заявку
+                                </button>
+                                <input class="form-item-input" type="checkbox" name="agree" id="agree-bottom">
+                                <label class="form-item-label" for="agree-bottom">
+                                    Я даю своё согласие на обработку персональных данных
+                                </label>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

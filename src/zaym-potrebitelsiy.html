@@ -3,10 +3,10 @@ layout: secondary
 title: Боггат | Займ потребительский
 ---
 
-<div class="page-wrapper">
-    <section class="saving-title">
+<div class="page-wrapper pb15">
+    <section class="saving-title mb800">
         <div class="title-container title-container--pt">
-            <div class="background-mask-light">
+            <div class="background-mask background-mask--light">
                 <div class="breadcrumbs">Займы / Займ потребительский</div>
                 <h1>Займ потребительский</h1>
 
@@ -22,7 +22,7 @@ title: Боггат | Займ потребительский
     <section class="container dark-container">
         <div class="container special">
             <h2>Преимущества в Боггат</h2>
-            <ul class="advantages-wrapper">
+            <ul id="advantages-slider" class="advantages-wrapper owl-carousel">
                 <li>
                     <div class="advantages-image-check">
                         <img src="/assets/images/icons/check.svg" alt="check">
@@ -53,6 +53,20 @@ title: Боггат | Займ потребительский
                 </li>
             </ul>
         </div>
-        <button class="cta-button-dark">Оставить заявку на займ</button>
+        <button class="cta-button-dark cta-button-dark--center cta-button-dark">Оставить заявку на займ</button>
     </section>
+    <div class="call-bottom-form mobile-show">
+        <form class="form-wrapper" action="/" method="POST">
+            <input class="form-item" type="text" placeholder="Ваше имя" name="name" id="name-bottom">
+            <input class="form-item" type="text" placeholder="+7 (___)___-__-__" name="phone" id="phone-bottom">
+            
+            <button class="cta-call cta-button-dark" type="submit">
+                Оставить заявку
+            </button>
+            <input class="form-item-input" type="checkbox" name="agree" id="agree-bottom">
+            <label class="form-item-label" for="agree-bottom">
+                Я даю своё согласие на обработку персональных данных
+            </label>
+        </form>
+    </div>
 </div>

@@ -22,3 +22,19 @@
         font: normal normal 500 1.6rem/120% 'Montserrat';
     }
 }
+
+.pt15 {
+    padding-top: 15rem;
+
+    @include breakpoint($tabletV_bp) {
+        padding-top: 6rem;
+    }
+}
+
+.pb15 {
+    padding-bottom: 15rem;
+
+    @include breakpoint($tabletV_bp) {
+        padding-bottom: 6rem;
+    }
+}

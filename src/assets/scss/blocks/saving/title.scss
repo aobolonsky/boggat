@@ -1,118 +1,135 @@
 .saving-title {
     display: flex;
-    background-color: #EBEBEB;
+    background-color: rgba(235, 235, 235, 0.52);
     min-height: 350px;
-    height: auto;
+    height: 70.8rem;
+
+    @include breakpoint(1298px) {
+        height: auto;
+    }
 
     .title-image {
         height: 100%;
+        margin-left: auto;
     }
 
     .title-image img {
-        display: none;
+        display: block;
+        height: auto;
 
-        @media (min-width: 1298px) {
-            display: block;
-            height: auto;
+        @include breakpoint(1298px) {
+            display: none;
         }
     }
 
     .title-container {
-        margin-left: 0;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        margin-left: 8em;
+        margin-right: 15em;
+        background: none;
 
-        &--bp {
-            background-image: url(/assets/images/saving-title-1.png);
-        }
-
-        &--gp {
-            background-image: url(/assets/images/zaym-gospoddergka.png);
-        }
-
-        &--mk {
-            background-image: url(/assets/images/materinskiy-kapital.png);
-        }
-
-        &--pz {
-            background-image: url(/assets/images/zaym-pod-zalog.png);
-        }
-
-        &--pt {
-            background-image: url(/assets/images/zaym-potrebitelskiy.png);
-        }
-
-        &--rsk {
-            background-image: url(/assets/images/zaym-rsk.png);
-        }
-
-        &--zp {
-            background-image: url(/assets/images/saving-title-2.png);
-        }
-
-        @media (min-width: 1298px) {
-            margin-left: 0;
-            margin-right: 2em;
-            background: none;
-        }
-
-        @media (min-width: 1460px) {
+        @include breakpoint(1660px) {
             margin-left: 4em;
             margin-right: 8em;
         }
 
-        @media (min-width: 1660px) {
-            margin-left: 8em;
-            margin-right: 15em;
+        @include breakpoint(1460px) {
+            margin-left: 3rem;
+            margin-right: 2em;
         }
-    }
 
-    @media (min-width: 1298px) {
-        height: 70.8rem;
+        @include breakpoint(1298px) {
+            margin-left: 0;
+            margin-right: 0;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            &--bp {
+                background-image: url(/assets/images/saving-title-1.png);
+            }
+    
+            &--gp {
+                background-image: url(/assets/images/zaym-gospoddergka.png);
+            }
+    
+            &--mk {
+                background-image: url(/assets/images/materinskiy-kapital.png);
+            }
+    
+            &--pz {
+                background-image: url(/assets/images/zaym-pod-zalog.png);
+            }
+    
+            &--pt {
+                background-image: url(/assets/images/zaym-potrebitelskiy.png);
+            }
+    
+            &--rsk {
+                background-image: url(/assets/images/zaym-rsk.png);
+            }
+    
+            &--zp {
+                background-image: url(/assets/images/saving-title-2.png);
+            }
+
+            h1 {
+                padding-left: 3rem;
+            }
+        }
     }
 }
 
-.background-mask-light {
+.background-mask {
     width: 100%;
     height: 100%;
-    background: rgba(235, 235, 235, 0.8);
+
+    &--light {
+        @include breakpoint(1298px) {
+            background: rgba(235, 235, 235, 0.8);
+        }
+    }
+
+    &--dark {
+        background: rgba(255, 255, 255, 0.92);
+    }
 }
 
 .saving-decription {
-    margin-top: 4rem;
-    margin-bottom: 3.1rem;
-    padding: 0 3rem;
+    margin-top: 6.1rem;
+    margin-bottom: 6.1rem;
+    max-width: 69.5rem;
+    width: 100%;
+
+    @include breakpoint(1298px) {
+        margin-top: 4rem;
+        padding: 0 3rem;
+        max-width: none;
+    }
 
     p {
-        font-weight: 500;
-        font-size: 1.6rem;
-        line-height: 120%;
+        font: normal normal 500 2rem/150% 'Montserrat';
+        text-indent: 0;
+
+        @include breakpoint(1298px) {
+            font: normal normal 500 1.6rem/120% 'Montserrat';
+            margin-top: 4rem;
+            text-indent: 2rem;
+        }
     }
 
     &--pensioner {
-        display: none;
+        display: block;
         margin-top: 10rem;
 
+        @include breakpoint(1298px) {
+            display: none;
+        }
+
         &_mobile {
-            display: block;
-        }
-    }
+            display: none;
 
-    @media (min-width: 1298px) {
-        margin-top: 6.1rem;
-
-        p {
-            font-weight: 500;
-            font-size: 2rem;
-            line-height: 150%;
-        }
-
-        &--pensioner {
-            display: block;
-    
-            &_mobile {
-                display: none;
+            @include breakpoint(1298px) {
+                display: block;
             }
         }
     }

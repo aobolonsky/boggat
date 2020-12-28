@@ -37,6 +37,22 @@
     .owl-carousel .owl-next {
         right: -1rem;
     }
+
+    .owl-dots {
+        margin-top: 3rem;
+        text-align: center;
+        .owl-dot {
+            height: 1rem;
+            width: 1rem;
+            background: rgba(51, 51, 51, 0.5);
+            border-radius: 50%;
+            margin: 0 0.5rem;
+    
+            &.active {
+                background: #1D2B6B;
+            }
+        }
+    }
 }
 
 .news-heading {

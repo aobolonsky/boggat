@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Open+Sans+Condensed:wght@700&display=swap');
 @import "vendor/owl.carousel.min";
 @import "vendor/owl.theme.default";
 @import "vars";
@@ -105,7 +105,11 @@ input {
     color: $primary;
     padding-top: 5rem;
 
-    @include breakpoint($mobile_bp) {
+    @include breakpoint(1299px) {
+        padding-left: 3rem;
+    }
+
+    @include breakpoint($tabletV_bp) {
         display: none;
     }
 }
@@ -176,4 +180,6 @@ input {
 @import "blocks/zaymi/zaym-potrebitelsiy.scss";
 @import "blocks/zaymi/zaym-gospoddergka.scss";
 @import "blocks/zaymi/zaym-rsk.scss";
+@import "blocks/zaymi/zaym-pod-zalog.scss";
 @import "blocks/footer";
+@import "blocks/mobile.scss";

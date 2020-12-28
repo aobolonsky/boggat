@@ -1,0 +1,214 @@
+.items-list-horizontal {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    max-width: 94rem;
+    width: 100%;
+    margin: 0 auto;
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-bottom: 5rem;
+        position: relative;
+    }
+
+    .list-icon {
+        position: absolute;
+        top: 0.5rem;
+    }
+
+    .list-icon-text {
+        position: absolute;
+        font: normal normal 900 8rem/90% 'Montserrat';
+        color: $primary;
+        max-width: 4rem;
+        width: 100%;
+        text-align: right;
+
+        &+.list-title {
+            margin-left: 9rem;
+
+            @include breakpoint($tabletV_bp) {
+                margin-left: 7rem;
+            }
+        }
+
+        &+.list-title+.list-text {
+            margin-left: 9rem;
+
+            @include breakpoint($tabletV_bp) {
+                margin-left: 0rem;
+            }
+        }
+
+        @include breakpoint($mobile_bp) {
+            font: normal normal 900 7rem/90% 'Montserrat';
+            margin-right: 3rem;
+        }
+    }
+
+    .list-title {
+        font: normal normal 600 1.8rem/150% 'Montserrat';
+        color: #333;
+        margin-bottom: 2.5rem;
+        margin-left: 7rem;
+
+        @include breakpoint($mobile_bp) {
+            font: normal normal 600 1.6rem/120% 'Montserrat';
+        }
+    }
+
+    .list-text {
+        font: normal normal 500 1.8rem/150% 'Montserrat';
+        color: #333;
+        margin-left: 7rem;
+
+        @include breakpoint($tabletV_bp) {
+            margin-left: 0rem;
+        }
+
+        @include breakpoint($mobile_bp) {
+            font: normal normal 500 1.4rem/120% 'Montserrat';
+        }
+    }
+}
+
+.special-background {
+    background-image: url(/assets/images/zaym-pod-zalog-back.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    background-color: rgba(235, 235, 235, 0.52);
+    clip-path: polygon(0 0, 100% 0, 100% 89%, 50% 100%, 0 89%);
+}
+
+.section-icons-vertical {
+    @include breakpoint(860px) {
+        display: none;
+    }
+}
+
+.icons-vertical {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 57rem;
+
+    .icon {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10rem;
+        height: 10rem;
+        background-color: #F0F0F0;
+        box-shadow: 0px 3px 10px rgba(51, 51, 51, 0.2);
+        border-radius: 50%;
+        margin-bottom: 10rem;
+        z-index: 10;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    .line-vertical {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 2px solid rgba(51, 51, 51, 0.15);
+        height: 100%;
+        max-height: 82.2rem;
+        z-index: 1;
+    }
+
+    .popup {
+        position: absolute;
+        background: #F0F0F0;
+        box-shadow: 0px 3px 10px rgba(51, 51, 51, 0.3);
+        border-radius: 10px;
+        padding: 3.6rem 4.9rem;
+        width: 60.4rem;
+
+        @include breakpoint(1450px) {
+            width: 40.4rem;
+        }
+
+        @include breakpoint($mobile_menu_bp) {
+            width: 30.4rem;
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            width: 4.7rem;
+            height: 4.7rem;
+            background-image: url(/assets/images/icons/popup-arrow.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        &--left {
+            top: 0;
+            right: 15.4rem;
+
+            &:after {
+                top: 2.5rem;
+                right: -4rem;
+                transform: rotate(180deg);
+            }
+        }
+
+        &--right {
+            top: 0;
+            left: 15.4rem;
+
+            &:after {
+                top: 2.5rem;
+                left: -4rem;
+            }
+        }
+
+        &--bottom {
+            top: 15.4rem;
+
+            @include breakpoint(1450px) {
+                width: 70.4rem;
+            }
+
+            &:after {
+                top: -4rem;
+                left: 50%;
+                transform: translateX(-50%) rotate(90deg) ;
+            }
+        }
+
+        .popup-title {
+            font: normal normal bold 1.8rem/150% 'Montserrat';
+            margin-bottom: 1.9rem;
+        }
+
+        .popup-text {
+            font: normal normal 500 1.8rem/150% 'Montserrat';
+        }
+    }
+}
+
+.call-bottom-form.mobile-show {
+    display: none;
+
+    @include breakpoint(860px) {
+        display: block;
+    }
+}
