@@ -83,7 +83,26 @@ $(document).ready(function () {
         }
     });
 
+    $('#tree-squares').owlCarousel({
+        nav: false,
+        responsive: {
+            300: {
+                items: 1,
+                pagination: true,
+            },
+            991: {
+                items: 2,
+                pagination: true,
+            },
+            1420: {
+                items: 3,
+                pagination: false,
+            }
+        }
+    });
+
     $('#sert-wrapper-slider').owlCarousel({
+        nav: false,
         responsive: {
             300: {
                 items: 1,

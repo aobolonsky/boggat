@@ -5,14 +5,13 @@ title: Боггат | Информация о Боггат
 
 <section class="o-boggat">
     <div class="container">
-
         <div class="breadcrumbs">О Боггат / Информация о Боггат</div>
         <h1 class="section-name">Информация о Боггат</h1>
         <div class="o-boggat-slogan">Объединяем людей, предоставляя возможности</div>
     </div>
 </section>
 <section class="boggat-cooperativ">
-    <div class="container tree-squares">
+    <div id="tree-squares" class="container tree-squares owl-carousel">
         <div class="square">
             <div class="check"><img src="/assets/images/check.svg"></div>
             <div class="check-text">Кредитный потребительский кооператив «БОГГАТ» является членом Саморегулируемой
@@ -40,39 +39,56 @@ title: Боггат | Информация о Боггат
 
     </div>
 </section>
-<section class="cooperativ-info">
+<section class="cooperativ-info pt15 pb15">
     <div class="container">
-        <h2 class="cooperativ-info-text section-heading">Для того, чтобы стать пайщиком, нужно:</h2>
+        <h2 class="cooperativ-info-text">Для того, чтобы стать пайщиком, нужно:</h2>
         <div class="cooperativ-info-all">
             <div class="pay-text">
                 <div class="pay-text-steps">
-                    <p class="pay-text-steps-number">1</p>
-                    <p>Подтвердить членство в Ассоциации «Социальное сотрудничество» (ОГРН 1197800003609)</p>
+                    <span class="pay-text-steps-number">1</span>
+                    <span>Подтвердить членство в Ассоциации «Социальное сотрудничество» (ОГРН 1197800003609)</span>
                 </div>
                 <div class="pay-text-steps">
-                    <p class="pay-text-steps-number">2</p>
-                    <p>Написать заявление на вступление в Кооператив в одном из офисов «БОГГАТ»</p>
+                    <span class="pay-text-steps-number">2</span>
+                    <span>Написать заявление на вступление в Кооператив в одном из офисов «БОГГАТ»</span>
                 </div>
                 <div class="pay-text-steps">
-                    <p class="pay-text-steps-number">3</p>
-                    <p>Оплатить вступительный и паевой взносы<br>
-                        • Вступительный – 50 руб.<br>
-                        • Обязательный паевой – 25 руб.<br>
-                        • Членский - 25 руб.</p>
+                    <span class="pay-text-steps-number">3</span>
+                    <span class="pay-text-steps-list">
+                        Оплатить вступительный и паевой взносы
+                        <ul>
+                            <li>Вступительный – 50 руб.</li>
+                            <li>Обязательный паевой – 25 руб.</li>
+                            <li>Членский - 25 руб.</li>
+                        </ul>
+                    </span>
                 </div>
                 <div class="pay-text-text">В случае прекращения членства в Кооперативе, пайщику возвращается сумма его
                     паенакопления (пая), включая сумму паевых взносов и присоединенных начислений на паевой взнос, если
                     присоединение допускается законом.<br><br>
 
                     Член Кооператива солидарно несет субсидиарную ответственность по обязательствам Кооператива в
-                    пределах невнесенной части дополнительного взноса каждого из членов Кооператива.</div>
+                    пределах невнесенной части дополнительного взноса каждого из членов Кооператива.
+                    <button class="cta-button-dark cta-button-dark--center cooperativ-button-dark">
+                        Стать членом кооператива
+                    </button>
+                </div>
             </div>
-            
-            <div class="pay-image"><img src="/assets/images/payhand.png"></div><div class="button-cooperativ-place">
-                <button class="cta-button-dark cooperativ-button-dark">
-                    Стать членом кооператива
-                </button></div>
+            <div class="pay-image"><img src="/assets/images/payhand.png"></div>
         </div>
-
+    </div>
+    <div class="call-bottom-form mobile-show background-image background-image--kpk">
+        <form class="form-wrapper" action="/" method="POST">
+            <input class="form-item" type="text" placeholder="Ваше имя" name="name" id="name-bottom">
+            <input class="form-item" type="text" placeholder="+7 (___)___-__-__" name="phone" id="phone-bottom">
+            
+            <button class="cta-call cta-button-dark" type="submit">
+                Стать членом КПК
+            </button>
+            <input class="form-item-input" type="checkbox" name="agree" id="agree-bottom">
+            <label class="form-item-label" for="agree-bottom">
+                Я даю своё согласие на обработку персональных данных
+            </label>
+        </form>
     </div>
 </section>
