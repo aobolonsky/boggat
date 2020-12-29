@@ -3,6 +3,11 @@ footer {
     color: $secondary;
     padding-top: 5.7rem;
     padding-bottom: 7.5rem;
+
+    @include breakpoint($tabletV_bp) {
+        padding-top: 4.3rem;
+        padding-bottom: 3.5rem;
+    }
 }
 
 .footer-container {

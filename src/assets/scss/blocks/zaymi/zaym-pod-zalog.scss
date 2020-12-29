@@ -204,11 +204,3 @@
         }
     }
 }
-
-.call-bottom-form.mobile-show {
-    display: none;
-
-    @include breakpoint(860px) {
-        display: block;
-    }
-}
