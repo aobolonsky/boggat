@@ -1,14 +1,7 @@
-.zaym-advantages {
-    padding: 12rem 0;
-    text-align: center;
-    h2 {
-        margin-bottom: 10rem;
-    }
-}
 .advantage-list{
-@include breakpoint($mobile_menu_bp) {
-    display: none;
-}
+    @include breakpoint($mobile_menu_bp) {
+        display: none;
+    }
 }
 
 .advantages-wrapper {
@@ -187,38 +180,35 @@
     }
 
     .text {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 150%;
+        font: normal normal 500 1.8rem/150% 'Montserrat';
         color: #1D2B6B;
         padding: 5.5rem 3.2rem;
+
         @include breakpoint($mobile_menu_bp) {
-            font-size: 14px;
+            font: normal normal 500 1.4rem/120% 'Montserrat';
         }
     }
 
     .text-white {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 150%;
+        font: normal normal 600 1.8rem/150% 'Montserrat';
         color: #fff;
         text-align: center;
         padding: 5.5rem 3.2rem;
+
+        @include breakpoint($mobile_menu_bp) {
+            font: normal normal 600 1.4rem/120% 'Montserrat';
+        }
     }
 }
 
 .zaym-advantages .star-text {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 128.2%;
+    font: normal normal 500 2rem/128.2% 'Montserrat';
     text-align: center;
     margin-top: 5rem;
+
+    @include breakpoint($tabletV_bp) {
+        font: normal normal 500 1.4rem/120% 'Montserrat';
+    }
 }
 
 .zaym-advantages .cards-wrapper {
@@ -226,7 +216,13 @@
     justify-content: space-between;
     margin-bottom: 10rem;
 
+    @include breakpoint($tabletV_bp) {
+        margin-bottom: 0;
+    }
+
     .card {
+        display: flex;
+        flex-direction: column;
         border: 3px solid #F0F0F0;
         border-radius: 1rem;
         max-width: 33.7rem;
@@ -235,21 +231,20 @@
     }
 
     .top-card {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 150%;
+        font: normal normal 600 1.8rem/150% 'Montserrat';
         background-color: #F0F0F0;
-        padding: 4rem 3rem;
+        padding: 3rem 3rem;
+
+        .sub-text {
+            font: normal normal 500 1.8rem/150% 'Montserrat';
+        }
     }
 
     .bottom-card {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 150%;
-        padding: 4rem 3rem;
+        font: normal normal 500 2rem/150% 'Montserrat';
+        padding: 3rem 3rem;
+        display: flex;
+        justify-content: center;
+        margin: auto 0;
     }
 }

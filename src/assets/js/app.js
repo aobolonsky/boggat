@@ -48,7 +48,7 @@ $(document).ready(function () {
                     // Количество элементов 1
                     items: 1,
                     margin: 3,
-                    //nav: false,
+                    nav: false,
                 },
                 768: {
                     // Количество элементов 2
@@ -70,6 +70,27 @@ $(document).ready(function () {
         responsive: {
             300: {
                 items: 1,
+                pagination: true,
+            },
+            991: {
+                items: 3,
+                pagination: true,
+            },
+            1245: {
+                items: 4,
+                pagination: false,
+            }
+        }
+    });
+
+    $('#sert-wrapper-slider').owlCarousel({
+        responsive: {
+            300: {
+                items: 1,
+                pagination: true,
+            },
+            780: {
+                items: 2,
                 pagination: true,
             },
             991: {

@@ -1,26 +1,23 @@
-.news-page {
-    margin-bottom: 15rem;
-}
-
-.single-page {
-    margin-bottom: 12rem;
-}
-
 .single-page-body {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.8rem;
-    margin: 3rem;
+    margin: 10rem 15rem 6rem 15rem;
 
-    @media (min-width: 581px) {
-        margin: 10rem 15rem 6rem 15rem;
+    @include breakpoint($tabletV_bp) {
+        margin: 3rem 0;
+    }
+
+    p {
+        font: normal normal 500 1.8rem/120% 'Montserrat';
+
+        @include breakpoint($mobile_bp) {
+            font: normal normal 500 1.6rem/120% 'Montserrat';
+        }
     }
     
     img {
         display: block;
         max-width: 100%;
         height: auto;
+        margin: 6rem auto;
     }
 }
 
@@ -29,31 +26,26 @@
 }
 
 .news-page-wrapper {
-    padding: 4rem 3rem;
+    padding: 10rem 10rem 0 10rem;
+
+    @include breakpoint($mobile_bp) {
+        padding: 0;
+    }
 
     .news-page-grid {
         display: grid;
         grid-gap: 9rem;
         grid-template-columns: 1fr 1fr 1fr;
         margin-bottom: 6rem;
-        grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
-        margin-bottom: 3rem;
-        grid-gap: 3rem;
-    }
-    
-    @media (min-width: 581px) {
-        padding: 10rem 10rem 0 10rem;
-        .news-page-grid {
-            grid-template-columns: repeat(auto-fill, minmax(332px, 1fr));
-            margin-bottom: 6rem;
-            grid-gap: 6rem;
+
+        @include breakpoint(1330px) {
+            grid-template-columns: 1fr 1fr;
         }
-    }
-    
-    @media (min-width: 1511px) {
-        .news-page-grid {
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 9rem;
+
+        @include breakpoint(920px) {
+            grid-template-columns: 1fr;
+            margin-bottom: 3rem;
+            grid-gap: 2rem;
         }
     }
 }

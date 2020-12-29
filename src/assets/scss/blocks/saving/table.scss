@@ -3,11 +3,7 @@
     background: #F0F0F0;
 
     h2 {
-        font-family: Open Sans Condensed;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 35px;
-        line-height: 120.1%;
+        font: normal normal bold 3.5rem/120% 'Open Sans Condensed';
         letter-spacing: 0.02em;
         color: #00296F;
         text-transform: uppercase;
@@ -37,15 +33,11 @@ table {
     }
 
     th {
+        font: normal normal 800 2rem/120% 'Montserrat';
         padding: 1rem 10rem;
         vertical-align: middle;
         color: $secondary;
         background-color: $primary;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 20px;
-        line-height: 120.1%;
         border: 1.5px solid #fff;
         text-align: center;
 
@@ -63,6 +55,7 @@ table {
     }
 
     td {
+        font: normal normal 500 1.8rem/120% 'Montserrat';
         vertical-align: middle;
         color: #333;
         text-align: center;
@@ -70,11 +63,6 @@ table {
         background-color: #fff;
         border-collapse: collapse;
         height: 6rem;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 120.1%;
 
         &:first-child {
             border-left: none;

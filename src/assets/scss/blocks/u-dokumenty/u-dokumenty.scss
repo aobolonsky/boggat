@@ -1,32 +1,29 @@
 .u-documenty {
-    font: normal normal 700 5rem/6rem 'Open Sans Condensed';
-    color: $primary;
     margin-bottom: 15rem;
-    font-size: 18px;
 
     .section-heading {
         text-align: center;
     }
     
     .page-wrapper {
-        padding: 4rem 3rem;
+        padding: 7rem 12rem 0 12rem;
 
-        @media (min-width: 625) {
+        @include breakpoint($tabletH_bp) {
             padding: 7rem 5rem 0 5rem;
         }
 
-        @media (min-width: 870px) {
-            padding: 7rem 12rem 0 12rem;
-        }  
+        @include breakpoint($tabletV_bp) {
+            padding: 0;
+        }
     }
 
     .download-wrapper {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         margin-bottom: 5rem;
 
-        @media (min-width: 1140px) {
-            grid-template-columns: 1fr 1fr;
+        @include breakpoint($mobile_menu_bp) {
+            grid-template-columns: 1fr;
         }
     }
 
@@ -39,33 +36,36 @@
         .item-image {
             width: 6rem;
             height: 6rem;
-            margin-right: 3rem;
+            margin-right: 6rem;
 
-            @media (min-width: 1140px) {
-                margin-right: 6rem;
+            @include breakpoint($tabletV_bp) {
+                margin-right: 3rem;
             }
         }
 
         .item-title {
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 130.2%;
+            font: normal normal 500 1.8rem/130% 'Montserrat';
             color: #333;
+
+            @include breakpoint($tabletV_bp) {
+                font: normal normal 500 1.6rem/130% 'Montserrat';
+            }
         }
     }
 
     .sert-wrapper {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
-        grid-column-gap: 2.7rem;
-        grid-row-gap: 1rem;
 
         .image-wrapper {
             position: relative;
-            margin: auto;
             cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+
+            img {
+                display: block;
+            }
 
             .hover-wrapper {
                 position: absolute;
@@ -85,8 +85,31 @@
                     opacity: 1;
                 }
             }
+        }
 
+        .owl-stage {
+            display: flex;
+            align-items: center;
 
+            .owl-item .image-wrapper img {
+                max-width: 34.4rem;
+            }
+        }
+
+        .owl-dots {
+            margin-top: 3rem;
+            text-align: center;
+            .owl-dot {
+                height: 1rem;
+                width: 1rem;
+                background: rgba(51, 51, 51, 0.5);
+                border-radius: 50%;
+                margin: 0 0.5rem;
+    
+                &.active {
+                    background: #1D2B6B;
+                }
+            }
         }
     }
 }

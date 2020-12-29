@@ -1,21 +1,14 @@
 .rekvizity {
-    font: normal normal 700 5rem/6rem 'Open Sans Condensed';
-    color: $primary;
-    
-    @media (min-width: 1140px) {
-        margin-bottom: 15rem;
-    }
-    
     .page-wrapper {
-        padding: 4rem 3rem;
+        padding: 7rem 12rem 0 12rem;
 
-        @media (min-width: 625) {
+        @include breakpoint($tabletH_bp) {
             padding: 7rem 5rem 0 5rem;
         }
 
-        @media (min-width: 870px) {
-            padding: 7rem 12rem 0 12rem;
-        }  
+        @include breakpoint($tabletV_bp) {
+            padding: 0;
+        }
     }
 
     .table-wrapper {
@@ -29,12 +22,12 @@
             color: #333;
 
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: minmax(20rem, 3fr) 5fr;
             padding: 3rem 0;
             border-top: 2px solid #1D2B6B;
 
-            @media (min-width: 1140px) {
-                grid-template-columns: minmax(20rem, 3fr) 5fr;
+            @include breakpoint($tabletV_bp) {
+                grid-template-columns: 1fr;
             }
 
             &:nth-child(1) {
@@ -42,28 +35,20 @@
             }
 
             .title-col {
+                font: normal normal 500 2rem/130% 'Montserrat';
                 padding-right: 3rem;
-                font-weight: 600;
-                font-size: 1.6rem;
-                line-height: 120%;
                 margin-bottom: 1.5rem;
 
-                @media (min-width: 1140px) {
-                    font-weight: 500;
-                    font-size: 2rem;
-                    line-height: 130.2%;
+                @include breakpoint($tabletV_bp) {
+                    font: normal normal 600 1.6rem/120% 'Montserrat';
                 }
             }
 
             .value-col {
-                font-weight: 500;
-                font-size: 1.6rem;
-                line-height: 120%;
+                font: normal normal 500 2rem/130% 'Montserrat';
 
-                @media (min-width: 1140px) {
-                    font-weight: 500;
-                    font-size: 2rem;
-                    line-height: 130.2%;
+                @include breakpoint($tabletV_bp) {
+                    font: normal normal 500 1.6rem/120% 'Montserrat';
                 }
             }
         }
@@ -82,20 +67,20 @@
             .item-image {
                 width: 6rem;
                 height: 6rem;
-                margin-right: 3.3rem;
+                margin-right: 6rem;
 
-                @media (min-width: 1140px) {
-                    margin-right: 6rem;
+                @include breakpoint($tabletV_bp) {
+                    margin-right: 3.3rem;
                 }
             }
 
             .item-title {
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 130.2%;
+                font: normal normal 500 1.8rem/130% 'Montserrat';
                 color: #333;
+
+                @include breakpoint($tabletV_bp) {
+                    font: normal normal 500 1.6rem/120% 'Montserrat';
+                }
             }
         }
     }

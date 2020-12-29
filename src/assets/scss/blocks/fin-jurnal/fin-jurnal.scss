@@ -1,102 +1,87 @@
-.fin-jurnal,
-.fin-jurnal-single-page {
-    font: normal normal 700 5rem/6rem 'Open Sans Condensed';
-    color: $primary;
-}
-
-.fin-jurnal {
-    margin-bottom: 6rem;
-
-    @media (min-width: 956px) {
-        argin-bottom: 15rem;
-    }
-}
-
 .fin-jurnal-wrapper {
-    padding: 1rem 3rem 0 3rem;
+    padding: 10rem 23rem 0 23rem;
+
+    @include breakpoint($tabletV_bp) {
+        padding: 10rem 13rem 0 13rem;
+    }
+
+    @include breakpoint($tabletH_bp) {
+        padding: 1rem 3rem 0 3rem;
+    }
+
+    @include breakpoint($mobile_bp) {
+        padding: 0;
+    }
 
     .item-wrapper {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
         color: #333333;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         background: #F0F0F0;
         border-radius: 10px;
-        padding: 1.5rem;
         margin-bottom: 4.5rem;
-        min-height: 12.7rem;
         box-sizing: border-box;
         transition: box-shadow .2s ease;
+        padding: 3rem 8rem;
+        height: 20.3rem;
         cursor: pointer;
+
+        @include breakpoint($tabletV_bp) {
+            padding: 2rem 1.5rem;
+            min-height: 12.7rem;
+            height: auto;
+        }
 
         &:hover {
             box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.3);
         }
 
         .item-text {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 120%;
+            font: normal normal 500 2.5rem/130% 'Montserrat';
+
+            @include breakpoint($tabletV_bp) {
+                font: normal normal 500 1.6rem/120% 'Montserrat';
+            }
         }
 
         .item-bottom {
-            display: none;
+            display: flex;
             justify-content: space-between;
 
+            @include breakpoint($tabletV_bp) {
+                display: none;
+            }
+
             .item-link {
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 130.2%;
+                font: normal normal 500 1.8rem/130% 'Montserrat';
                 color: #04388F;
                 text-decoration: none;
             }
 
             .item-tag {
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 130.2%;
+                font: normal normal 500 1.8rem/130% 'Montserrat';
                 color: #ABABAB;
             }
         }
-
-        @media (min-width: 956px) {
-            padding: 3rem 8rem;
-            height: 20.3rem;
-
-            .item-text {
-                font-size: 25px;
-                line-height: 130.2%;
-            }
-
-            .item-bottom {
-                display: flex;
-            }
-        }
     }
-    @media (min-width: 956px) {
-        padding: 10rem 13rem 0 13rem;
-    }
-
-    @media (min-width: 1150px) {
-        padding: 10rem 23rem 0 23rem;
-    }    
 }
 
-.fin-jurnal-single-page {
-    margin-bottom: 18rem;
+.single-jurnal {
+
+    .single-page-bottom {
+        @include breakpoint($mobile_bp) {
+            display: none;
+        }
+    }
 
     .single-fin-jurnal-bottom {
         text-align: center;
     }
 
     .single-fin-jurnal-link {
+        font: normal normal 500 1.8rem/130% 'Montserrat';
         display: block;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 130.2%;
         color: #04388F;
         text-decoration: none;
         &:focus {
@@ -105,11 +90,7 @@
     }
 
     .single-fin-jurnal-body {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 142.8%;
+        font: normal normal 500 1.8rem/143% 'Montserrat';
         text-align: justify;
         margin: 10rem 25rem 6rem 25rem;
     }

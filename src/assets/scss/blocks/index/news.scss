@@ -75,8 +75,8 @@
     background-position: center;
 
     @include breakpoint($mobile_bp) {
-        height: 19.7rem;
-        max-width: 19.7rem;
+        height: 21.6rem;
+        max-width: 21.6rem;
     }
 
     .background-mask {
@@ -86,15 +86,18 @@
         display: flex;
         align-items: center;
     }
-    
-    &:hover {
-        margin: -1.5rem auto;
-        box-shadow: 0px 4px 20px rgba(29, 43, 107, 0.5);
 
-        .background-mask {
-            background-color: #1d2b6b;
+    &--hovered {
+        &:hover {
+            margin: -1.5rem auto;
+            box-shadow: 0px 4px 20px rgba(29, 43, 107, 0.5);
+    
+            .background-mask {
+                background-color: #1d2b6b;
+            }
         }
     }
+    
 }
 
 .news-item-all {
@@ -106,7 +109,7 @@
     transition: all 0.2s ease-in;
 
     @include breakpoint($mobile_bp) {
-        padding: 0.8rem;
+        padding: 1.8rem;
     }
 }
 

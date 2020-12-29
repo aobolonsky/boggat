@@ -1,17 +1,21 @@
 .saving-bottom {
-    padding: 5rem 0;
+    padding: 15rem 0;
     text-align: center;
 
-    @media (min-width: 1298px) {
-        padding: 15rem 0;
+    @include breakpoint(1298px) {
+        padding: 5rem 0;
+    }
+
+    @include breakpoint($tabletV_bp) {
+        padding: 5rem 0 0;
     }
 
     .image-wrap {
-        display: none;
+        display: block;
         width: 50%;
 
-        @media (min-width: 1298px) {
-            display: block;
+        @include breakpoint(1298px) {
+            display: none;
         }
 
         img {
@@ -22,18 +26,32 @@
     }
 
     .text {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 1.8rem;
-        line-height: 150%;
+        font: normal normal 500 1.8rem/150% 'Montserrat';
         text-align: justify;
         letter-spacing: 0.02em;
         color: #333;
+
+        @include breakpoint($tabletV_bp) {
+            font: normal normal 500 1.6rem/130% 'Montserrat';
+        }
     }
 
     .hr-line {
         border-top: 0.2rem solid #1D2B6B;
+    }
+
+    .background-image {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &--pensioner {
+            background-image: url(/assets/images/pensioner-mobile-bottom.png);
+        }
+
+        &--procent {
+            background-image: url(/assets/images/procent-mobile-bottom.png);
+        }
     }
 }
 
@@ -43,31 +61,39 @@
 
     .text-wrap {
         padding: 10rem 0;
-        width: 100%;
-        margin-right: 3rem;
+        width: 50%;
+        margin-right: 6rem;
 
-        @media (min-width: 1298px) {
-            width: 50%;
-            margin-right: 6rem;
+        @include breakpoint(1298px) {
+            width: 100%;
+            margin-right: 3rem;
+        }
+
+        @include breakpoint($tabletV_bp) {
+            margin-right: 0;
         }
 
         .text {
             margin-left: 5vw;
+
+            @include breakpoint($tabletV_bp) {
+                margin-left: 0;
+            }
         }
     }
 
     .hr-line {
-        margin: 2rem 40% 2rem 0;
+        &:nth-child(2),
+        &:nth-child(6) {
+            margin: 2rem 20% 2rem 0;
+        }
 
-        @media (max-width: 1298px) {
-            &:nth-child(2),
-            &:nth-child(6) {
-                margin: 2rem 20% 2rem 0;
-            }
+        &:nth-child(4) {
+            margin: 2rem 0 2rem 20%;
+        }
 
-            &:nth-child(4) {
-                margin: 2rem 0 2rem 20%;
-            }
+        @include breakpoint(1298px) {
+            margin: 2rem 40% 2rem 0;
         }
     }
 
@@ -77,31 +103,39 @@
         padding: 10rem 0;
 
         .text-wrap {
-            width: 100%;
-            margin-left: 3rem;
+            margin-right: 6rem;
+            width: 50%;
 
-            @media (min-width: 1298px) {
-                margin-right: 6rem;
-                width: 50%;
+            @include breakpoint(1298px) {
+                width: 100%;
+                margin-left: 3rem;
+            }
+
+            @include breakpoint($tabletV_bp) {
+                margin-right: 3rem;
             }
         
             .text {
                 margin-right: 5vw;
+
+                @include breakpoint($tabletV_bp) {
+                    margin-right: 0;
+                }
             }
         }
         
         .hr-line {
-            margin: 2rem 0 2rem 40%;
+            &:nth-child(2),
+            &:nth-child(6) {
+                margin: 2rem 20% 2rem 0;
+            }
 
-            @media (max-width: 1298px) {
-                &:nth-child(2),
-                &:nth-child(6) {
-                    margin: 2rem 20% 2rem 0;
-                }
-    
-                &:nth-child(4) {
-                    margin: 2rem 0 2rem 20%;
-                }
+            &:nth-child(4) {
+                margin: 2rem 0 2rem 20%;
+            }
+
+            @include breakpoint(1298px) {
+                margin: 2rem 0 2rem 40%;
             }
         }
     }
