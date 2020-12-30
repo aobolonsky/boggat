@@ -14,12 +14,12 @@
             @include breakpoint($mobile_menu_bp) {
                 margin-bottom: 1rem;
             }
-                
-            .user-image{
+
+            .user-image {
                 padding: 2rem;
             }
-            .user-name{
-                padding:2rem;
+            .user-name {
+                padding: 2rem;
             }
         }
 
@@ -31,7 +31,6 @@
             }
         }
     }
-
 }
 
 .reviews-wrapper {
@@ -45,12 +44,12 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background: #F0F0F0;    
+        background: #f0f0f0;
         border-radius: 10px;
         padding: 3rem 8rem;
         margin-bottom: 4.5rem;
         box-sizing: border-box;
-        transition: box-shadow .2s ease;
+        transition: box-shadow 0.2s ease;
         cursor: pointer;
 
         @include breakpoint($tabletV_bp) {
@@ -89,12 +88,12 @@
 
         .item-text {
             p {
-                font: normal normal 500 1.8rem/143% 'Montserrat';    
+                font: normal normal 500 1.8rem/143% 'Montserrat';
                 text-align: center;
                 color: #000000;
 
                 @include breakpoint($mobile_bp) {
-                    font: normal normal 500 1.6rem/120% 'Montserrat';  
+                    font: normal normal 500 1.6rem/120% 'Montserrat';
                 }
             }
             padding: 1.3rem;
@@ -111,7 +110,7 @@
             .item-link {
                 font: normal normal 500 1.8rem/143% 'Montserrat';
                 padding: 1.5rem;
-                color: #04388F;
+                color: #04388f;
                 text-decoration: none;
 
                 @include breakpoint($mobile_bp) {
@@ -125,7 +124,7 @@
                 font-weight: 500;
                 font-size: 18px;
                 line-height: 130.2%;
-                color: #ABABAB;
+                color: #ababab;
             }
         }
     }

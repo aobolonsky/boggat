@@ -15,7 +15,7 @@
         display: grid;
         grid-template-columns: 1fr;
         margin-bottom: 2rem;
-        
+
         .table-item {
             font-family: Montserrat;
             font-style: normal;
@@ -24,7 +24,7 @@
             display: grid;
             grid-template-columns: minmax(20rem, 3fr) 5fr;
             padding: 3rem 0;
-            border-top: 2px solid #1D2B6B;
+            border-top: 2px solid #1d2b6b;
 
             @include breakpoint($tabletV_bp) {
                 grid-template-columns: 1fr;

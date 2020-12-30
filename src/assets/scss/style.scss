@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans+Condensed:wght@700&display=swap');
-@import "vendor/owl.carousel.min";
-@import "vendor/owl.theme.default";
-@import "vars";
-@import "mixins";
+@import 'vendor/owl.carousel.min';
+@import 'vendor/owl.theme.default';
+@import 'vars';
+@import 'mixins';
 
 html {
     font-size: 62.5%;
@@ -18,14 +18,19 @@ body {
     }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     padding-top: 3rem;
 }
 
 h1 {
     font: normal normal bold 5rem/120% 'Open Sans Condensed';
     color: $primary;
-    padding: 3rem 0 4rem; 
+    padding: 3rem 0 4rem;
 
     @include breakpoint($tabletV_bp) {
         font: normal normal bold 2rem/130% 'Open Sans Condensed';
@@ -38,7 +43,7 @@ h2 {
     color: $primary;
 
     @include breakpoint($tabletV_bp) {
-        font: normal normal bold 2rem/130% 'Open Sans Condensed';    
+        font: normal normal bold 2rem/130% 'Open Sans Condensed';
     }
 }
 
@@ -70,13 +75,13 @@ b {
 a {
     font: normal normal 500 1.8rem/142% 'Montserrat';
     text-decoration: none;
-    color: #04388F;
+    color: #04388f;
 
     &:hover,
     &:active,
     &:visited {
         text-decoration: none;
-        color: #04388F;
+        color: #04388f;
     }
 }
 
@@ -92,7 +97,7 @@ button:focus {
     outline: none;
 }
 
-label, 
+label,
 input {
     margin: 0;
     padding: 0;
@@ -123,7 +128,7 @@ input {
 .arrows-wrapper {
     text-align: center;
     width: 100%;
-    
+
     .arrow-left img {
         transform: rotateY(180deg);
     }
@@ -160,34 +165,34 @@ input {
 }
 
 /* Blocks */
-@import "blocks/mobile-nav.scss";
-@import "blocks/burger.scss";
-@import "blocks/header";
-@import "blocks/header-secondary.scss";
-@import "blocks/section.scss";
-@import "blocks/cta-button.scss";
-@import "blocks/index/slider";
-@import "blocks/index/about";
-@import "blocks/index/call-form.scss";
-@import "blocks/index/finservices";
-@import "blocks/index/calc.scss";
-@import "blocks/index/news";
-@import "blocks/index/contact.scss";
-@import "blocks/o-boggat/o-boggat.scss";
-@import "blocks/u-dokumenty/u-dokumenty.scss";
-@import "blocks/rekvizity/rekvizity.scss";
-@import "blocks/dlya-partnerov/dlya-partnerov.scss";
-@import "blocks/news/news.scss";
-@import "blocks/fin-jurnal/fin-jurnal.scss";
-@import "blocks/reviews/reviews.scss";
-@import "blocks/contacts/contacts.scss";
-@import "blocks/saving/title.scss";
-@import "blocks/saving/table.scss";
-@import "blocks/saving/bottom.scss";
-@import "blocks/zaymi/materinsky-kapital.scss";
-@import "blocks/zaymi/zaym-potrebitelsiy.scss";
-@import "blocks/zaymi/zaym-gospoddergka.scss";
-@import "blocks/zaymi/zaym-rsk.scss";
-@import "blocks/zaymi/zaym-pod-zalog.scss";
-@import "blocks/footer";
-@import "blocks/mobile.scss";
+@import 'blocks/mobile-nav.scss';
+@import 'blocks/burger.scss';
+@import 'blocks/header';
+@import 'blocks/header-secondary.scss';
+@import 'blocks/section.scss';
+@import 'blocks/cta-button.scss';
+@import 'blocks/index/slider';
+@import 'blocks/index/about';
+@import 'blocks/index/call-form.scss';
+@import 'blocks/index/finservices';
+@import 'blocks/index/calc.scss';
+@import 'blocks/index/news';
+@import 'blocks/index/contact.scss';
+@import 'blocks/o-boggat/o-boggat.scss';
+@import 'blocks/u-dokumenty/u-dokumenty.scss';
+@import 'blocks/rekvizity/rekvizity.scss';
+@import 'blocks/dlya-partnerov/dlya-partnerov.scss';
+@import 'blocks/news/news.scss';
+@import 'blocks/fin-jurnal/fin-jurnal.scss';
+@import 'blocks/reviews/reviews.scss';
+@import 'blocks/contacts/contacts.scss';
+@import 'blocks/saving/title.scss';
+@import 'blocks/saving/table.scss';
+@import 'blocks/saving/bottom.scss';
+@import 'blocks/zaymi/materinsky-kapital.scss';
+@import 'blocks/zaymi/zaym-potrebitelsiy.scss';
+@import 'blocks/zaymi/zaym-gospoddergka.scss';
+@import 'blocks/zaymi/zaym-rsk.scss';
+@import 'blocks/zaymi/zaym-pod-zalog.scss';
+@import 'blocks/footer';
+@import 'blocks/mobile.scss';

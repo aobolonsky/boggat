@@ -18,11 +18,11 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background: #F0F0F0;
+        background: #f0f0f0;
         border-radius: 10px;
         margin-bottom: 4.5rem;
         box-sizing: border-box;
-        transition: box-shadow .2s ease;
+        transition: box-shadow 0.2s ease;
         padding: 3rem 8rem;
         height: 20.3rem;
         cursor: pointer;
@@ -55,20 +55,19 @@
 
             .item-link {
                 font: normal normal 500 1.8rem/130% 'Montserrat';
-                color: #04388F;
+                color: #04388f;
                 text-decoration: none;
             }
 
             .item-tag {
                 font: normal normal 500 1.8rem/130% 'Montserrat';
-                color: #ABABAB;
+                color: #ababab;
             }
         }
     }
 }
 
 .single-jurnal {
-
     .single-page-bottom {
         @include breakpoint($mobile_bp) {
             display: none;
@@ -82,7 +81,7 @@
     .single-fin-jurnal-link {
         font: normal normal 500 1.8rem/130% 'Montserrat';
         display: block;
-        color: #04388F;
+        color: #04388f;
         text-decoration: none;
         &:focus {
             outline: none;

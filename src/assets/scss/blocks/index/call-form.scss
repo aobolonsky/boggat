@@ -5,10 +5,9 @@
     margin-top: 3rem;
     max-width: 71.2rem;
     width: 100%;
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
     border-radius: 1rem;
     box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.2);
-
 }
 .form-wrapper {
     max-width: 31rem;
@@ -17,7 +16,7 @@
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    
+
     .form-item {
         font: normal normal 500 2rem/2.4rem 'Montserrat';
         color: #333333;
@@ -26,7 +25,7 @@
         margin-top: 50px;
         text-align: center;
         border: none;
-        border-bottom: 0.15rem solid #333333;;
+        border-bottom: 0.15rem solid #333333;
         background-color: transparent;
         padding: 1rem 0;
 
@@ -50,9 +49,9 @@
         display: none;
     }
 
-    input[type="checkbox"] + label:before {
+    input[type='checkbox'] + label:before {
         position: absolute;
-        content: "";
+        content: '';
         width: 1.9rem;
         height: 2rem;
         left: 0;
@@ -60,7 +59,7 @@
         background-image: url('/assets/images/icons/unchecked.svg');
     }
 
-    input[type="checkbox"]:checked + label:before {
+    input[type='checkbox']:checked + label:before {
         width: 2rem;
         background-image: url('/assets/images/icons/checked.svg');
     }
@@ -71,7 +70,7 @@
 
         &:hover {
             color: #fff;
-            background-color: #04388F;
+            background-color: #04388f;
         }
     }
 }
@@ -86,6 +85,6 @@
 
     &:hover {
         color: #fff;
-        background-color: #04388F;
+        background-color: #04388f;
     }
 }

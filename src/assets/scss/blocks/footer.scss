@@ -17,27 +17,27 @@ footer {
     grid-template-columns: repeat(12, auto);
     grid-template-rows: repeat(4, auto);
     grid-template-areas:
-        "logo nav nav contact contact contact contact contact contact contact contact contact"
-        "tou tou tou tou tou tou tou tou tou tou tou social"
-        "fi fi fi fi fi fi fi fi fi fi fi fi"
-        "copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright";
+        'logo nav nav contact contact contact contact contact contact contact contact contact'
+        'tou tou tou tou tou tou tou tou tou tou tou social'
+        'fi fi fi fi fi fi fi fi fi fi fi fi'
+        'copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright';
 
     @include breakpoint($tabletH_bp) {
         grid-template-areas:
-        "logo nav nav nav nav nav nav nav contact contact contact contact"
-        "tou tou tou tou tou tou tou tou tou tou tou social"
-        "fi fi fi fi fi fi fi fi fi fi fi fi"
-        "copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright";
+            'logo nav nav nav nav nav nav nav contact contact contact contact'
+            'tou tou tou tou tou tou tou tou tou tou tou social'
+            'fi fi fi fi fi fi fi fi fi fi fi fi'
+            'copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright';
     }
 
     @include breakpoint($mobile_menu_bp) {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-            "social contact"
-            "nav nav"
-            "tou tou"
-            "fi fi"
-            "copyright copyright";
+            'social contact'
+            'nav nav'
+            'tou tou'
+            'fi fi'
+            'copyright copyright';
     }
 }
 
@@ -120,7 +120,6 @@ footer {
             color: #fff;
             padding-top: 0;
         }
-
     }
 
     .footer-address {

@@ -1,5 +1,4 @@
 .dlya-partnerov {
-        
     .advantages-title {
         font: normal normal 500 2.5rem/30px 'Montserrat';
         text-transform: uppercase;
@@ -16,7 +15,7 @@
             text-transform: none;
         }
     }
-    
+
     .advantages-items {
         display: flex;
         align-items: center;
@@ -31,19 +30,19 @@
             flex-direction: column;
         }
     }
-    
-    .advantages-item {  
+
+    .advantages-item {
         display: flex;
-        flex-direction: column;    
+        flex-direction: column;
         justify-content: space-between;
         width: 25%;
-        max-width: 25%;        
+        max-width: 25%;
 
         @include breakpoint($tabletV_bp) {
             flex-direction: row;
-            justify-content: flex-start; 
+            justify-content: flex-start;
             width: 100%;
-            max-width: none;  
+            max-width: none;
             margin-bottom: 3rem;
 
             &:last-of-type {
@@ -58,10 +57,10 @@
         @include breakpoint($tabletV_bp) {
             margin: 0;
             width: 35px;
-            height: 35px;    
+            height: 35px;
         }
     }
-    
+
     .item-title {
         font: normal normal 500 2rem/2.4rem 'Montserrat';
         color: #333333;
@@ -74,11 +73,11 @@
             margin-left: 0;
             text-align: left;
             margin-left: 3rem;
-            margin-top: 0; 
+            margin-top: 0;
             text-transform: none;
         }
     }
-    
+
     .perspectives-wrapper {
         background: url(/assets/images/perspectivesBack.png) center no-repeat;
         background-size: cover;
@@ -89,11 +88,11 @@
             color: $secondary;
         }
     }
-    
+
     .background-mask {
-        background: rgba(37, 37, 37, 0.83);  
+        background: rgba(37, 37, 37, 0.83);
     }
-    
+
     .perspectives-title {
         font: normal normal 500 2.5rem/150% 'Montserrat';
         text-align: center;
@@ -103,7 +102,7 @@
             font: normal normal 500 1.6rem/120% 'Montserrat';
         }
     }
-    
+
     .perspectives {
         display: flex;
         justify-content: space-between;
@@ -121,7 +120,7 @@
             display: flex;
         }
     }
-    
+
     .perspectives-items-left,
     .perspectives-items-right {
         display: flex;
@@ -136,7 +135,7 @@
         padding: 0;
         list-style-type: none;
     }
-    
+
     .perspectives-item {
         font: normal normal 500 2rem/150% 'Montserrat';
         position: relative;
@@ -152,9 +151,9 @@
                 margin-top: 0;
             }
         }
-        
+
         &:before {
-            content: "";
+            content: '';
             width: 3.1rem;
             height: 3.1rem;
             background: url(/assets/images/icons/mark.svg) center no-repeat;
@@ -170,7 +169,7 @@
             }
         }
     }
-    
+
     .text-wrapper {
         font: normal normal 500 2rem/150% 'Montserrat';
         display: flex;
@@ -183,11 +182,11 @@
             display: none;
         }
     }
-    
+
     .request-wrapper {
         background: url(/assets/images/requestBack.png) center no-repeat;
         background-size: cover;
-        
+
         .background-mask {
             padding: 21.5rem 15rem;
 
@@ -195,7 +194,7 @@
                 padding: 11.3rem 3.2rem;
             }
         }
-        
+
         .request-title {
             font: normal normal 600 2.5rem/150% 'Montserrat';
             text-align: center;
@@ -207,9 +206,9 @@
                 margin-bottom: 0;
             }
         }
-        
+
         .request-button {
-            display: block;    
+            display: block;
             margin: 0 auto;
             border-radius: 1rem;
             padding: 2.9rem 10.2rem;
@@ -220,14 +219,3 @@
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-

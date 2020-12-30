@@ -1,4 +1,4 @@
-.fin-services{
+.fin-services {
     background-image: url(/assets/images/slider1.png);
     padding-top: 6.5rem;
     padding-bottom: 9.1rem;
@@ -21,14 +21,13 @@
     .owl-carousel .owl-prev {
         width: 2.7rem;
         height: 4.3rem;
-            
+
         position: absolute;
         top: 43%;
 
         &.disabled {
             display: none;
         }
-        
     }
     .owl-carousel .owl-prev {
         left: -1rem;
@@ -48,12 +47,12 @@
             margin: 0 0.5rem;
 
             &.active {
-                background: #1D2B6B;
+                background: #1d2b6b;
             }
         }
     }
 }
-.fin-service{
+.fin-service {
     height: 33.3rem;
     width: 33.3rem;
     border: solid 3px #ffffff;
@@ -61,12 +60,12 @@
     justify-items: center;
     align-items: center;
     text-decoration: none;
-    transition: all .1s ease-in;
+    transition: all 0.1s ease-in;
     margin: 0 auto;
 
     @include breakpoint($tabletV_bp) {
-        background: #1D2B6B;
-        border-color: #1D2B6B;
+        background: #1d2b6b;
+        border-color: #1d2b6b;
     }
 
     @include breakpoint($mobile_bp) {
@@ -74,9 +73,9 @@
         width: 21.6rem;
     }
 }
-.fin-service:hover{
-    background: #1D2B6B;
-    border-color: #1D2B6B;
+.fin-service:hover {
+    background: #1d2b6b;
+    border-color: #1d2b6b;
 }
 .fin-services-heading {
     text-align: center;
@@ -88,7 +87,7 @@
         color: $primary;
     }
 }
-.item-details{
+.item-details {
     font: normal normal bold 1.8rem/2.7rem 'Montserrat';
     color: #ffffff;
     padding-right: 3rem;
@@ -99,12 +98,12 @@
         font: normal normal 500 1.6rem/120% 'Montserrat';
     }
 }
-.item-all{
+.item-all {
     display: grid;
     justify-items: center;
     align-content: space-between;
 }
-.fin-ico{
+.fin-ico {
     margin-bottom: 2rem;
     @include breakpoint($mobile_bp) {
         width: 5rem;

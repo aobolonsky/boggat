@@ -1,4 +1,4 @@
-.advantage-list{
+.advantage-list {
     @include breakpoint($mobile_menu_bp) {
         display: none;
     }
@@ -21,7 +21,7 @@
             margin: 0 0.5rem;
 
             &.active {
-                background: #1D2B6B;
+                background: #1d2b6b;
             }
         }
     }
@@ -40,7 +40,6 @@
         @include breakpoint($tabletV_bp) {
             max-width: none;
         }
-    
     }
 
     .advantages-image-check {
@@ -58,7 +57,7 @@
         width: 14.5rem;
         height: 14.5rem;
         border-radius: 50%;
-        background-color: #F0F0F0;
+        background-color: #f0f0f0;
         overflow: hidden;
         margin-bottom: 5rem;
         display: flex;
@@ -85,7 +84,7 @@
     }
 }
 
-.container-blocks{
+.container-blocks {
     padding-left: 0;
     padding-right: 0;
 }
@@ -94,25 +93,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        "bi1 bt1 bi2 bt2"
-        "bt3 bi3 bt4 bi4"
-         ;
+        'bi1 bt1 bi2 bt2'
+        'bt3 bi3 bt4 bi4';
     @include breakpoint($mobile_menu_bp) {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-        "bi1 bt1"
-        "bt2 bi2"
-        "bi3 bt3"
-        "bt4 bi4"
-         ;
+            'bi1 bt1'
+            'bt2 bi2'
+            'bi3 bt3'
+            'bt4 bi4';
     }
 
     > div {
         min-width: 31.5rem;
         height: 31.5rem;
         @include breakpoint($mobile_menu_bp) {
-        min-width: 18rem;
-        height: 18rem;
+            min-width: 18rem;
+            height: 18rem;
         }
     }
 
@@ -146,9 +143,9 @@
             background-image: url(/assets/images/blockImg4.png);
         }
     }
-    
+
     .block-text {
-        background-color: #F0F0F0;
+        background-color: #f0f0f0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -166,13 +163,13 @@
         grid-area: bt4;
     }
 
-    .text.text-short{
+    .text.text-short {
         display: none;
         @include breakpoint($mobile_menu_bp) {
             display: block;
         }
     }
-    .text.text-full{
+    .text.text-full {
         display: block;
         @include breakpoint($mobile_menu_bp) {
             display: none;
@@ -181,7 +178,7 @@
 
     .text {
         font: normal normal 500 1.8rem/150% 'Montserrat';
-        color: #1D2B6B;
+        color: #1d2b6b;
         padding: 5.5rem 3.2rem;
 
         @include breakpoint($mobile_menu_bp) {
@@ -223,7 +220,7 @@
     .card {
         display: flex;
         flex-direction: column;
-        border: 3px solid #F0F0F0;
+        border: 3px solid #f0f0f0;
         border-radius: 1rem;
         max-width: 33.7rem;
         text-align: center;
@@ -232,7 +229,7 @@
 
     .top-card {
         font: normal normal 600 1.8rem/150% 'Montserrat';
-        background-color: #F0F0F0;
+        background-color: #f0f0f0;
         padding: 3rem 3rem;
 
         .sub-text {

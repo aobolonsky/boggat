@@ -1,11 +1,11 @@
 .saving-table {
     padding: 9rem 0 10rem;
-    background: #F0F0F0;
+    background: #f0f0f0;
 
     h2 {
         font: normal normal bold 3.5rem/120% 'Open Sans Condensed';
         letter-spacing: 0.02em;
-        color: #00296F;
+        color: #00296f;
         text-transform: uppercase;
         margin-bottom: 5rem;
         text-align: center;
@@ -24,7 +24,7 @@
 table {
     margin: 0 auto;
     width: 100%;
-    
+
     tr {
         &:first-child > th,
         &:last-child > td {
@@ -59,7 +59,7 @@ table {
         vertical-align: middle;
         color: #333;
         text-align: center;
-        border: 1.5px solid #1D2B6B;
+        border: 1.5px solid #1d2b6b;
         background-color: #fff;
         border-collapse: collapse;
         height: 6rem;

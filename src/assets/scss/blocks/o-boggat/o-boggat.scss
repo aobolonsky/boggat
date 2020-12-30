@@ -9,7 +9,7 @@
         height: 20.7rem;
     }
 }
-.o-boggat-slogan{
+.o-boggat-slogan {
     font: normal normal bold 6rem/120% 'Montserrat';
     color: rgba(51, 51, 51, 0.5);
     padding-top: 4.1rem;
@@ -20,10 +20,10 @@
     }
 }
 
-.section-name{
+.section-name {
     padding-top: 3rem;
 }
-.boggat-cooperativ{
+.boggat-cooperativ {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -52,12 +52,12 @@
             margin: 0 0.5rem;
 
             &.active {
-                background: #1D2B6B;
+                background: #1d2b6b;
             }
         }
     }
 }
-.tree-squares{
+.tree-squares {
     position: absolute;
     top: -6rem;
     left: 50%;
@@ -67,13 +67,13 @@
         top: -8rem;
     }
 }
-.square{
+.square {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 45.3rem;
     height: 47.6rem;
-    background: #1D2B6B;
+    background: #1d2b6b;
     box-shadow: 0px 3px 10px rgba(29, 43, 107, 0.4);
     border-radius: 10px;
     padding: 6.9rem 6rem;
@@ -85,7 +85,7 @@
         padding: 5rem 3rem 8rem;
     }
 }
-.check{
+.check {
     display: grid;
     place-items: center;
     align-items: end;
@@ -98,7 +98,7 @@
         }
     }
 }
-.check-text{
+.check-text {
     font: normal normal 500 2rem/150% 'Montserrat';
     color: #ffffff;
     text-align: justify;
@@ -107,7 +107,7 @@
         font: normal normal 500 1.4rem/120% 'Montserrat';
     }
 }
-.cooperativ-text{
+.cooperativ-text {
     font: normal normal 500 2rem/150% 'Montserrat';
     display: grid;
     grid-template-columns: auto 81.6rem;
@@ -127,7 +127,7 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-    
+
             &--kpk {
                 background-image: url(/assets/images/kpk-mobile.png);
             }
@@ -142,9 +142,9 @@
         text-align: center;
     }
 }
-.cooperativ-info-all{
+.cooperativ-info-all {
     font: normal normal 500 1.8rem/150% 'Montserrat';
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(2, auto);
 
     @include breakpoint($tabletV_bp) {
@@ -152,10 +152,10 @@
     }
 }
 
-.pay-text-steps{
+.pay-text-steps {
     display: grid;
     grid-template-columns: 10rem auto;
-    align-self:start;
+    align-self: start;
     align-items: center;
     margin-top: 3rem;
     padding-right: 15rem;
@@ -169,7 +169,7 @@
 }
 .pay-text-steps-number {
     font: normal normal 900 6rem/130% 'Montserrat';
-    color: #00296F;
+    color: #00296f;
     align-self: start;
 
     @include breakpoint($tabletV_bp) {
@@ -193,7 +193,7 @@
         display: none;
     }
 }
-.pay-text-text{
+.pay-text-text {
     padding-top: 6rem;
     padding-right: 15rem;
     margin-bottom: 5rem;

@@ -8,7 +8,7 @@
     border-radius: 1rem;
     box-shadow: 0 0.6rem 1rem rgba(#333, 0.2);
     padding: 2.2rem 8.7rem;
-    transition: background-color .2s ease-in;
+    transition: background-color 0.2s ease-in;
 
     &:hover {
         color: $primary;
@@ -30,7 +30,7 @@
     border-radius: 1rem;
     box-shadow: 0 0.3rem 1rem rgba(#333, 0.2);
     padding: 1rem 2.6rem;
-    transition: background-color .2s ease-in;
+    transition: background-color 0.2s ease-in;
 
     &:hover {
         color: $secondary;
@@ -41,9 +41,7 @@
     &--mobile {
         @include breakpoint($mobile_menu_bp) {
             padding: 1.2rem 2.4rem;
-            font: normal normal 500 1.6rem/2rem "Montserrat";
+            font: normal normal 500 1.6rem/2rem 'Montserrat';
         }
     }
 }
-
-

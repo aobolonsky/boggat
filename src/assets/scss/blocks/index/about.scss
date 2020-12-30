@@ -65,7 +65,7 @@
                 max-height: 3rem;
             }
         }
-    
+
         &--left {
             flex-direction: row;
 
@@ -104,11 +104,11 @@
                 @include breakpoint($mobile_menu_bp) {
                     margin: 0 2rem 0 0;
                 }
-                
+
                 @include breakpoint($mobile_bp) {
                     margin: 0 1.2rem 0 0;
                 }
             }
-        }     
+        }
     }
 }

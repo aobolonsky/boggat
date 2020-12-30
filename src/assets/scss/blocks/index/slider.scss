@@ -1,7 +1,7 @@
 .slider {
     height: 100vh;
     padding-top: 10rem;
-    background-image: url("../images/Headerimage.png");
+    background-image: url('../images/Headerimage.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -15,7 +15,7 @@
     }
 
     @include breakpoint($tabletV_bp) {
-        max-height: 36rem;  
+        max-height: 36rem;
         max-width: 100%;
         background-size: cover;
 
@@ -46,7 +46,7 @@
         text-align: left;
 
         @include breakpoint($tabletV_bp) {
-            font: normal normal 600 2.4rem/120% "Open Sans Condensed";
+            font: normal normal 600 2.4rem/120% 'Open Sans Condensed';
             margin: auto 0 auto 3rem;
             padding: 0;
         }

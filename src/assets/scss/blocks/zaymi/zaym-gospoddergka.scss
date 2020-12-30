@@ -8,7 +8,7 @@
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: #EDF9F5;
+    background-color: #edf9f5;
 
     @include breakpoint($tabletH_bp) {
         padding: 5rem 0;
@@ -61,7 +61,7 @@
 
 .goverment-list-number {
     font: normal normal 900 8rem/90% 'Montserrat';
-    color: #1D2B6B;
+    color: #1d2b6b;
     margin-right: 4rem;
     display: block;
     height: 100%;
