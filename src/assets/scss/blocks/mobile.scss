@@ -1,3 +1,5 @@
+//-------------Some mobile styles-------------//
+
 .mobile-show {
     display: none;
     @include breakpoint($tabletV_bp) {
