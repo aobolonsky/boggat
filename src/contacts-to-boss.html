@@ -9,42 +9,75 @@ title: Контакты | Обратиться к руководителю
         <h1 class="section-name">Обратиться к руководителю</h1>
         <div class="to-boss-all-info">
             <h3 class="to-boss-info-heder">Уважаемые посетители!</h3>
-            <p>Вы можете отправить обращение к председателю правления кооператива по любым вопросам, касающимся деятельности кооператива: задать вопрос, обратиться с жалобой, просьбой, предложением, пожеланием.</p>
-            <p>Ваше обращение, будет немедленно отправлено на личную электронную почту председателя правления кооператива и рассмотрено в течении суток.</p>
+            <p>
+                Вы можете отправить обращение к председателю правления кооператива по любым
+                вопросам, касающимся деятельности кооператива: задать вопрос, обратиться с жалобой,
+                просьбой, предложением, пожеланием.
+            </p>
+            <p>
+                Ваше обращение, будет немедленно отправлено на личную электронную почту председателя
+                правления кооператива и рассмотрено в течении суток.
+            </p>
             <p>В течении трех рабочих дней, вам буден дан ответ в устной или письменной форме.</p>
         </div>
     </div>
 </section>
 <section class="form-to-boss">
-    <div class="container">
-        <div class="form-to-boss-all">
-            <form class="form-to-boss-wrapper" action="/" method="POST">
-                <p>
-                    <label for="">Ваше имя:</label>
-                    <input class="form-to-boss-input" type="text" placeholder="" name="name" id="tobossname">
-                </p>
-                <p></p>
-                <p>
-                    <label for="">Телефон:</label>
-                    <input class="form-to-boss-input" type="text" placeholder="" name="phone" id="tobossphone">
-                </p>
-                <p>
-                    <label for="">Электронная почта:</label>
-                    <input class="form-to-boss-input" type="text" placeholder="" name="email" id="tobossemail">
-                </p>
-                <p class="full-width">
-                    <label for="">Текст письма:</label>
-                    <input class="form-to-boss-input" type="text" placeholder="" name="messagebody"
-                        id="tobossmessagebody">
-                </p>
-                <p class="full-width button-send"><button class="cta-call cta-button-dark" type="submit">Отправить</button></p>
-                <p></p>
-                <p class="full-width agree-send">
-                <input class="form-item-input" type="checkbox" name="agree" id="agree">
-                <label class="form-item-label" for="agree">
-                    Я даю своё согласие на обработку персональных данных
-                </label></p>
-            </form>
-        </div>
+    <div class="form-to-boss-all">
+        <form class="form-to-boss-wrapper" action="/" method="POST">
+            <span>
+                <label for="">Ваше имя:</label>
+                <input
+                    class="form-to-boss-input"
+                    type="text"
+                    placeholder=""
+                    name="name"
+                    id="tobossname"
+                />
+            </span>
+            <span></span>
+            <span>
+                <label for="">Телефон:</label>
+                <input
+                    class="form-to-boss-input"
+                    type="text"
+                    placeholder=""
+                    name="phone"
+                    id="tobossphone"
+                />
+            </span>
+            <span>
+                <label for="">Электронная почта:</label>
+                <input
+                    class="form-to-boss-input"
+                    type="text"
+                    placeholder=""
+                    name="email"
+                    id="tobossemail"
+                />
+            </span>
+            <span class="full-width">
+                <label for="">Текст письма:</label>
+                <textarea
+                    class="form-to-boss-textarea"
+                    type="text"
+                    placeholder=""
+                    name="messagebody"
+                    id="tobossmessagebody"
+                >
+                </textarea>
+            </span>
+            <div class="full-width button-area">
+                <div class="button-send">
+                    <button class="cta-call cta-button-dark" type="submit">Отправить</button>
+                </div>
+                <div class="agree-send">
+                    <input class="form-item-input" type="checkbox" name="agree" id="agree" />
+                    <label class="form-item-label" for="agree">
+                        Я даю своё согласие на обработку персональных данных
+                    </label>
+                </div>
+            </div>
+        </form>
     </div>
 </section>

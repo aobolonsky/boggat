@@ -40,9 +40,14 @@
         padding-left: 3.5rem;
         margin-top: 5rem;
         color: #333333;
-        font: normal normal 500 1.5rem/1.95rem 'Montserrat';
+        font: normal normal 400 1.5rem/130% 'Montserrat';
         user-select: none;
         cursor: pointer;
+
+        @include breakpoint($tabletV_bp) {
+            font: normal normal 400 1.2rem/130% 'Montserrat';
+            color: rgba(51, 51, 51, 0.5);
+        }
     }
 
     .form-item-input {

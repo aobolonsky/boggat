@@ -1,8 +1,10 @@
+//-------------Contacts styles-------------//
+
 .contacts {
     margin-bottom: 7rem;
 
-    .container {
-        position: relative;
+    @include breakpoint($mobile_bp) {
+        margin-bottom: 3rem;
     }
 }
 
@@ -14,6 +16,7 @@
 
 .all-contacts-info {
     display: flex;
+    flex-direction: row;
 
     @include breakpoint(762px) {
         flex-direction: column;
@@ -43,20 +46,19 @@
 }
 
 .right-wrapper {
-    padding-top: 5rem;
-    margin-left: 12rem;
-    margin-bottom: 8rem;
+    margin: 5rem 0 8rem 12rem;
     overflow: hidden;
     position: relative;
     height: inherit;
     width: 100%;
+    max-width: 95.2rem;
 
     @include breakpoint($tabletH_bp) {
         margin-left: 6rem;
     }
 
     @include breakpoint(762px) {
-        margin: 0;
+        margin: 6rem 0 0;
         height: 365px;
     }
 
@@ -69,6 +71,7 @@
     }
 }
 
+//-------------Contact to boss styles-------------//
 .to-boss-all-info {
     position: absolute;
     left: 50%;
@@ -83,11 +86,12 @@
     z-index: 1000;
     padding: 8rem 6.8rem 11rem;
 
-    @include breakpoint($tabletH_bp) {
+    @include breakpoint($tabletV_bp) {
         position: relative;
         transform: translateX(0);
         left: 0;
         padding: 3rem 2.9rem 6rem;
+        margin-bottom: 6rem;
     }
     @include breakpoint($mobile_bp) {
         margin-top: 0;
@@ -99,7 +103,7 @@
         text-align: center;
         font: normal normal 600 2.5rem/130% 'Montserrat';
 
-        @include breakpoint($tabletH_bp) {
+        @include breakpoint($tabletV_bp) {
             font: normal normal 500 2rem/120% 'Montserrat';
         }
     }
@@ -109,7 +113,7 @@
         text-align: justify;
         color: #ffffff;
 
-        @include breakpoint($tabletH_bp) {
+        @include breakpoint($tabletV_bp) {
             font: normal normal 400 1.6rem/120% 'Montserrat';
         }
     }
@@ -117,21 +121,25 @@
 
 .form-to-boss {
     margin-top: -6rem;
-    background-image: url(/assets/images/telefon.png);
+    background-image: url('/assets/images/telefon.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     z-index: 100;
     height: 73.1rem;
     margin-top: 55rem;
 
-    @include breakpoint($tabletH_bp) {
+    @include breakpoint($tabletV_bp) {
+        height: auto;
         margin-top: 1rem;
         background: none;
     }
 }
 .form-to-boss-all {
-    display: grid;
-    @include breakpoint($mobile_bp) {
-        width: 30rem;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .form-to-boss-wrapper {
     display: grid;
@@ -142,12 +150,51 @@
     margin-top: 14rem;
     margin-bottom: 14.3rem;
 
-    @include breakpoint($tabletH_bp) {
-        margin-top: 6rem;
+    @include breakpoint($tabletV_bp) {
+        grid-gap: 0;
+        margin-top: 0;
         grid-template-columns: 1fr;
+        margin-bottom: 0;
+
+        span:nth-child(2) {
+            display: none;
+        }
+
+        > span {
+            padding: 0 3rem;
+        }
     }
-    @include breakpoint($mobile_bp) {
-        display: inline;
+
+    .form-item-label {
+        position: relative;
+        padding-left: 3.5rem;
+        color: #333333;
+        user-select: none;
+        cursor: pointer;
+
+        @include breakpoint($tabletV_bp) {
+            font: normal normal 400 1.2rem/130% 'Montserrat';
+            color: rgba(51, 51, 51, 0.5);
+        }
+    }
+
+    .form-item-input {
+        display: none;
+    }
+
+    input[type='checkbox'] + label:before {
+        position: absolute;
+        content: '';
+        width: 1.9rem;
+        height: 2rem;
+        left: 0;
+        top: 0;
+        background-image: url('/assets/images/icons/unchecked.svg');
+    }
+
+    input[type='checkbox']:checked + label:before {
+        width: 2rem;
+        background-image: url('/assets/images/icons/checked.svg');
     }
 }
 
@@ -155,39 +202,75 @@
     font: normal normal 500 1.6rem/130% 'Montserrat';
     display: block;
     color: rgba(51, 51, 51, 0.5);
-    @include breakpoint($mobile_bp) {
-        margin-bottom: 4rem;
+
+    @include breakpoint($tabletV_bp) {
         margin-top: 2rem;
+        margin-bottom: 2.4rem;
     }
 }
 
-.form-to-boss-wrapper p {
-    margin: 0;
-}
-
 .form-to-boss-input {
+    font: normal normal 500 1.6rem/120% 'Montserrat';
     width: 100%;
     border: none;
     border-bottom: 0.15rem solid #333333;
     background-color: transparent;
-    @include breakpoint($mobile_bp) {
-        width: 207px;
+
+    @include breakpoint($tabletV_bp) {
+        width: 20.7rem;
+    }
+}
+
+.form-to-boss-textarea {
+    font: normal normal 500 1.6rem/120% 'Montserrat';
+    width: 100%;
+    border: none;
+    border-bottom: 0.15rem solid #333333;
+    background-color: transparent;
+
+    @include breakpoint($tabletV_bp) {
+        width: 30rem;
     }
 }
 
 .full-width {
     grid-column: 1 / 3;
-    @include breakpoint($mobile_bp) {
+    @include breakpoint($tabletV_bp) {
         grid-column: auto;
         width: 300px;
     }
 }
-.full-width label {
-    @include breakpoint($mobile_bp) {
-        margin-bottom: 19.7rem;
+
+.button-area {
+    margin: 0 auto;
+    padding-top: 2rem;
+    @include breakpoint($tabletV_bp) {
+        padding: 6rem 3rem;
+        width: 100%;
+        background-image: url('/assets/images/telefon-mobile.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    
     }
 }
+
 .button-send,
 .agree-send {
-    justify-self: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.button-send {
+    margin-bottom: 2.5rem;
+
+    .cta-button-dark {
+        width: 100%;
+        padding: 2.2rem 9.7rem;
+    }
+}
+
+.agree-send {
+    max-width: 32rem;
+    width: 100%;
 }
