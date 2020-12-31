@@ -6,7 +6,7 @@ $(document).ready(function () {
         nav: true,
         pagination: false,
         navText: [
-            '<img src="/assets/images/prev.svg" alt="left">', '<img src="/assets/images/next.svg" alt="right">'
+            '<img src="assets/images/prev.svg" alt="left">', '<img src="assets/images/next.svg" alt="right">'
         ],
         // Адаптация
         responsive: {
@@ -40,7 +40,7 @@ $(document).ready(function () {
         var owl = $(this).find('.owl-carousel').owlCarousel({
             nav: true,
             navText: [
-                '<img src="/assets/images/icons/news-arrow.svg" alt="left">', '<img src="/assets/images/icons/news-arrow.svg" alt="right">'
+                '<img src="assets/images/icons/news-arrow.svg" alt="left">', '<img src="assets/images/icons/news-arrow.svg" alt="right">'
             ],
             // Адаптация
             responsive: {

@@ -1,12 +1,12 @@
 .mobile-show {
     display: none;
     @include breakpoint($tabletV_bp) {
-        display: block;
+        display: flex;
     }
 }
 
 .mobile-hide {
-    display: block;
+    display: flex;
     @include breakpoint($tabletV_bp) {
         display: none;
     }
