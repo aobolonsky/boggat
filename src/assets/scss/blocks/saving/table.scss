@@ -21,6 +21,10 @@
     -moz-border-radius: 10px;
     -khtml-border-radius: 10px;
     overflow: hidden;
+
+    @include breakpoint($tabletH_bp) {
+        overflow: auto;
+    }
 }
 
 table {

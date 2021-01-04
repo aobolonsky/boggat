@@ -123,6 +123,24 @@ $(document).ready(function () {
         }
     });
 
+    $('#cards-wrapper-slider').owlCarousel({
+        nav: false,
+        responsive: {
+            300: {
+                items: 1,
+                pagination: true,
+            },
+            780: {
+                items: 2,
+                pagination: true,
+            },
+            991: {
+                items: 3,
+                pagination: false,
+            },
+        }
+    });
+
     $('.burger').on('click', () => {
         $(this).find('body').addClass("show-mobile-menu")
     });
